@@ -1,0 +1,25 @@
+body {
+    background-color: antiquewhite;
+}
+
+p {
+    color: chocolate;
+    margin-bottom: 30px;
+}
+
+img {
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+figure {
+    display: inline-block;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: chocolate
+}

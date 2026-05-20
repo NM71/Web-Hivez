@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wallpaper Gallery</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+      /* text-align: center; */
+    }
+    a{
+      color: #1e90ff;
+      text-decoration: underline ;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+
+  <h4>*The main motive of using Semantic Tags is basically SEO (Search Engine Optimization)</h4>
+  <h4>A better SEO allows the search engines like Google to understand a site's page layout and then index it better (better ranking) in search results</h4>
+
+  <h1>Wallpaper Gallery</h1>
+
+  <div class="gallery">
+
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200"
+         alt="Mountain Wallpaper">
+
+    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200"
+         alt="Forest Wallpaper">
+
+    <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?q=80&w=1200"
+         alt="Lake Wallpaper">
+
+    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=1200"
+         alt="Nature Wallpaper">
+
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200"
+         alt="Beach Wallpaper">
+
+  </div>
+
+  <p>This is a normal paragraph, but <span style="color: red; font-weight: bold;">this part is red and bold</span> because of the span tag.</p>
+  C + O<sub>2</sub> = CO<sub>2</sub>
+
+
+  <h1>Wallpaper</h1>
+  <p>Wallpaper is used in <a href="https://en.wikipedia.org/wiki/Interior_decoration">interior decoration</a> to cover the interior walls of domestic and public buildings. It is usually sold in rolls and is applied onto a wall using <a href="https://en.wikipedia.org/wiki/Wallpaper_paste">wallpaper paste</a>. Wallpapers can come plain as "lining paper" to help cover uneven surfaces and minor wall defects, "textured", plain with a regular repeating pattern design, or with a single non-repeating large design carried over a set of sheets.</p>
+
+  
+
+
+</body>
+</html>
