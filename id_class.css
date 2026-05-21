@@ -1,0 +1,21 @@
+.red {
+    color: red;
+}
+
+.bg-green {
+    background-color: lightgreen;
+}
+
+
+#firstdiv {
+    border: 2px solid;
+    border-color: darkblue;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#seconddiv {
+    border: 2px solid;
+    border-color: darkblue;
+    padding: 20px;
+}
