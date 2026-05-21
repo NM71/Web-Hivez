@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+    <style>
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        div {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Forms in HTML</h1>
+    <form action="/submit.php">
+        <!-- Making the "for" and "id" attributes match, associates them with each other -->
+        <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter your Name" required>
+        </div>
+
+        <div>
+            <label for="phone">Phone</label>
+            <input id="phone" type="tel" placeholder="Enter your Phone Number" required>
+        </div>
+
+        <div> <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter your Email" required>
+        </div>
+
+        <div> <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Enter your Password" required>
+        </div>
+
+        <div>
+            <label for="dob">Date of Birth</label>
+            <input id="dob" type="date" placeholder="Enter your Date of Birth">
+        </div>
+
+        <!-- Dropdown List Selector -->
+
+        <div>
+            <label for="gender">Gender</label>
+            <select id="gender" required>
+                <!-- preselected option -->
+                <option value="" disabled selected>Select Gender</option>>
+                <!-- other options -->
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+
+            </select>
+        </div>
+
+        <div>
+            <p>Subscription Plan</p>
+
+            <!-- Basic Plan -->
+            <input type="radio" id="basic" name="plan" value="basic">
+            <label for="basic">Basic</label>
+
+            <!-- Pro Plan -->
+            <input type="radio" id="premium" name="plan" value="premium">
+            <label for="premium">Premium</label>
+
+            <!-- VIP Plan -->
+            <input type="radio" id="vip" name="plan" value="vip">
+            <label for="vip">VIP</label>
+        </div>
+
+        <!-- Terms and Conditions Checkbox -->
+        <input type="checkbox" id="terms" required>
+        <label for="terms">I agree to the Terms and Conditions of this form</label>
+
+        <!-- Comments -->
+        <div>
+            <label for="comments">Comments</label>
+            <textarea id="comments" placeholder="Enter your long text"></textarea>
+        </div>
+
+
+        <!-- Submit Form -->
+
+        <div>
+            <button type=" submit">Submit</button>
+        </div>
+    </form>
+
+</body>
+
+</html>

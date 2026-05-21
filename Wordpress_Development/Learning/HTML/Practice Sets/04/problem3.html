@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Vacation</title>
+</head>
+
+<body>
+    <h1>Book a Vacation of your Choice</h1>
+    <br>
+
+    <!-- Vacation Booking Form -->
+    <form action="book_vacation.php">
+        <p>Fill out the form below to book your vacation:</p>
+        <label for="name">Name</label>
+        <!-- The 'name' attribute is used to identify the input field when the form is submitted, it's data is sent to the server -->
+        <input type="text" id="name" name="name" required>
+
+        <br><br>
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age">
+
+        <br><br>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <br><br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <br><br>
+        <label for="address">Address</label>
+        <textarea name="address" id="address" required></textarea>
+
+        <br><br>
+        <label for="destination">Select Destination</label>
+        <select id="destination" required>
+            <!-- Pre-Selected Option -->
+            <option value="" disabled selected>Select your destination</option>
+            <option value="paris">Paris</option>
+            <option value="islamabad">Islamabad</option>
+            <option value="tokyo">Tokyo</option>
+            <option value="newyork">NewYork</option>
+            <option value="london">London</option>
+        </select>
+
+        <!-- Submit Form Button -->
+        <br><br>
+        <button type="submit">Book Now</button>
+
+
+
+
+    </form>
+
+</body>
+
+</html>
