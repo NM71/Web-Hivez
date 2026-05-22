@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Simple Selector */
+        /* div {
+            background-color: rebeccapurple;
+            color: wheat;
+        } */
+
+        /* Class Selector */
+        .purple {
+            background-color: rebeccapurple;
+            color: wheat;
+        }
+
+        /* Id Selector */
+        #eminem {
+            background-color: saddlebrown;
+            color: white;
+        }
+
+        /* Child Selectors */
+        div>p {
+            background-color: indigo;
+            color: whitesmoke;
+        }
+
+        /* Descendent Selector (this will apply css on h1 directly) */
+        div h1 {
+            background-color: indigo;
+            color: whitesmoke;
+        }
+
+        /* Universal Selector */
+        * {
+            margin: 20px;
+            border: 1px solid black;
+        }
+
+        /* Pseudo selectors (e.g., :hover, :focus) */
+    </style>
+</head>
+
+<body>
+
+    <div class="purple">My name is Eminem</div>
+    <div id="eminem">My name is Eminem</div>
+
+    <div>
+        <article>
+            <p>This is an example of Child Selectors</p>
+        </article>
+    </div>
+    <div>
+        <h1>This is an example for descendent selectors</h1>
+    </div>
+</body>
+
+</html>

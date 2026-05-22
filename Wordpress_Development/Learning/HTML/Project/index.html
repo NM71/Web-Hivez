@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone - Watch TV Shows & Movies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="overlay"></div>
+        <nav class="navbar">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo"
+                class="logo">
+            <button class="btn btn-red">Sign In</button>
+        </nav>
+
+        <div class="hero-content">
+            <h1>Unlimited movies, TV shows, and more.</h1>
+            <h3>Watch anywhere. Cancel anytime.</h3>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+
+            <form class="email-form" id="ctaForm">
+                <input type="email" placeholder="Email address" required id="userEmail">
+                <button type="submit" class="btn btn-red btn-large">Get Started &gt;</button>
+            </form>
+        </div>
+    </header>
+
+    <!-- Movie Rows Section -->
+    <main class="main-content">
+        <section class="row">
+            <h2>Trending Now</h2>
+            <div class="row-posters" id="trendingRow">
+                <!-- JavaScript will inject posters here -->
+            </div>
+        </section>
+
+        <section class="row">
+            <h2>Popular on Netflix</h2>
+            <div class="row-posters" id="popularRow">
+                <!-- JavaScript will inject posters here -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
