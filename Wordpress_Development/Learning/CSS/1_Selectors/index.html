@@ -18,6 +18,12 @@
             color: wheat;
         }
 
+        /* Attribute Selector */
+        [data-x=a] {
+            background-color: red;
+            color: thistle;
+        }
+
         /* Id Selector */
         #eminem {
             background-color: saddlebrown;
@@ -48,12 +54,12 @@
 
 <body>
 
-    <div class="purple">My name is Eminem</div>
-    <div id="eminem">My name is Eminem</div>
+    <div class="purple">My name is Eminem (Class Selector applied here)</div>
+    <div id="eminem">I'm slim shaddy (Id Selector applied here)</div>
 
     <div>
         <article>
-            <p>This is an example of Child Selectors</p>
+            <p data-x="a">This is an example of Child Selectors (Attribute Selector applied here)</p>
         </article>
     </div>
     <div>

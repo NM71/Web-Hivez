@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity and Cascade</title>
+    <style>
+        /* * {
+            color: gray;
+        }
+
+        #title {
+            color: red;
+        }
+
+        .h1 {
+            color: blue;
+        }
+
+        h1 {
+            color: pink;
+        } */
+
+        /* The specificity of this selector is 1 */
+        h1 {
+            color: rgb(0, 153, 255);
+        }
+
+        /* The specificity of this selector is 10 */
+
+        .yellow {
+            color: yellow;
+        }
+
+        /* The specificity of this selector is 10 */
+
+        .brown {
+            color: brown;
+        }
+
+        /* The specificity of this selector is 10 */
+
+        [abc-1=val] {
+            background-color: cadetblue;
+            color: thistle;
+        }
+
+        /* The specificity of this selector is 0 */
+
+        * {
+            background-color: chocolate;
+            /* color: #000 !important; */
+            /*This will override all other color styles and apply this color everywhere on text*/
+        }
+
+        /* The specificity of this selector is h1(1) + .yellow(10) = 11, so it will be applied*/
+        h1.yellow {
+            color: yellowgreen
+        }
+
+        h1.yellow.brown[abc-1=val]:hover {
+            /* The specificity of this selector is h1(1) + .yellow(10) + .brown(10) + [abc-1=val](10) = 31, 
+            so it will be applied on hover*/
+            color: violet;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- <h1 id="title" class="h1" style="color:purple">CSS Specificity and Cascade</h1> -->
+    <h1 class="yellow brown" abc-1="val">CSS Specificity</h1>
+</body>
+
+</html>

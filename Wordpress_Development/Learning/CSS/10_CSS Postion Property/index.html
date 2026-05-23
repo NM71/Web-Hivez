@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            height: 433px;
+            width: 80vw;
+            padding: 3px;
+            margin: 3px;
+            border: 2px solid black;
+        }
+
+        .box1 {
+            background-color: rebeccapurple;
+            /* position: absolute; */
+            /* top: 0px; */
+            /* right: 2px; */
+            /* z-index: 1; */
+        }
+
+        .box2 {
+            /* position: relative; */
+            background-color: wheat;
+            /* top: 40px; */
+            /* we can only use one of top/bottom and one of left/right */
+            /* bottom: 20px; */
+            /* left: 30px; */
+
+        }
+
+        .box3 {
+            background-color: brown;
+            position: fixed;
+            /* left: 8vw; */
+            bottom: 0px;
+            left: 8vw;
+            height: 100px;
+        }
+
+        .box4 {
+            background-color: goldenrod;
+        }
+
+        .parent {
+            padding: 20px;
+            margin: 20px;
+            border: 3px solid brown;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>CSS Position Property</h1>
+        <p>The CSS position property specifies the type of positioning method used for an element (static, relative,
+            fixed, absolute, or sticky).</p>
+    </div>
+
+    <br><br><br>
+
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+
+</html>
