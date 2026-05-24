@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+    <style>
+        body {
+            background-color: red;
+            color: white;
+        }
+
+        @media only screen and (max-width:1000px) {
+            body {
+                background-color: black;
+            }
+
+            .box {
+                display: inline-block;
+            }
+        }
+
+
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: steelblue;
+            margin: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+
+</html>

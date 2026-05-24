@@ -1,0 +1,38 @@
+body {
+    background: #333;
+    color: #fff;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.parent {
+    width: 300px;
+    background: pink;
+    position: relative;
+}
+
+.child {
+    height: 100px;
+    width: 100px;
+}
+
+.child-1 {
+    background: yellow;
+}
+
+.child-2 {
+    background: red;
+    position: absolute;
+
+    top: 0;
+    right: 0;
+}
+
+.child-3 {
+    background: dodgerblue;
+    width: 120px;
+    height: 120px;
+}
