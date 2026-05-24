@@ -1,6 +1,5 @@
 <p align="center">
-  <img src="<img width="501" height="501" alt="webHivez" src="https://github.com/user-attachments/assets/9fdb414b-5659-46ae-b72e-bd4f41cd634c" />
-" alt="Project Logo" width="150" height="150">
+  <img src="https://github.com/user-attachments/assets/9fdb414b-5659-46ae-b72e-bd4f41cd634c" alt="webHivez Logo" width="150" height="150">
 </p>
 
 ---
