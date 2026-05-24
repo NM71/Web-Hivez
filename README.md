@@ -4,4 +4,4 @@
 
 ---
 
-Welcome to my Web Development Internship repository. This space serves as a central hub for all the projects, weekly assignments, and practical components completed during my internship. Inside, you will find responsive front-end layouts, interactive JavaScript applications, and integrated web solutions built from the ground up.
+This space serves is where all of my practiced topics, core concepts, and weekly hands-on exercises are structured and preserved. Inside, you will find practical implementations of fundamental web technologies and frameworks built throughout the internship.
