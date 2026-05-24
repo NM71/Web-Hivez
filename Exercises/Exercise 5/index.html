@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5 - Custom Design Layout</title>
+    <style>
+        :root {
+            --primary-color: darkslategrey;
+        }
+
+
+        body {
+            background-color: black;
+            font-family: 'Courier New', Courier, monospace;
+            border: 2px solid white;
+            padding: 50px;
+            margin: 30px;
+            border-radius: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        ul li {
+            display: inline-block;
+            padding: 10px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: antiquewhite;
+        }
+
+        nav {
+            border: 2px solid;
+            background-color: var(--primary-color);
+
+        }
+
+        div.hero {
+            background-color: var(--primary-color);
+            display: flex;
+            gap: 100px;
+            justify-content: center;
+            padding: 100px;
+
+        }
+
+        .box1 {
+            background-color: brown;
+            width: 30vw;
+            height: 60vh;
+            border: 2px solid white;
+            border-radius: 20px;
+
+        }
+
+        .box2 {
+            background-color: antiquewhite;
+            width: 30vw;
+            height: 60vh;
+            border: 2px solid white;
+            border-radius: 20px;
+
+        }
+
+        .welcome-text {
+            font-size: 50px;
+            border: 2px solid;
+            padding: 50px;
+            border-radius: 20px;
+            font-weight: bolder;
+            margin: 60px 20px;
+            text-align: center;
+            background-color: antiquewhite;
+        }
+
+        .description-text {
+            border: 2px solid;
+            padding: 50px;
+            border-radius: 20px;
+            font-weight: bolder;
+            margin: 40px 20px;
+            text-align: center;
+            background-color: antiquewhite;
+        }
+
+        footer {
+            text-align: center;
+            font-weight: bolder;
+            margin: 40px 20px;
+            color: antiquewhite;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            background-color: var(--primary-color);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About Us</a></li>
+                <li><a href="/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="hero">
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+
+        <div class="welcome-text">Welcome to this Web Development Express</div>
+        <div class="description-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque voluptatum, iusto,
+            alias saepe assumenda ab repudiandae sequi veniam quis, asperiores quo minima ex? Ducimus sapiente amet
+            fugiat soluta veritatis atque quasi hic, maxime tempore laboriosam excepturi voluptas magni aliquid, autem,
+            vero aut asperiores fuga ab eos deserunt porro dolore sit unde. Labore commodi alias quia aut ad ea
+            repudiandae quos? Deserunt earum minus, iste quia ea fugit consequuntur consectetur excepturi quisquam
+            beatae architecto magnam. Sunt reiciendis odio deserunt rem dolore, quis asperiores iure. Error, illo?
+            Architecto voluptatibus quae, modi, aperiam labore nihil tenetur exercitationem veniam ipsum sunt ut
+            voluptatem! Possimus.</div>
+    </main>
+
+
+    <footer>
+
+        <h2>Follow us on</h2>
+        <br>
+        <div class="icons">
+            <a href="https://www.google.com" target="_blank"><img src="google-icon.png" height="100px" width="100px"
+                    alt="Google Icon"></a>
+
+            <a href="https://www.youtube.com" target="_blank"><img style=" background-color: white;"
+                    src="youtube-icon.png" height="100px" width="200px" alt="Youtube Icon"></a>
+
+        </div>
+    </footer>
+</body>
+
+</html>
