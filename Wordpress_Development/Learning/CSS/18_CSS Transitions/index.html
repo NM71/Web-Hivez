@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        .container {
+            background-color: aquamarine;
+            height: 50vh;
+            width: 70vw;
+        }
+
+        .box {
+            background-color: antiquewhite;
+            width: 4vw;
+            height: 7vh;
+
+            /* CSS Transitions */
+            /* transition-property: transform; */
+            /* transition-property: all; */
+            /* transition-property: background-color, transform; */
+
+
+            /* transition-duration: 2s; */
+
+            /* transition-timing-function: ease-in-out; */
+            /* transition-timing-function: cubic-bezier(0.46, 0.79, 0.52, 0.15); */
+
+
+            /* transition-delay: 1s; */
+
+
+            transition: all 3s ease-in 1s;
+            /*This allows to set all properties in a single line*/
+        }
+
+        .translate {
+            transform: translateX(15vw) translateY(10vh) scale(3);
+            background-color: burlywood;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box translate">Hello</div>
+    </div>
+
+</body>
+
+</html>

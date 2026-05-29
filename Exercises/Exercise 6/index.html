@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6 - CSS Flexbox</title>
+    <style>
+        /* Global Variables */
+        :root {
+            --primary-color: #fce077;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .logo img {
+            width: 164px;
+
+        }
+
+        .navlist ul {
+            list-style: none;
+        }
+
+        .navlist li {
+            display: inline-block;
+            padding: 20px;
+
+        }
+
+        .navlist li::after {
+            content: '˅';
+            font-size: 15px;
+            margin-left: 10px;
+        }
+
+
+        .navsign {
+            background-color: var(--primary-color);
+            border-radius: 4px;
+            border: none;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="UE_Site-Logo-webp.webp" alt="Ultra Edit Logo">
+            </div>
+
+
+            <!-- list items -->
+            <div class="navlist">
+                <ul>
+                    <li>Products</li>
+                    <li>Pricing</li>
+                    <li>Resources</li>
+                    <li>About Us </li>
+
+                </ul>
+            </div>
+            <button class="navsign">Sign In</button>
+
+        </nav>
+    </header>
+</body>
+
+</html>

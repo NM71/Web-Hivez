@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforms in CSS</title>
+    <style>
+        .container {
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: beige;
+            border: 2px solid black;
+
+
+            /* Rotate */
+            /* transform: rotate(0.30turn); */
+            /* transform: rotateX(40deg); */
+            /* transform: rotateY(40deg); */
+
+            /* Scale */
+            /* transform: scale(1.6); */
+            /* transform: scaleY(1.6); */
+            /* transform: scaleY(1.6); */
+
+            /* Skew */
+            /* transform: skew‌‌‌‌(5deg); */
+            /* transform: skew‌‌‌‌X(5deg); */
+            /* transform: skewY(5deg); */
+
+            /* Translate */
+            /* transform: translate(100px); */
+            /* transform: translate‌X(100px); */
+            /* transform: translate‌Y(100px); */
+
+            /* To use multiple translate properties at the same time */
+            /* transform: rotate(0.25turn) skew(20deg) scale(1.5) translate(100%); */
+
+
+
+            transform: rotate(0.125turn);
+            /* Default of transform-origin is 50%, 50% which means center */
+            transform-origin: (0%, 0%);
+
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+
+</body>
+
+</html>
