@@ -1,0 +1,23 @@
+{
+  "name": "web-hivez",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">\r   <img src=\"https://github.com/user-attachments/assets/9fdb414b-5659-46ae-b72e-bd4f41cd634c\" alt=\"webHivez Logo\" width=\"150\" height=\"150\">\r </p>",
+  "homepage": "https://github.com/NM71/Web-Hivez#readme",
+  "bugs": {
+    "url": "https://github.com/NM71/Web-Hivez/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NM71/Web-Hivez.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}
