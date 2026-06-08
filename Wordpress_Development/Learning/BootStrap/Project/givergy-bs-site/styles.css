@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+:root {
+    --primary-color: #243776;
+    --text-color: #ffffff;
+    --nav-bg: #f6f6f6;
+    --pink: #bc2b87;
+    --pink-hover: #6c3471;
+    --light-pink: #f8eaf3;
+
+    --light-blue: #089dd9;
+    --light-blue-hover: #243776;
+    --blue-hover: #e6f5fb;
+    --transparent-white-hover: #1b2959;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-family: "Nunito Sans", sans-serif; */
+}
+
+p-regular {
+    font-size: 1rem;
+    margin: 0 0 0.75rem 0;
+}
