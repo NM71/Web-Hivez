@@ -91,7 +91,7 @@ header {
 .btn {
     border-radius: 8px;
     font-weight: 600;
-    padding: 10px 24px;
+    /* padding: 10px 24px; */
     transition: all 0.2s;
 }
 
@@ -173,6 +173,7 @@ header {
 
 .hero-video-wrapper {
     border-radius: 12px;
+    margin-top: 30px;
     overflow: hidden;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
 }
@@ -237,25 +238,26 @@ header {
 
 .slider-track {
     display: flex;
-    width: calc(250px * 21);
+    /* width: calc(250px * 21); */
     animation: scroll-forever 15s linear infinite;
 }
 
 .slide {
-    width: 250px;
+    width: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
+    flex-grow: 0;
 }
 
 .slide img {
-    max-width: 80%;
-    height: auto;
-    object-fit: contain;
+    max-width: 100%;
+    /* height: auto; */
+    /* object-fit: contain; */
     filter: grayscale(100%);
     opacity: 0.6;
-    transition: all 0.3s;
+    /* transition: all 0.3s; */
 }
 
 .slide img:hover {
@@ -407,6 +409,13 @@ header {
     color: var(--primary-color);
 }
 
+.fundraising-section .p-regular {
+    font-weight: 300;
+    /* line-height: 1.3; */
+    margin: 0px 0px 0.75rem;
+
+}
+
 .fundraising-section .section-title strong {
     color: var(--primary-color);
 }
@@ -424,13 +433,110 @@ header {
 
 
 /* -------------------- CTA -------------------- */
+
 .cta-card {
     background-color: var(--primary-color);
     border-radius: 12px;
-    padding: 50px 40px;
+    padding: 3rem 2.5rem;
+    position: relative;
+    /* CRITICAL: Overwrite hidden to allow mockups to hang outside the box */
+    overflow: visible !important;
+}
+
+.cta-card .cta-overlap-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    /* Mobile overlap: pulls it slightly out of the bottom on smaller screens */
+    margin-bottom: -5rem;
+    transform: translateY(1rem);
+}
+
+/* Desktop Optimizations (Matches your row layout) */
+@media (min-width: 992px) {
+    .cta-card {
+        /* Gives extra bottom padding on desktop so text has breathing room */
+        padding-bottom: 4rem;
+    }
+
+    .cta-card .cta-overlap-img {
+        /* Deep overlap for desktop layout */
+        margin-bottom: -7.5rem;
+        transform: translateY(2rem);
+        /* Ensures the devices layer nicely over sections below it */
+        position: relative;
+        z-index: 5;
+    }
+}
+
+.cta-section.py-custom {
+    /* 6rem (96px) on top, and 10rem (160px) on the bottom */
+    /* The bottom needs extra padding to accommodate the overlapping image! */
+    padding: 6rem 0 10rem 0;
+}
+
+/* Optional: Shrink the padding slightly on mobile screens so it's not too giant */
+@media (max-width: 767px) {
+    .cta-section.py-custom {
+        padding: 4rem 0 7rem 0;
+    }
+}
+
+/* .cta-card {
+    background-color: var(--primary-color);
+    border-radius: 12px;
+    padding: 3rem 2.5rem;
     position: relative;
     overflow: hidden;
 }
+
+.cta-card img {
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: -1.5rem;
+} */
+/* ========================================= */
+/* .cta {
+    padding: 0 3rem 3rem 3rem;
+    margin: 5rem;
+}
+
+.cta-card-bg {
+    background-color: var(--primary-color);
+}
+
+.cta-card-bg {
+    max-width: 64rem;
+    margin: 0 auto;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.cta-text {
+    padding: 2.75rem 0 3rem 3rem;
+    color: var(--text-color);
+}
+
+.cta-text .p-regular {
+    font-weight: 300;
+}
+
+.cta-img-wrapper {
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: -1.5rem;
+}
+
+.cta-img {
+    position: relative;
+    bottom: -1.5rem;
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.2));
+} */
 
 
 /* -------------------- FOOTER -------------------- */
@@ -443,6 +549,13 @@ header {
     border-top: 1px solid rgba(255, 255, 255, 0.15);
     opacity: 1;
     margin: 0;
+}
+
+.footer-reviews-row img {
+    height: 5.25rem;
+    max-width: auto;
+    filter: drop-shadow(0 0.125rem 0.25rem rgba(0, 0, 0, 0.3));
+    transition: all 0.15s ease-in-out;
 }
 
 .footer-links h4 {
@@ -510,8 +623,9 @@ header {
 }
 
 
-/* -------------------- RESPONSIVE TWEAKS -------------------- */
-@media (max-width: 991.98px) {
+/* -------------------- Responsive Styles -------------------- */
+
+@media (max-width: 991px) {
     .nav-pills-custom {
         background-color: transparent;
         gap: 0;
@@ -524,13 +638,13 @@ header {
     }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 767px) {
     .hero-section {
         text-align: center;
     }
 
     .cta-card {
-        padding: 32px 24px;
+        /* padding: 32px 24px; */
         text-align: center;
     }
 
@@ -548,7 +662,7 @@ header {
     }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 575px) {
     .announcement-bar {
         flex-direction: column;
         gap: 8px;
@@ -567,4 +681,17 @@ header {
     .review-logo {
         max-height: 45px;
     }
+
+    .img-btn {
+        padding: 0.75rem;
+    }
 }
+
+@media (max-width: 420px) {
+    .img-btn {
+        font-size: 10px;
+        padding: 0.5rem;
+    }
+}
+
+/* ================================================================ */
