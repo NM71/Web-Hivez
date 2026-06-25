@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Card</title>
+    <style>
+        .card {
+            display: flex;
+            gap: 10px;
+        }
+
+        .rBottom {
+            display: flex;
+            gap: 10px;
+        }
+
+        .rSection {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .lSection {
+            position: relative;
+            display: inline-block;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* .lSection img {
+            display: block;
+            width: 100%;
+            height: auto;
+        } */
+
+        .lSection span {
+            position: absolute;
+            bottom: 8px;
+            right: 8px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            font-weight: bold;
+            font-size: 10px;
+            border-radius: 4px;
+            padding: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- More than one card -->
+        <div class="card">
+            <!-- Left Section -->
+            <div class="lSection">
+                <img src="https://i.ytimg.com/vi/KtL-SQ20Q0s/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDPqs5LtUVsb50otOywVTZEmI75fg"
+                    alt="">
+                <span>
+                    20:22
+                </span>
+            </div>
+
+            <!-- Right Section -->
+            <div class="rSection">
+                <div class="rTop">
+                    <h4>
+                        JavaScript - Selecting by Ids, Classes, and More | Sigma Web Development Course - Tutorial #68
+                    </h4>
+                </div>
+                <div class="rBottom">
+                    <p>320k views</p>
+                    <p> • </p>
+                    <p>2 years ago</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

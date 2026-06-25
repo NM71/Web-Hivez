@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Insertion/Deletion</title>
+</head>
+
+<body>
+
+    <!-- Inserting and Deleting elements from DOM using JS -->
+    <div class="container">
+        <div class="box" style="display: flex;" data-createdby="nousher" data-conceptby="Ali" ->
+            This is a simple box
+            <img src="https://plus.unsplash.com/premium_photo-1670148434900-5f0af77ba500?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                height="300px" width="300px" alt="">
+        </div>
+    </div>
+
+    <script>
+
+        // let div = document.createElement("div");
+        // div.innerHTML = "This ia div created using script tag <b>by Nousher</b>"
+        // div.setAttribute("class", "created")
+        // document.querySelector(".container").before(div)
+
+        let cont = document.querySelector(".container");
+        cont.insertAdjacentHTML("beforeEnd", "US mein bohat jagah gaya hun, Naam bataiye:  <b>Bhopinder Jogi</b>")
+    </script>
+
+</body>
+
+</html>
