@@ -6,15 +6,19 @@
 
 body {
     background-image: url("assets/space-bg.jpg");
+    overflow: hidden;
+
 }
+
+
 
 /* Carousel CSS */
 
 .carousel {
-    width: 800px;
+    width: 99vw;
     height: 450px;
     margin: 30px auto;
-    /* overflow: hidden; */
+    overflow: hidden;
     border-radius: 12px;
     position: relative;
 }
@@ -29,7 +33,7 @@ body {
 }
 
 .carousel-images img {
-    width: 800px;
+    width: 33vw;
     height: 450px;
     object-fit: cover;
     flex-shrink: 0;
@@ -46,9 +50,9 @@ body {
 /* Slider CSS */
 
 .slider {
-    width: 800px;
+    width: 99vw;
     height: 450px;
-    margin: 50px auto;
+    margin: 0 auto;
     overflow: hidden;
     position: relative;
     border-radius: 12px;
@@ -61,7 +65,7 @@ body {
 
 /* Each slide */
 .slide {
-    min-width: 800px;
+    min-width: 33vw;
     height: 450px;
     position: relative;
 }
@@ -98,25 +102,22 @@ body {
 }
 
 /* Buttons */
+.slider-controls {
+    margin: 15px auto 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
 .prev,
 .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
+    background: white;
+    color: black;
     border: none;
-    width: 45px;
-    height: 45px;
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
     font-size: 20px;
     cursor: pointer;
     border-radius: 50%;
-}
-
-.prev {
-    left: 15px;
-}
-
-.next {
-    right: 15px;
 }
