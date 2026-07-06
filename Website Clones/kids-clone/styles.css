@@ -1,0 +1,99 @@
+:root {
+    --red: #fd4d40;
+    --teal: #16c3b0;
+    --orange: #ff7300;
+    --light-blue: #2db3d9;
+    --yellow: #f1c22e;
+}
+
+html,
+body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Info Section */
+.info-bar {
+    background-color: var(--yellow);
+    min-height: 40px;
+}
+
+.contact-info .right i {
+    font-size: 1.1rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.custom-navbar-links ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.custom-navbar-links ul li {
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 10px 30px;
+    text-align: center;
+    width: 100px;
+}
+
+.custom-navbar-links ul li.active {
+    background-color: var(--red);
+    color: white;
+    border-radius: 50px;
+}
+
+@media (max-width: 991.98px) {
+
+    body {
+        padding-top: 110px;
+    }
+
+    .custom-navbar-links {
+        width: 100%;
+        padding-bottom: 15px;
+    }
+
+    .custom-navbar-links ul li {
+        width: 100%;
+        border-radius: 8px;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 130px;
+    }
+
+    .custom-navbar-links ul li {
+        width: auto;
+    }
+}
+
+
+/* Custom round yellow arrow buttons */
+.custom-carousel-btn {
+    background-color: #ffb703;
+    /* Matches the bright golden-yellow color */
+    border: none;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+/* Make them look clickable when hovered over */
+.custom-carousel-btn:hover {
+    background-color: #fb8500;
+    transform: scale(1.05);
+}
