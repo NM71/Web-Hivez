@@ -4,6 +4,15 @@
     --orange: #ff7300;
     --light-blue: #2db3d9;
     --yellow: #f1c22e;
+    --gray: #999999;
+
+    --header-height: 110px;
+}
+
+@media (min-width: 992px) {
+    :root {
+        --header-height: 130px;
+    }
 }
 
 html,
@@ -12,6 +21,32 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    padding-top: var(--header-height);
+}
+
+#homeSectionCarousel {
+    width: 100%;
+    height: calc(120vh - var(--header-height));
+}
+
+.carousel-item {
+    transition: transform 0.8s ease-in-out !important;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Fix text positioning layer over actual elements */
+.carousel-caption-custom {
+    z-index: 2;
 }
 
 /* Info Section */
@@ -21,9 +56,8 @@ body {
 }
 
 .contact-info .right i {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     padding: 4px 8px;
-    border-radius: 4px;
 }
 
 .custom-navbar-links ul {
@@ -48,39 +82,14 @@ body {
     border-radius: 50px;
 }
 
-@media (max-width: 991.98px) {
-
-    body {
-        padding-top: 110px;
-    }
-
-    .custom-navbar-links {
-        width: 100%;
-        padding-bottom: 15px;
-    }
-
-    .custom-navbar-links ul li {
-        width: 100%;
-        border-radius: 8px;
-    }
-}
-
-@media (min-width: 992px) {
-    body {
-        padding-top: 130px;
-    }
-
-    .custom-navbar-links ul li {
-        width: auto;
-    }
-}
 
 
-/* Custom round yellow arrow buttons */
+
+/* Carousel Buttons */
+
 .custom-carousel-btn {
-    background-color: #ffb703;
-    /* Matches the bright golden-yellow color */
-    border: none;
+    background-color: var(--yellow);
+    border: 1px solid white;
     color: white;
     width: 40px;
     height: 40px;
@@ -92,8 +101,643 @@ body {
     transition: all 0.2s ease;
 }
 
-/* Make them look clickable when hovered over */
 .custom-carousel-btn:hover {
     background-color: #fb8500;
     transform: scale(1.05);
+    background-color: var(--light-blue);
+    border: none;
+}
+
+
+.carousel-controls-container {
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+}
+
+@media(max-width: 576px) {
+    .carousel-controls-container {
+        bottom: 20%;
+    }
+}
+
+
+/* ================================================================ */
+
+/* Features */
+
+.features-container {
+    position: relative;
+    z-index: 15;
+    margin-top: -160px;
+}
+
+/* .feature-1 {
+    text-align: center;
+    position: relative;
+    background-color: var(--yellow);
+}
+
+.feature-2 {
+    text-align: center;
+    position: relative;
+    background-color: var(--red);
+}
+
+.feature-3 {
+    text-align: center;
+    position: relative;
+    background-color: var(--teal);
+}
+
+.feature-1 .feature {
+    display: flex;
+    padding-top: 20px;
+    justify-content: start;
+    align-items: start;
+}
+
+.feature-1 .feature .feature-icon {
+    font-size: 3rem;
+    text-align: center;
+    width: 100px;
+
+    display: block;
+    border-radius: 100px;
+    padding: 10px;
+}
+
+.feature .feature-content {
+    text-align: start;
+    padding: 0px 10px 20px 10px;
+} */
+
+
+/* ================================================================ */
+
+
+
+/* ================================================================ */
+
+
+
+/* ================================================================ */
+
+
+
+
+/* Welcome Kids Section */
+
+.welcome-kids .welcome-content h1 {
+    color: var(--red);
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.welcome-kids .welcome-content p {
+    max-width: 90%;
+    font-weight: 200;
+    text-align: justify;
+    color: var(--gray);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.kids-data {
+    background-image: url("https://muse.rometheme.pro/kids/images/static_bg.jpg?crc=3991059178");
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ================================================================ */
+/* Stats Section */
+
+.stats-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.counter-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rhombus-badge {
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+    border-radius: 14px;
+    /* Smooth, rounded corners like the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+    /* Pushes the label down below the bottom point */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle depth */
+}
+
+.rhombus-text {
+    transform: rotate(-45deg);
+    /* Counter-rotate so text is upright */
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.counter-label {
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    /* Optional: text shadow to ensure the white text pops against complex background images */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .rhombus-badge {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 25px;
+    }
+
+    .rhombus-text {
+        font-size: 1.5rem;
+    }
+}
+
+/* 
+
+#page {
+    background-image: none;
+    background-color: transparent;
+    margin-left: auto;
+    z-index: 1;
+    padding-bottom: 0px;
+    margin-right: auto;
+    border-color: #000000;
+    border-width: 0px;
+}
+
+@media (max-width: 480px) {
+    #page {
+        width: 320px;
+        min-height: 1827.9687499999945px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 760px) {
+    #page {
+        width: 480px;
+        min-height: 1804.768750000001px;
+    }
+}
+
+@media (min-width: 761px) and (max-width: 1000px) {
+    #page {
+        width: 760px;
+        min-height: 1287.5687500000004px;
+    }
+}
+
+@media (min-width: 1201px),
+print {
+    #page {
+        width: 1200px;
+        min-height: 999.7187500000009px;
+    }
+} */
+
+
+
+
+
+
+/* ============================================================= */
+.popular-classes h1 {
+    color: var(--red);
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.class-content {
+    padding: 20px;
+}
+
+.class-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.class-title span:first-child {
+    color: var(--red);
+    font-weight: 400;
+}
+
+.class-title span {
+    color: var(--yellow);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.class-img img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.class-content .class-description {
+    margin-bottom: 2rem;
+}
+
+.class-ratios {
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.class-ratios p {
+    margin: 0;
+    padding: 10px;
+}
+
+
+.class-ratios .class-age {
+    background-color: var(--red);
+    border-bottom-left-radius: 12px;
+    position: relative;
+    text-align: center;
+}
+
+.class-ratios .class-size {
+    background-color: var(--yellow);
+    border-bottom-right-radius: 12px;
+    text-align: center;
+}
+
+/* ================================================================= */
+
+
+.choose-us .choose-us-bg {
+    background-image: url(https://muse.rometheme.pro/kids/images/school2.jpg?crc=3893233985);
+    height: 600px;
+    overflow: hidden;
+}
+
+
+
+.choose-us-content .choose-us-header p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.choose-us-content .choose-us-header span {
+    color: var(--red);
+    font-weight: 400;
+}
+
+.benefit-item {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.choose-us-benefits .benefit-item i {
+    color: var(--teal);
+    font-size: 1.6rem;
+    padding: 0px 5px;
+    font-weight: 900;
+    background-color: white;
+    align-self: center;
+    border-radius: 50px;
+    flex-shrink: 0;
+
+}
+
+.choose-us-benefits .benefit-item span {
+    color: white;
+    padding-left: 20px;
+
+}
+
+/* =================================================================== */
+
+
+/* =================================================================== */
+/* =================================================================== */
+
+.responsive-breakpoint {
+    background-image: none;
+    background-color: transparent;
+    margin-left: auto;
+    z-index: 1;
+    padding-bottom: 0px;
+    margin-right: auto;
+    border-color: #000000;
+    border-width: 0px;
+}
+
+@media (min-width: 1201px),
+print {
+    .responsive-breakpoint {
+        width: 1200px;
+        /* min-height: 999.7187500000009px; */
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+    .responsive-breakpoint {
+        width: 1000px;
+        /* min-height: 999.8937500000038px; */
+    }
+}
+
+@media (min-width: 761px) and (max-width: 1000px) {
+    .responsive-breakpoint {
+        width: 760px;
+        /* min-height: 1287.5687500000004px; */
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 760px) {
+    .responsive-breakpoint {
+        width: 480px;
+        /* min-height: 1804.768750000001px; */
+    }
+}
+
+@media (max-width: 480px) {
+    .responsive-breakpoint {
+        width: 320px;
+        /* min-height: 1827.9687499999945px; */
+    }
+}
+
+
+
+
+
+
+/* ================================================================== */
+
+@media (max-width: 576px) {
+    .choose-us .choose-us-bg {
+        height: 1200px;
+        overflow: hidden;
+    }
+}
+
+/* 
+@media (min-width: 1000px) {
+    .feature {
+        text-align: center;
+        position: relative;
+    }
+
+
+    .feature-1 .feature .feature-icon {
+        background-color: var(--yellow);
+        color: white;
+        z-index: 1;
+        position: absolute;
+        top: -48px;
+        transform: translateX(-50%);
+        font-size: 3rem;
+        text-align: center;
+        width: 100px;
+
+        display: inline-block;
+        border-radius: 100px;
+        padding: 10px;
+    }
+
+    .feature-1 .feature .feature-content {
+        background-color: var(--yellow);
+        color: white;
+        z-index: -1;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .feature-2 .feature .feature-icon {
+        background-color: var(--red);
+        color: white;
+        z-index: 1;
+        position: absolute;
+        top: -48px;
+        transform: translateX(-50%);
+        font-size: 3rem;
+        text-align: center;
+        width: 100px;
+
+        display: inline-block;
+        border-radius: 100px;
+        padding: 10px;
+    }
+
+    .feature-2 .feature .feature-content {
+        background-color: var(--red);
+        color: white;
+        z-index: -1;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .feature-3 .feature .feature-icon {
+        background-color: var(--teal);
+        color: white;
+        z-index: 1;
+        position: absolute;
+        top: -48px;
+        transform: translateX(-50%);
+        font-size: 3rem;
+        text-align: center;
+        width: 100px;
+
+        display: inline-block;
+        border-radius: 100px;
+        padding: 10px;
+    }
+
+    .feature-3 .feature .feature-content {
+        background-color: var(--teal);
+        color: white;
+        z-index: -1;
+        text-align: center;
+        padding: 40px 20px;
+    }
+} */
+
+/* ================================================================ */
+/* --- Features Section Responsive Styles --- */
+/* ================================================================ */
+
+/* 1. Base Styles & Colors (Applies to all screens) */
+.feature-1,
+.feature-1 .feature-content {
+    background-color: var(--yellow);
+}
+
+.feature-2,
+.feature-2 .feature-content {
+    background-color: var(--red);
+}
+
+.feature-3,
+.feature-3 .feature-content {
+    background-color: var(--teal);
+}
+
+.feature-1 .feature-icon {
+    background-color: var(--yellow);
+    color: white;
+}
+
+.feature-2 .feature-icon {
+    background-color: var(--red);
+    color: white;
+}
+
+.feature-3 .feature-icon {
+    background-color: var(--teal);
+    color: white;
+}
+
+.feature-content h4,
+.feature-content p {
+    color: white;
+    margin: 0;
+}
+
+.feature p {
+    font-weight: 300;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Button Colors Base */
+.btn-feature-1 {
+    background-color: var(--red);
+    border: 2px solid var(--red);
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.btn-feature-2 {
+    background-color: var(--teal);
+    border: 2px solid var(--teal);
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.btn-feature-3 {
+    background-color: var(--yellow);
+    border: 2px solid var(--yellow);
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+
+/* 2. Small Screens (Mobile - Stacked & Centered, 3rd Image) */
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.feature .feature-icon {
+    font-size: 3rem;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+
+/* 3. Medium Screens (Tablet - Left Aligned Row, 2nd Image) */
+@media (min-width: 576px) and (max-width: 999.98px) {
+    .feature {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+        padding: 50px 40px;
+    }
+
+    .feature .feature-icon {
+        flex-shrink: 0;
+        margin-right: 35px;
+        margin-bottom: 0;
+    }
+
+    .feature-content {
+        padding: 0;
+    }
+}
+
+
+/* 4. Large Screens (Desktop - 3 Columns with Popping Icons, 1st Image) */
+@media (min-width: 1000px) {
+    .feature {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 60px 30px 40px;
+        position: relative;
+    }
+
+    .feature .feature-icon {
+        position: absolute;
+        top: -45px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90px;
+        height: 90px;
+        margin-bottom: 0;
+        border: none;
+        z-index: 10;
+    }
+
+    .feature-content {
+        padding-top: 10px;
+    }
+}
+
+/* ============================================================= */
+@media (max-width: 991.98px) {
+    .custom-navbar-links {
+        width: 100%;
+        padding-bottom: 15px;
+    }
+
+    .custom-navbar-links ul li {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .features-container {
+        margin-top: -80px;
+    }
+
+    .choose-us .choose-us-bg {
+        height: 1200px;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 992px) {
+    .custom-navbar-links ul li {
+        width: auto;
+    }
 }

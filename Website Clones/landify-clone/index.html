@@ -25,389 +25,422 @@
     <title>Landify</title>
 </head>
 
+<body>
 
-<section id="home" class="hero-section pb-5">
-    <!-- Navbar -->
-    <nav class="custom-navbar">
-        <!-- <div class="nav-container"> -->
-        <div class="nav-logo">Landify</div>
-        <ul class="nav-links">
-            <li><a href="#home" class="nav-item active">Home</a></li>
-            <li><a href="#about" class="nav-item">About</a></li>
-            <li><a href="#features" class="nav-item">Features</a></li>
-            <li><a href="#services" class="nav-item">Services</a></li>
-            <li><a href="#pricing" class="nav-item">Pricing</a></li>
-            <!-- <li><a href="#services" class="nav-item">Dropdown</a></li> -->
-            <li class="nav-item dropdown nav-item py-0">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Dropdown1</a></li>
-                    <li><a class="dropdown-item" href="#">Dropdown2</a></li>
-                    <li><a class="dropdown-item" href="#">Dropdown3</a></li>
-                    <li><a class="dropdown-item" href="#">Dropdown4</a></li>
-                    <!-- <li>
+    <button id="backToTop">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <section id="home" class="hero-section pb-5">
+        <!-- Navbar -->
+        <nav class="custom-navbar">
+            <!-- <div class="nav-container"> -->
+            <div class="nav-logo">Landify</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-item active">Home</a></li>
+                <li><a href="#about" class="nav-item">About</a></li>
+                <li><a href="#features" class="nav-item">Features</a></li>
+                <li><a href="#services" class="nav-item">Services</a></li>
+                <li><a href="#pricing" class="nav-item">Pricing</a></li>
+                <!-- <li><a href="#services" class="nav-item">Dropdown</a></li> -->
+                <li class="nav-item dropdown nav-item py-0">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Dropdown1</a></li>
+                        <li><a class="dropdown-item" href="#">Dropdown2</a></li>
+                        <li><a class="dropdown-item" href="#">Dropdown3</a></li>
+                        <li><a class="dropdown-item" href="#">Dropdown4</a></li>
+                        <!-- <li>
                         <hr class="dropdown-divider">
                     </li> -->
-                </ul>
-            </li>
-            <li><a href="#contact" class="nav-item">Contact</a></li>
-        </ul>
-        <div class="nav-btn">
-            <div class="btn" style="background-color: var(--primary-color); color: white;">Get Started</div>
-            <i class="mobile-nav-toggle bi bi-list"></i>
+                    </ul>
+                </li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
+            </ul>
+            <div class="nav-btn">
+                <div class="btn" style="background-color: var(--primary-color); color: white;">Get Started</div>
+                <i class="mobile-nav-toggle bi bi-list"></i>
+            </div>
+            <!-- </div> -->
+        </nav>
+
+        <!-- Hero Section -->
+
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <!-- Texts Column -->
+                <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-up-right" data-aos-duration="1000">
+                    <div class="hero-content">
+                        <h1 class="display-4 fw-normal py-3">Creating Digital Experiences That Matter</h1>
+                        <p>We craft beautiful, functional, and meaningful digital solutions
+                            that
+                            help businesses connect
+                            with their audiences in authentic ways.</p>
+
+                        <div class="hero-actions">
+                            <a href="#about">
+                                <div class="btn-primary" style="background-color: var(--primary-color); color: white;">
+                                    Start
+                                    Your
+                                    Journey</div>
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" target="_blank">
+                                <div class="btn">
+                                    <div class="btn-story">
+                                        <i class="ri-play-circle-line"></i>
+                                        <span>Watch Our
+                                            Story</span>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+
+                        <div class="hero-stats">
+                            <div class="row text-center">
+                                <div class="col-12 col-lg-4 col-md-4">
+                                    <div class="stat-item">
+                                        <span class="stat-number">150+</span>
+                                        <span class="stat-label">Projects Completed</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4 col-md-4">
+                                    <div class="stat-item">
+                                        <span class="stat-number">98%</span>
+                                        <span class="stat-label">Client Satisfaction</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4 col-md-4">
+                                    <div class="stat-item">
+                                        <span class="stat-number">24/7</span>
+                                        <span class="stat-label">Support Available</span>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Image Column -->
+                <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up-left" data-aos-duration="1000">
+                    <div class="hero-img">
+                        <div class="img-fluid">
+                            <img src="https://bootstrapmade.com/content/demo/Landify/assets/img/illustration/illustration-15.webp"
+                                alt="">
+                        </div>
+                        <div class="floating-elements">
+                            <div class="floating-elements-card card-1">
+                                <i class="bi bi-lightbulb"></i>
+                                <span>Innovation</span>
+                            </div>
+                            <div class="floating-elements-card card-2">
+                                <i class="bi bi-award"></i>
+                                <span>Excellence</span>
+                            </div>
+                            <div class="floating-elements-card card-3">
+                                <i class="bi bi-people"></i>
+                                <span>Collaboration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- </div> -->
-    </nav>
 
-    <!-- Hero Section -->
+    </section>
 
-    <div class="container py-5">
-        <div class="row align-items-center">
-            <!-- Texts Column -->
-            <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-up-right" data-aos-duration="1500">
-                <div class="hero-content">
-                    <h1 class="display-4 fw-normal py-3">Creating Digital Experiences That Matter</h1>
-                    <p>We craft beautiful, functional, and meaningful digital solutions
-                        that
-                        help businesses connect
-                        with their audiences in authentic ways.</p>
+    <!-- ========================================================== -->
 
-                    <div class="hero-actions">
-                        <a href="#about">
-                            <div class="btn-primary" style="background-color: var(--primary-color); color: white;">
-                                Start
-                                Your
-                                Journey</div>
-                        </a>
-                        <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" target="_blank">
-                            <div class="btn">
-                                <div class="btn-story">
-                                    <i class="ri-play-circle-line"></i>
-                                    <span>Watch Our
-                                        Story</span>
+    <!-- * ABOUT SECTION -->
+
+    <section id="about" class="about-section pb-5">
+        <div class="container">
+            <div class="row">
+                <!-- Texts Column -->
+                <div class="col-lg-6 order-1 order-lg-1 pt-5">
+                    <div class="about-content">
+                        <span>ABOUT OUR COMPANY</span>
+                        <h1 class="display-6 fw-semibold py-3">Tempor incididunt ut labore et dolore magna</h1>
+                        <p class="text-black fw-semibold">Unde omnis iste natus error sit voluptatem accusantium
+                            doloremque
+                            laudantium, totam rem
+                            aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                            accusantium.</p>
+
+                        <div class="stats-grid">
+
+                            <div class="stat-grid-item">
+                                <div class="stat-number">250+</div>
+                                <div class="stat-label">Projects Completed</div>
+                            </div>
+
+                            <div class="stat-grid-item">
+                                <div class="stat-number">98%</div>
+                                <div class="stat-label">Client Satisfaction</div>
+                            </div>
+
+                            <div class="stat-grid-item">
+                                <div class="stat-number">24/7</div>
+                                <div class="stat-label">Support Available</div>
+                            </div>
+
+                            <div class="stat-grid-item">
+                                <div class="stat-number">12+</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Image Column -->
+                <div class="col-lg-6 order-2 order-lg-2 py-5">
+                    <div class="about-img">
+                        <div class="img-fluid">
+                            <img src="https://bootstrapmade.com/content/demo/Landify/assets/img/about/about-8.webp"
+                                alt="">
+                        </div>
+
+                        <div class="overlay-card">
+                            <div class="overlay-card-content">
+                                <h4>Quality First</h4>
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+                                <div class="overlay-card-icon">
+                                    <i class="bi bi-award-fill"></i>
                                 </div>
                             </div>
-                        </a>
-
-                    </div>
-
-                    <div class="hero-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">150+</span>
-                            <span class="stat-label">Projects Completed</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">98%</span>
-                            <span class="stat-label">Client Satisfaction</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">24/7</span>
-                            <span class="stat-label">Support Available</span>
                         </div>
                     </div>
-
-                </div>
-            </div>
-
-            <!-- Image Column -->
-            <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up-left" data-aos-duration="1500">
-                <div class="hero-img">
-                    <div class="img-fluid">
-                        <img src="https://bootstrapmade.com/content/demo/Landify/assets/img/illustration/illustration-15.webp"
-                            alt="">
-                    </div>
-                    <div class="floating-elements">
-                        <div class="floating-elements-card card-1">
-                            <i class="bi bi-lightbulb"></i>
-                            <span>Innovation</span>
+                    <div class="row py-3 g-3">
+                        <div class="col-6">
+                            <img src="https://bootstrapmade.com/content/demo/Landify/assets/img/about/about-11.webp"
+                                alt="" class="img-fluid secondary-img">
                         </div>
-                        <div class="floating-elements-card card-2">
-                            <i class="bi bi-award"></i>
-                            <span>Excellence</span>
-                        </div>
-                        <div class="floating-elements-card card-3">
-                            <i class="bi bi-people"></i>
-                            <span>Collaboration</span>
+                        <div class="col-6">
+                            <img src="https://bootstrapmade.com/content/demo/Landify/assets/img/about/about-5.webp"
+                                alt="" class="img-fluid secondary-img">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-</section>
-
-<!-- ========================================================== -->
-
-<!-- * ABOUT SECTION -->
-
-<section id="about" class="about-section pb-5">
-    <div class="container">
-        <div class="row">
-            <!-- Texts Column -->
-            <div class="col-lg-6 order-1 order-lg-1 pt-5">
-                <div class="about-content">
-                    <span>ABOUT OUR COMPANY</span>
-                    <h1 class="display-6 fw-semibold py-3">Tempor incididunt ut labore et dolore magna</h1>
-                    <p class="text-black fw-semibold">Unde omnis iste natus error sit voluptatem accusantium
-                        doloremque
-                        laudantium, totam rem
-                        aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                        accusantium.</p>
-
-                    <div class="stats-grid">
-
-                        <div class="stat-grid-item">
-                            <div class="stat-number">250+</div>
-                            <div class="stat-label">Projects Completed</div>
-                        </div>
-
-                        <div class="stat-grid-item">
-                            <div class="stat-number">98%</div>
-                            <div class="stat-label">Client Satisfaction</div>
-                        </div>
-
-                        <div class="stat-grid-item">
-                            <div class="stat-number">24/7</div>
-                            <div class="stat-label">Support Available</div>
-                        </div>
-
-                        <div class="stat-grid-item">
-                            <div class="stat-number">12+</div>
-                            <div class="stat-label">Years Experience</div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Image Column -->
-            <div class="col-lg-6 order-2 order-lg-2 py-5">
-                <div class="about-img">
-                    <div class="img-fluid">
-                        <img src="https://bootstrapmade.com/content/demo/Landify/assets/img/about/about-8.webp" alt="">
-                    </div>
-                </div>
-                <div class="row py-3 g-3">
-                    <div class="col-6">
-                        <img src="https://bootstrapmade.com/content/demo/Landify/assets/img/about/about-11.webp" alt=""
-                            class="img-fluid secondary-img">
-                    </div>
-                    <div class="col-6">
-                        <img src="https://bootstrapmade.com/content/demo/Landify/assets/img/about/about-5.webp" alt=""
-                            class="img-fluid secondary-img">
-                    </div>
-                </div>
-            </div>
         </div>
-    </div>
-    </div>
-</section>
+    </section>
 
-<!-- ========================================================== -->
+    <!-- ========================================================== -->
 
 
-<!-- * FEATURE BOXES -->
-<section class="feature-boxes py-5">
-    <div class="container">
-        <div class="row">
-            <!-- Col 1 -->
-            <div class="col-md-4">
-                <div class="feature-box">
-                    <div class="feature-icon">
-                        <i class="bi bi-shield-check"></i>
-                    </div>
-                    <h5 class="fw-bold pb-2">Trusted Security</h5>
-                    <p class="fw-semibold text-black-50">Quis autem vel eum iure reprehenderit qui in ea voluptate
-                        velit esse quam
-                        nihil molestiae.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Col 2 -->
-            <div class="col-md-4">
-                <div class="feature-box">
-                    <div class="feature-icon">
-                        <i class="bi bi-lightning-charge"></i>
-                    </div>
-                    <h5 class="fw-bold pb-2">Fast Performance</h5>
-                    <p class="fw-semibold text-black-50">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                        odit aut fugit sed quia consequuntur.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Col 3 -->
-            <div class="col-md-4">
-                <div class="feature-box">
-                    <div class="feature-icon">
-                        <i class="bi bi-headset"></i>
-                    </div>
-                    <h5 class="fw-bold pb-2">Expert Support</h5>
-                    <p class="fw-semibold text-black-50">Neque porro quisquam est qui dolorem ipsum quia dolor sit
-                        amet consectetur adipisci velit.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- ========================================================== -->
-
-
-<!-- * FEATURES SECTION -->
-<section id="features" class="features-section py-5">
-    <div class="header-container py-5">
-        <div class="title-wrapper">
-            <span class="bg-text">Features</span>
-            <h2 class="fg-text">Features</h2>
-        </div>
-        <p class="subtitle">
-            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
-        </p>
-    </div>
-
-    <div class="container bg-white shadow-lg rounded p-5">
-
-        <div class="feature-tabs">
-            <div class="row py-5">
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="nav-tab active" data-title="Innovation Excellence" data-icon="bi-rocket-takeoff"
-                        data-desc="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis."
-                        data-stat1-num="99%" data-stat1-label="Uptime" data-stat2-num="50K+" data-stat2-label="Users"
-                        data-stat3-num="24/7" data-stat3-label="Support" data-badge-text="Performance"
-                        data-badge-val="+85% Improvement" data-badge-icon="bi-graph-up-arrow"
-                        data-img="https://bootstrapmade.com/content/demo/Landify/assets/img/features/features-4.webp">
-                        <div class="tab-icon">
-                            <i class="bi bi-rocket-takeoff"></i>
+    <!-- * FEATURE BOXES -->
+    <section class="feature-boxes py-2">
+        <div class="container">
+            <div class="row">
+                <!-- Col 1 -->
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="bi bi-shield-check"></i>
                         </div>
-                        <div class="tab-content">
-                            <h5>Innovation</h5>
-                            <span>Cutting-edge solutions</span>
-                        </div>
+                        <h5 class="fw-bold pb-2">Trusted Security</h5>
+                        <p class="fw-semibold text-black-50">Quis autem vel eum iure reprehenderit qui in ea voluptate
+                            velit esse quam
+                            nihil molestiae.
+                        </p>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="nav-tab" data-title="Advanced Security" data-icon="bi-shield-shaded"
-                        data-desc="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur adipisci velit sed quia non numquam eius modi tempora incidunt ut labore."
-                        data-stat1-num="256-bit" data-stat1-label="Encryption" data-stat2-num="ISO"
-                        data-stat2-label="Certified" data-stat3-num="GDPR" data-stat3-label="Compliant"
-                        data-badge-text="Security" data-badge-val="Military-Grade" data-badge-icon="bi-shield-check"
-                        data-img="https://bootstrapmade.com/content/demo/Landify/assets/img/features/features-2.webp">
-                        <div class="tab-icon">
-                            <i class="bi bi-shield-shaded"></i>
-                        </div>
-                        <div class="tab-content">
-                            <h5>Security</h5>
-                            <span>Advanced protection</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="nav-tab" data-title="Lightning Performance" data-icon="bi-lightning-charge"
-                        data-desc="Ut enim ad minima veniam quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid ex ea commodi consequatur quis autem vel."
-                        data-stat1-num="0.5s" data-stat1-label="Load Time" data-stat2-num="100%"
-                        data-stat2-label="Optimized" data-stat3-num="CDN" data-stat3-label="Global"
-                        data-badge-text="Speed" data-badge-val="Ultra Fast" data-badge-icon="bi-speedometer2"
-                        data-img="https://bootstrapmade.com/content/demo/Landify/assets/img/features/features-6.webp">
-                        <div class="tab-icon">
+                <!-- Col 2 -->
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
                             <i class="bi bi-lightning-charge"></i>
                         </div>
-                        <div class="tab-content">
-                            <h5>Performance</h5>
-                            <span>Lightning fast speed</span>
-                        </div>
+                        <h5 class="fw-bold pb-2">Fast Performance</h5>
+                        <p class="fw-semibold text-black-50">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                            odit aut fugit sed quia consequuntur.
+                        </p>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="nav-tab" data-title="Premium Support" data-icon="bi-heart-pulse"
-                        data-desc="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
-                        data-stat1-num="24/7" data-stat1-label="Available" data-stat2-num="2min"
-                        data-stat2-label="Response" data-stat3-num="Expert" data-stat3-label="Team"
-                        data-badge-text="Support" data-badge-val="Always Here" data-badge-icon="bi-headset"
-                        data-img="https://bootstrapmade.com/content/demo/Landify/assets/img/features/features-1.webp">
-                        <div class="tab-icon">
-                            <i class="bi bi-heart-pulse"></i>
+                <!-- Col 3 -->
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="bi bi-headset"></i>
                         </div>
-                        <div class="tab-content">
-                            <h5>Support</h5>
-                            <span>24/7 assistance</span>
-                        </div>
+                        <h5 class="fw-bold pb-2">Expert Support</h5>
+                        <p class="fw-semibold text-black-50">Neque porro quisquam est qui dolorem ipsum quia dolor sit
+                            amet consectetur adipisci velit.
+                        </p>
                     </div>
                 </div>
+
             </div>
+        </div>
+    </section>
 
-            <div class="row pt-4">
-                <div class="col-lg-5">
-                    <div class="tab-data">
-                        <div class="icon-badge">
-                            <i class="bi bi-rocket-takeoff" id="dynamic-badge-icon"></i>
-                        </div>
+    <!-- ========================================================== -->
 
-                        <h3 id="dynamic-title">Innovation Excellence</h3>
-                        <p id="dynamic-desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                            doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis.</p>
 
-                        <div class="feature-grid">
-                            <div class="feature-item"><i class="bi bi-check-circle-fill"></i><span>Excepteur sint
-                                    occaecat cupidatat non proident</span></div>
-                            <div class="feature-item"><i class="bi bi-check-circle-fill"></i><span>Sunt in culpa qui
-                                    officia deserunt mollit anim</span></div>
-                            <div class="feature-item"><i class="bi bi-check-circle-fill"></i><span>At vero eos et
-                                    accusamus et iusto odio</span></div>
-                            <div class="feature-item"><i class="bi bi-check-circle-fill"></i><span>Et harum quidem rerum
-                                    facilis est et expedita</span></div>
-                        </div>
+    <!-- * FEATURES SECTION -->
+    <section id="features" class="features-section py-5">
+        <div class="header-container py-5">
+            <div class="title-wrapper">
+                <span class="bg-text">Features</span>
+                <h2 class="fg-text">Features</h2>
+            </div>
+            <p class="subtitle">
+                Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+            </p>
+        </div>
 
-                        <div class="stats-row">
-                            <div class="stat-item">
-                                <div class="stat-number" id="dynamic-stat1-num">99%</div>
-                                <div class="stat-label" id="dynamic-stat1-label">Uptime</div>
+        <div class="container bg-white shadow-lg rounded p-5">
+
+            <div class="feature-tabs">
+                <div class="row py-5">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="nav-tab active" data-title="Innovation Excellence" data-icon="bi-rocket-takeoff"
+                            data-desc="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis."
+                            data-stat1-num="99%" data-stat1-label="Uptime" data-stat2-num="50K+"
+                            data-stat2-label="Users" data-stat3-num="24/7" data-stat3-label="Support"
+                            data-badge-text="Performance" data-badge-val="+85% Improvement"
+                            data-badge-icon="bi-graph-up-arrow"
+                            data-img="https://bootstrapmade.com/content/demo/Landify/assets/img/features/features-4.webp">
+                            <div class="tab-icon">
+                                <i class="bi bi-rocket-takeoff"></i>
                             </div>
-                            <div class="stat-item">
-                                <div class="stat-number" id="dynamic-stat2-num">50K+</div>
-                                <div class="stat-label" id="dynamic-stat2-label">Users</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number" id="dynamic-stat3-num">24/7</div>
-                                <div class="stat-label" id="dynamic-stat3-label">Support</div>
+                            <div class="tab-content">
+                                <h5>Innovation</h5>
+                                <span>Cutting-edge solutions</span>
                             </div>
                         </div>
+                    </div>
 
-                        <a href="#" class="btn btn-primary px-4 py-2">Learn More <i class="bi bi-arrow-right"></i></a>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="nav-tab" data-title="Advanced Security" data-icon="bi-shield-shaded"
+                            data-desc="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur adipisci velit sed quia non numquam eius modi tempora incidunt ut labore."
+                            data-stat1-num="256-bit" data-stat1-label="Encryption" data-stat2-num="ISO"
+                            data-stat2-label="Certified" data-stat3-num="GDPR" data-stat3-label="Compliant"
+                            data-badge-text="Security" data-badge-val="Military-Grade" data-badge-icon="bi-shield-check"
+                            data-img="https://bootstrapmade.com/content/demo/Landify/assets/img/features/features-2.webp">
+                            <div class="tab-icon">
+                                <i class="bi bi-shield-shaded"></i>
+                            </div>
+                            <div class="tab-content">
+                                <h5>Security</h5>
+                                <span>Advanced protection</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="nav-tab" data-title="Lightning Performance" data-icon="bi-lightning-charge"
+                            data-desc="Ut enim ad minima veniam quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid ex ea commodi consequatur quis autem vel."
+                            data-stat1-num="0.5s" data-stat1-label="Load Time" data-stat2-num="100%"
+                            data-stat2-label="Optimized" data-stat3-num="CDN" data-stat3-label="Global"
+                            data-badge-text="Speed" data-badge-val="Ultra Fast" data-badge-icon="bi-speedometer2"
+                            data-img="https://bootstrapmade.com/content/demo/Landify/assets/img/features/features-6.webp">
+                            <div class="tab-icon">
+                                <i class="bi bi-lightning-charge"></i>
+                            </div>
+                            <div class="tab-content">
+                                <h5>Performance</h5>
+                                <span>Lightning fast speed</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="nav-tab" data-title="Premium Support" data-icon="bi-heart-pulse"
+                            data-desc="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+                            data-stat1-num="24/7" data-stat1-label="Available" data-stat2-num="2min"
+                            data-stat2-label="Response" data-stat3-num="Expert" data-stat3-label="Team"
+                            data-badge-text="Support" data-badge-val="Always Here" data-badge-icon="bi-headset"
+                            data-img="https://bootstrapmade.com/content/demo/Landify/assets/img/features/features-1.webp">
+                            <div class="tab-icon">
+                                <i class="bi bi-heart-pulse"></i>
+                            </div>
+                            <div class="tab-content">
+                                <h5>Support</h5>
+                                <span>24/7 assistance</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-lg-7">
-                    <div class="tab-visuals">
-                        <div class="main-img">
-                            <img class="img-fluid" id="dynamic-img"
-                                src="https://bootstrapmade.com/content/demo/Landify/assets/img/features/features-4.webp"
-                                alt="Feature Image">
-                            <div class="floating-card">
-                                <i class="bi bi-graph-up-arrow" id="dynamic-card-icon"></i>
-                                <div class="card-content">
-                                    <span id="dynamic-card-text">Performance</span>
-                                    <strong id="dynamic-card-val">+85% Improvement</strong>
+                <div class="row pt-4">
+                    <div class="col-lg-5">
+                        <div class="tab-data">
+                            <div class="icon-badge">
+                                <i class="bi bi-rocket-takeoff" id="dynamic-badge-icon"></i>
+                            </div>
+
+                            <h3 id="dynamic-title">Innovation Excellence</h3>
+                            <p id="dynamic-desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                accusantium
+                                doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis.
+                            </p>
+
+                            <div class="feature-grid">
+                                <div class="feature-item"><i class="bi bi-check-circle-fill"></i><span>Excepteur sint
+                                        occaecat cupidatat non proident</span></div>
+                                <div class="feature-item"><i class="bi bi-check-circle-fill"></i><span>Sunt in culpa qui
+                                        officia deserunt mollit anim</span></div>
+                                <div class="feature-item"><i class="bi bi-check-circle-fill"></i><span>At vero eos et
+                                        accusamus et iusto odio</span></div>
+                                <div class="feature-item"><i class="bi bi-check-circle-fill"></i><span>Et harum quidem
+                                        rerum
+                                        facilis est et expedita</span></div>
+                            </div>
+
+                            <div class="stats-row">
+                                <div class="stat-item">
+                                    <div class="stat-number" id="dynamic-stat1-num">99%</div>
+                                    <div class="stat-label" id="dynamic-stat1-label">Uptime</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number" id="dynamic-stat2-num">50K+</div>
+                                    <div class="stat-label" id="dynamic-stat2-label">Users</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number" id="dynamic-stat3-num">24/7</div>
+                                    <div class="stat-label" id="dynamic-stat3-label">Support</div>
+                                </div>
+                            </div>
+
+                            <a href="#" class="btn btn-primary px-4 py-2">Learn More <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="tab-visuals">
+                            <div class="main-img">
+                                <img class="img-fluid" id="dynamic-img"
+                                    src="https://bootstrapmade.com/content/demo/Landify/assets/img/features/features-4.webp"
+                                    alt="Feature Image">
+                                <div class="floating-card">
+                                    <i class="bi bi-graph-up-arrow" id="dynamic-card-icon"></i>
+                                    <div class="card-content">
+                                        <span id="dynamic-card-text">Performance</span>
+                                        <strong id="dynamic-card-val">+85% Improvement</strong>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- <div class="feature-tabs">
+            <!-- <div class="feature-tabs">
             <div class="row py-5">
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="nav-tab active">
@@ -534,987 +567,593 @@
                 </div>
             </div>
         </div> -->
-    </div>
-
-</section>
-
-
-
-<!-- ========================================================== -->
-
-<!-- * FEATURE CARDS -->
-<div class="container features py-5">
-    <div class="row my-5 g-4">
-        <div class="col-lg-6">
-            <div class="feature-card">
-                <div class="icon-box">
-                    <i class="bi bi-shield-lock"></i>
-                </div>
-                <h3>Strategic Business Intelligence</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
-                    mattis, pulvinar dapibus leo. Aenean commodo ligula eget dolor.</p>
-
-
-                <ul class="feature-list">
-                    <li><i class="bi bi-check-circle"></i> Real-time data analytics </li>
-                    <li><i class="bi bi-check-circle"></i> Automated reporting systems</li>
-                </ul>
-
-                <a href="#" class="read-more">Business Solutions <i class="bi bi-arrow-right"></i></a>
-            </div>
         </div>
 
+    </section>
 
-        <div class="col-lg-6">
-            <div class="feature-card">
-                <div class="icon-box">
-                    <i class="bi bi-shield"></i>
-                </div>
-                <h3>Enterprise Security Framework</h3>
-                <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem
-                    neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.</p>
-                <ul class="feature-list">
-                    <li><i class="bi bi-check-circle"></i> Advanced encryption protocols</li>
-                    <li><i class="bi bi-check-circle"></i> Multi-factor authentication</li>
-                </ul>
-                <a href="#" class="read-more">Security Details <i class="bi bi-arrow-right"></i></a>
-            </div>
-        </div>
-
-        <!-- Second row with 4 small cards -->
-        <div class="col-lg-3 col-md-6">
-            <div class="compliance-card">
-                <h4>Cloud Integration</h4>
-                <p class="status in-development">In Development</p>
-            </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-            <div class="compliance-card">
-                <h4>Data Management</h4>
-                <p class="status implemented">Implemented</p>
-            </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-            <div class="compliance-card">
-                <h4>Process Automation</h4>
-                <p class="status implemented">Implemented</p>
-            </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-            <div class="compliance-card">
-                <h4>Process Automation</h4>
-                <p class="status scheduled">Implemented</p>
-            </div>
-        </div>
-
-
-
-    </div>
 
 
     <!-- ========================================================== -->
 
-    <div class="container features-2 py-5">
+    <!-- * FEATURE CARDS -->
+    <div class="container features py-5">
         <div class="row my-5 g-4">
-            <div class="col-lg-4">
+            <div class="col-lg-6">
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="bi bi-app-indicator"></i>
+                    <div class="icon-box">
+                        <i class="bi bi-shield-lock"></i>
                     </div>
-                    <h3>Intuitive Dashboard Interface</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua ut enim ad minim veniam.</p>
+                    <h3>Strategic Business Intelligence</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                        mattis, pulvinar dapibus leo. Aenean commodo ligula eget dolor.</p>
 
-
-                    <ul class="feature-benefits">
-                        <li><i class="bi bi-check-circle-fill"></i> Real-time data visualization</li>
-                        <li><i class="bi bi-check-circle-fill"></i> Customizable widgets</li>
-                        <li><i class="bi bi-check-circle-fill"></i> Interactive reports</li>
-                    </ul>
-
-                    <div class="feature-image">
-                        <img class="img-fluid"
-                            src="https://bootstrapmade.com/content/demo/Landify/assets/img/features/features-1.webp"
-                            alt="">
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Highlighted -->
-            <div class="col-lg-4">
-                <div class="feature-card highlighted">
-                    <div class="feature-icon">
-                        <i class="bi bi-graph-up-arrow"></i>
-                    </div>
-                    <h3>Advanced Analytics Tools</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua ut enim ad minim veniam.</p>
-
-
-                    <ul class="feature-benefits">
-                        <li><i class="bi bi-check-circle-fill"></i> Predictive analysis</li>
-                        <li><i class="bi bi-check-circle-fill"></i> Custom reporting</li>
-                        <li><i class="bi bi-check-circle-fill"></i> Data exploration</li>
-                    </ul>
-
-                    <div class="feature-image">
-                        <img class="img-fluid"
-                            src="https://bootstrapmade.com/content/demo/Landify/assets/img/features/features-2.webp"
-                            alt="">
-                    </div>
-
-                </div>
-            </div>
-
-
-            <div class="col-lg-4">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="bi bi-shield-check"></i>
-                    </div>
-                    <h3>Enterprise-Grade Security</h3>
-                    <p>Nulla porttitor accumsan tincidunt praesent sapien massa convallis a pellentesque nec egestas
-                        non nisi proin eget tortor risus donec sollicitudin.</p>
-
-                    <ul class="feature-benefits">
-                        <li><i class="bi bi-check-circle-fill"></i> End-to-end encryption</li>
-                        <li><i class="bi bi-check-circle-fill"></i> Advanced access control</li>
-                        <li><i class="bi bi-check-circle-fill"></i> Compliance monitoring</li>
-                    </ul>
-
-                    <div class="feature-image">
-                        <img class="img-fluid"
-                            src="https://bootstrapmade.com/content/demo/Landify/assets/img/features/features-3.webp"
-                            alt="">
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-        <div class="feature-testimonial ">
-            <div class="row mt-5 pt-5 align-items-center">
-
-                <div class="col-lg-6">
-                    <div class="testimonial-image">
-                        <img class="img-fluid"
-                            src="https://bootstrapmade.com/content/demo/Landify/assets/img/features/features-4.webp"
-                            alt="">
-                    </div>
-                </div>
-
-
-                <div class="col-lg-6">
-                    <div class="testimonial-content">
-                        <div class="quote-icon">
-                            <i class="bi bi-quote"></i>
-                        </div>
-                        <p>Curabitur arcu erat accumsan id imperdiet et porttitor at sem. Vivamus magna justo
-                            lacinia
-                            eget consectetur sed convallis at tellus. Curabitur aliquet quam id dui posuere blandit.
-                        </p>
-
-
-                        <div class="testimonial-author">
-                            <h4>Jennifer Austin</h4>
-                            <span>Product Director at TechCorp</span>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- ========================================================== -->
-<!-- * CALL TO ACTION -->
-
-<section class="call-to-action py-5">
-    <div class="container py-lg-5">
-        <div class="row align-items-center">
-
-            <div class="col-lg-6 col-xl-5 offset-xl-1 order-1 order-lg-2">
-                <div class="image-wrapper position-relative text-center text-lg-start">
-                    <img src="https://bootstrapmade.com/content/demo/Landify/assets/img/misc/misc-6.webp"
-                        alt="Security Solutions" class="img-fluid main-image">
-
-                    <div class="floating-card">
-                        <div class="card-icon">
-                            <i class="bi bi-shield-lock"></i>
-                        </div>
-                        <div>
-                            <h4>Advanced Security Solutions</h4>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                laudantium.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-lg-6 order-2 order-lg-1">
-                <div class="content-area">
-                    <h2>Transform Your Business with Cutting-Edge Technology</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation.</p>
 
                     <ul class="feature-list">
-                        <li>
-                            <i class="bi bi-check"></i>
-                            <span>Streamline operations and enhance productivity</span>
-                        </li>
-                        <li>
-                            <i class="bi bi-check"></i>
-                            <span>Achieve remarkable cost savings and efficiency gains</span>
-                        </li>
-                        <li>
-                            <i class="bi bi-check"></i>
-                            <span>Scale your business resources intelligently</span>
-                        </li>
+                        <li><i class="bi bi-check-circle"></i> Real-time data analytics </li>
+                        <li><i class="bi bi-check-circle"></i> Automated reporting systems</li>
                     </ul>
 
-                    <div class="cta-wrapper">
-                        <a href="#" class="btn btn-cta">Start Your Journey</a>
+                    <a href="#" class="read-more">Business Solutions <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+
+
+            <div class="col-lg-6">
+                <div class="feature-card">
+                    <div class="icon-box">
+                        <i class="bi bi-shield"></i>
                     </div>
+                    <h3>Enterprise Security Framework</h3>
+                    <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem
+                        neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.</p>
+                    <ul class="feature-list">
+                        <li><i class="bi bi-check-circle"></i> Advanced encryption protocols</li>
+                        <li><i class="bi bi-check-circle"></i> Multi-factor authentication</li>
+                    </ul>
+                    <a href="#" class="read-more">Security Details <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Second row with 4 small cards -->
+            <div class="col-lg-3 col-md-6">
+                <div class="compliance-card">
+                    <h4>Cloud Integration</h4>
+                    <p class="status in-development">In Development</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="compliance-card">
+                    <h4>Data Management</h4>
+                    <p class="status implemented">Implemented</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="compliance-card">
+                    <h4>Process Automation</h4>
+                    <p class="status implemented">Implemented</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="compliance-card">
+                    <h4>Process Automation</h4>
+                    <p class="status scheduled">Implemented</p>
                 </div>
             </div>
 
 
 
         </div>
-    </div>
-</section>
-<!-- ========================================================== -->
-<section class="clients">
-    <div class="container">
-        <div class="slider-container">
-            <div class="slider-track">
-                <div class="slide"><img
-                        src="https://bootstrapmade.com/content/demo/Landify/assets/img/clients/clients-1.webp" alt="">
-                </div>
-                <div class="slide"><img
-                        src="https://bootstrapmade.com/content/demo/Landify/assets/img/clients/clients-2.webp" alt="">
-                </div>
-                <div class="slide"><img
-                        src="https://bootstrapmade.com/content/demo/Landify/assets/img/clients/clients-3.webp" alt="">
-                </div>
-                <div class="slide"><img
-                        src="https://bootstrapmade.com/content/demo/Landify/assets/img/clients/clients-4.webp" alt="">
-                </div>
-                <div class="slide"><img
-                        src="https://bootstrapmade.com/content/demo/Landify/assets/img/clients/clients-5.webp" alt="">
-                </div>
-                <div class="slide"><img
-                        src="https://bootstrapmade.com/content/demo/Landify/assets/img/clients/clients-6.webp" alt="">
-                </div>
-                <div class="slide"><img
-                        src="https://bootstrapmade.com/content/demo/Landify/assets/img/clients/clients-7.webp" alt="">
-                </div>
-                <div class="slide"><img
-                        src="https://bootstrapmade.com/content/demo/Landify/assets/img/clients/clients-8.webp" alt="">
-                </div>
 
 
+        <!-- ========================================================== -->
 
-            </div>
-        </div>
-
-    </div>
-</section>
-
-
-<!-- ========================================================== -->
-<!-- * TESTIMONIAL SECTION -->
-<section id="testimonials" class="testimonial-section py-5">
-    <div class="header-container py-5">
-        <div class="title-wrapper">
-            <span class="bg-text">Testimonials</span>
-            <h2 class="fg-text">Testimonials</h2>
-        </div>
-        <p class="subtitle">
-            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
-        </p>
-    </div>
-
-
-    <div class="container">
-        <div class="testimonial-grid">
-
-
-            <div class="testimonial-item">
-                <div class="testimonial-content">
-                    <div class="testimonial-quote">
-                        <i class="bi bi-quote"></i>
-                    </div>
-                    <p>Implementing innovative strategies has revolutionized our approach to market challenges and
-                        competitive positioning.</p>
-                    <div class="client-info">
-                        <div class="client-image">
-                            <img src="https://bootstrapmade.com/content/demo/Landify/assets/img/person/person-f-7.webp"
-                                alt="Client">
+        <div class="container features-2 py-5">
+            <div class="row my-5 g-4">
+                <div class="col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-app-indicator"></i>
                         </div>
-                        <div class="client-details">
-                            <h3>Rachel Bennett</h3>
-                            <span class="position">Strategy Director</span>
+                        <h3>Intuitive Dashboard Interface</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua ut enim ad minim veniam.</p>
+
+
+                        <ul class="feature-benefits">
+                            <li><i class="bi bi-check-circle-fill"></i> Real-time data visualization</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Customizable widgets</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Interactive reports</li>
+                        </ul>
+
+                        <div class="feature-image">
+                            <img class="img-fluid"
+                                src="https://bootstrapmade.com/content/demo/Landify/assets/img/features/features-1.webp"
+                                alt="">
                         </div>
-                    </div>
-                </div>
-            </div>
 
-
-            <div class="testimonial-item highlight py-5">
-                <div class="testimonial-content">
-                    <div class="testimonial-quote">
-                        <i class="bi bi-quote"></i>
-                    </div>
-                    <p>Exceptional service delivery and innovative solutions have transformed our business
-                        operations, leading to remarkable growth and enhanced customer satisfaction across all
-                        touchpoints.</p>
-                    <div class="client-info">
-                        <div class="client-image">
-                            <img src="https://bootstrapmade.com/content/demo/Landify/assets/img/person/person-m-7.webp"
-                                alt="Client">
-                        </div>
-                        <div class="client-details">
-                            <h3>Daniel Morgan</h3>
-                            <span class="position">Chief Innovation Officer</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-            <div class="testimonial-item py-4">
-                <div class="testimonial-content">
-                    <div class="testimonial-quote">
-                        <i class="bi bi-quote"></i>
-                    </div>
-                    <p>Strategic partnership has enabled seamless digital transformation and operational excellence.
-                    </p>
-                    <div class="client-info">
-                        <div class="client-image">
-                            <img src="https://bootstrapmade.com/content/demo/Landify/assets/img/person/person-f-7.webp"
-                                alt="Client">
-                        </div>
-                        <div class="client-details">
-                            <h3>Emma Thompson</h3>
-                            <span class="position">Digital Lead</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-            <div class="testimonial-item">
-                <div class="testimonial-content">
-                    <div class="testimonial-quote">
-                        <i class="bi bi-quote"></i>
-                    </div>
-                    <p>Professional expertise and dedication have significantly improved our project delivery
-                        timelines and quality metrics.</p>
-                    <div class="client-info">
-                        <div class="client-image">
-                            <img src="https://bootstrapmade.com/content/demo/Landify/assets/img/person/person-m-8.webp"
-                                alt="Client">
-                        </div>
-                        <div class="client-details">
-                            <h3>Christopher Lee</h3>
-                            <span class="position">Technical Director</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="testimonial-item highlight py-5">
-                <div class="testimonial-content">
-                    <div class="testimonial-quote">
-                        <i class="bi bi-quote"></i>
-                    </div>
-                    <p>Collaborative approach and industry expertise have revolutionized our product development
-                        cycle, resulting in faster time-to-market and increased customer engagement levels.</p>
-                    <div class="client-info">
-                        <div class="client-image">
-                            <img src="https://bootstrapmade.com/content/demo/Landify/assets/img/person/person-f-9.webp"
-                                alt="Client">
-                        </div>
-                        <div class="client-details">
-                            <h3>Olivia Carter</h3>
-                            <span class="position">Product Manager</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-            <div class="testimonial-item py-4">
-                <div class="testimonial-content">
-                    <div class="testimonial-quote">
-                        <i class="bi bi-quote"></i>
-                    </div>
-                    <p>Innovative approach to user experience design has significantly enhanced our platform's
-                        engagement metrics and customer retention rates.
-                    </p>
-                    <div class="client-info">
-                        <div class="client-image">
-                            <img src="https://bootstrapmade.com/content/demo/Landify/assets/img/person/person-m-13.webp"
-                                alt="Client">
-                        </div>
-                        <div class="client-details">
-                            <h3>Nathan Brooks</h3>
-                            <span class="position">UX Director</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-        </div>
-    </div>
-
-
-</section>
-
-
-
-
-
-
-<!-- ========================================================== -->
-<section class="stats">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center mb-5">
-                <h3 class="main-headline">Driving Excellence Through Innovation</h3>
-                <p class="main-description">
-                    Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet
-                    sodales nisi, quis iaculis nulla iaculis vitae.
-                </p>
-
-                <div class="achievement-badge">
-                    <div class="badge-content">
-                        <div class="badge-icon"><i class="bi bi-trophy-fill"></i></div>
-                        <div class="badge-details">
-                            <div class="badge-title">Industry Leader</div>
-                            <div class="badge-subtitle">Recognized by 85+ industry experts</div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
-        <!-- ------------------------------------ -->
-        <div class="testimonial-stats-grid">
-            <div class="row g-4">
-                <div class="col-xl-3 col-lg-6 col-md-6">
-                    <div class="stat-item">
-                        <div class="stat-icon">
-                            <i class="bi bi-people-fill"></i>
-                        </div>
-                        <div class="stat-content">
-                            <div class="stat-number">
-                                <span>285</span>K+
-                            </div>
-                            <div class="stat-label">Happy Customers</div>
-                            <div class="stat-growth">
-                                <i class="bi bi-arrow-up"></i>
-                                <span>+12% this year</span>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
-                <div class="col-xl-3 col-lg-6 col-md-6">
-                    <div class="stat-item featured">
-                        <div class="stat-icon">
+                <!-- Highlighted -->
+                <div class="col-lg-4">
+                    <div class="feature-card highlighted">
+                        <div class="feature-icon">
                             <i class="bi bi-graph-up-arrow"></i>
                         </div>
-                        <div class="stat-content">
-                            <div class="stat-number">
-                                <span>99</span>%
-                            </div>
-                            <div class="stat-label">Success Rate</div>
-                            <div class="stat-growth">
-                                <i class="bi bi-arrow-up"></i>
-                                <span>+5% improvement</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-6 col-md-6">
-                    <div class="stat-item">
-                        <div class="stat-icon">
-                            <i class="bi bi-award-fill"></i>
-                        </div>
-                        <div class="stat-content">
-                            <div class="stat-number">
-                                <span>47</span>
-                            </div>
-                            <div class="stat-label">Awards Won</div>
-                            <div class="stat-growth">
-                                <i class="bi bi-arrow-up"></i>
-                                <span>+8 this quarter</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-6 col-md-6">
-                    <div class="stat-item">
-                        <div class="stat-icon">
-                            <i class="bi bi-globe"></i>
-                        </div>
-                        <div class="stat-content">
-                            <div class="stat-number">
-                                <span>156</span>
-                            </div>
-                            <div class="stat-label">Global Partners</div>
-                            <div class="stat-growth">
-                                <i class="bi bi-arrow-up"></i>
-                                <span>+23 new partners</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
+                        <h3>Advanced Analytics Tools</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua ut enim ad minim veniam.</p>
 
 
-
-
-
-
-<!-- ========================================================== -->
-<!-- * Services SECTION -->
-<section id="services" class="services-section pt-5">
-    <div class="header-container py-5">
-        <div class="title-wrapper">
-            <span class="bg-text">Services</span>
-            <h2 class="fg-text">Services</h2>
-        </div>
-        <p class="subtitle fw-semibold">
-            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
-        </p>
-    </div>
-
-
-    <div class="container py-5">
-        <div class="row">
-
-            <div class="col-lg-6">
-                <div class="services-content">
-                    <div class="services-badge mb-3">
-                        <i class="bi bi-star-fill"></i>
-                        <span>WHAT WE DO</span>
-                    </div>
-
-                    <h2 class="services-content-heading mb-4">Transforming Ideas into Outstanding Results</h2>
-
-                    <p class="services-content-description">
-                        We believe in crafting exceptional experiences that drive meaningful growth for your
-                        business. Our dedicated team combines creativity with technical excellence to deliver
-                        solutions that make a difference.
-                    </p>
-
-
-
-                    <a href="#" class="services-content-cta-btn">Explore Our Work</a>
-                </div>
-
-            </div>
-
-            <div class="col-lg-6">
-                <div class="services-img">
-                    <img src="https://bootstrapmade.com/content/demo/Landify/assets/img/services/services-1.webp"
-                        class="img-fluid" alt="">
-                </div>
-            </div>
-
-
-        </div>
-
-        <div class="services-grid my-5">
-            <div class="row g-4">
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="services-card">
-                        <div class="services-card-number mb-2">
-                            <span>01</span>
-                        </div>
-
-                        <div class="services-card-content">
-                            <h5 class="services-card-title">
-                                <a href="#">Custom Application Development</a>
-                            </h5>
-                            <p class="services-card-description">
-                                Building robust applications tailored to your specific needs using modern frameworks
-                                and cutting-edge technologies.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="services-card">
-                        <div class="services-card-number mb-2">
-                            <span>02</span>
-                        </div>
-
-                        <div class="services-card-content">
-                            <h5 class="services-card-title">
-                                <a href="#">Strategic Planning</a>
-                            </h5>
-                            <p class="services-card-description">
-                                Comprehensive roadmaps that align technology solutions with your business objectives
-                                and market opportunities.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="services-card">
-                        <div class="services-card-number mb-2">
-                            <span>03</span>
-                        </div>
-
-                        <div class="services-card-content">
-                            <h5 class="services-card-title">
-                                <a href="#">Identity Design</a>
-                            </h5>
-                            <p class="services-card-description">
-                                Creating compelling visual narratives that resonate with your audience and
-                                strengthen brand recognition across all touchpoints.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="services-card">
-                        <div class="services-card-number mb-2">
-                            <span>04</span>
-                        </div>
-
-                        <div class="services-card-content">
-                            <h5 class="services-card-title">
-                                <a href="#">Digital Marketing</a>
-                            </h5>
-                            <p class="services-card-description">
-                                Maximizing your online presence through targeted campaigns that drive engagement and
-                                convert visitors into loyal customers.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="services-card">
-                        <div class="services-card-number mb-2">
-                            <span>05</span>
-                        </div>
-
-                        <div class="services-card-content">
-                            <h5 class="services-card-title">
-                                <a href="#">User Experience Design</a>
-                            </h5>
-                            <p class="services-card-description">
-                                Crafting intuitive interfaces that prioritize user needs while delivering seamless
-                                interactions across desktop and mobile platforms.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="services-card">
-                        <div class="services-card-number mb-2">
-                            <span>06</span>
-                        </div>
-
-                        <div class="services-card-content">
-                            <h5 class="services-card-title">
-                                <a href="#">Data Intelligence</a>
-                            </h5>
-                            <p class="services-card-description">
-                                Transforming raw data into actionable insights that inform strategic decisions and
-                                optimize business performance effectively.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-            </div>
-        </div>
-
-
-    </div>
-    </div>
-
-
-</section>
-
-
-
-
-
-
-
-<!-- ========================================================== -->
-<!-- * Pricing Section -->
-<section id="pricing" class="pricing-section mb-5">
-    <div class="header-container pt-5">
-        <div class="title-wrapper">
-            <span class="bg-text">Pricing</span>
-            <h2 class="fg-text">Pricing</h2>
-        </div>
-        <p class="subtitle fw-semibold">
-            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
-        </p>
-    </div>
-
-    <div class="pricing-section">
-        <div class="text-center mb-2">
-            <div class="toggle-wrap">
-                <span class="toggle-label active" id="labelMonthly">Monthly</span>
-                <div class="form-check form-switch mb-0">
-                    <input class="form-check-input" type="checkbox" role="switch" id="billingToggle">
-                </div>
-                <span class="toggle-label" id="labelYearly">Yearly</span>
-            </div>
-            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.</p>
-        </div>
-
-        <div class="container mt-5">
-            <div class="row g-4 justify-content-center">
-
-                <!-- Starter -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="pricing-card">
-                        <span class="badge-plan">STARTER</span>
-                        <div class="plan-name">Lorem Dolor Sit</div>
-                        <div class="plan-desc">Ut enim ad minim veniam quis nostrud exercitation ullamco laboris.
-                        </div>
-                        <div class="price-row">
-                            <span class="currency">$</span>
-                            <span class="amount" data-monthly="12" data-yearly="120">12</span>
-                            <span class="period">/mo</span>
-                        </div>
-                        <hr class="divider">
-                        <ul class="feature-list">
-                            <li><span class="icon-check">✓</span> Lorem ipsum dolor amet</li>
-                            <li><span class="icon-check">✓</span> Consectetur adipiscing elit</li>
-                            <li><span class="icon-check">✓</span> Sed do eiusmod tempor</li>
-                            <li class="disabled"><span class="icon-check">–</span> Incididunt ut labore</li>
-                            <li class="disabled"><span class="icon-check">–</span> Dolore magna aliqua</li>
+                        <ul class="feature-benefits">
+                            <li><i class="bi bi-check-circle-fill"></i> Predictive analysis</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Custom reporting</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Data exploration</li>
                         </ul>
-                        <button class="btn-plan">Get Started</button>
+
+                        <div class="feature-image">
+                            <img class="img-fluid"
+                                src="https://bootstrapmade.com/content/demo/Landify/assets/img/features/features-2.webp"
+                                alt="">
+                        </div>
+
                     </div>
                 </div>
 
-                <!-- Pro -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="pricing-card popular">
-                        <span class="badge-popular">★ Popular</span>
-                        <span class="badge-plan">PRO</span>
-                        <div class="plan-name">Cras Aenean Quam</div>
-                        <div class="plan-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum.</div>
-                        <div class="price-row">
-                            <span class="currency">$</span>
-                            <span class="amount" data-monthly="29" data-yearly="290">29</span>
-                            <span class="period">/mo</span>
+
+                <div class="col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-shield-check"></i>
                         </div>
-                        <hr class="divider">
-                        <ul class="feature-list">
-                            <li><span class="icon-check">✓</span> Excepteur sint occaecat</li>
-                            <li><span class="icon-check">✓</span> Cupidatat non proident</li>
-                            <li><span class="icon-check">✓</span> Sunt in culpa qui officia</li>
-                            <li><span class="icon-check">✓</span> Deserunt mollit anim id</li>
-                            <li><span class="icon-check">✓</span> Est laborum commodo</li>
+                        <h3>Enterprise-Grade Security</h3>
+                        <p>Nulla porttitor accumsan tincidunt praesent sapien massa convallis a pellentesque nec egestas
+                            non nisi proin eget tortor risus donec sollicitudin.</p>
+
+                        <ul class="feature-benefits">
+                            <li><i class="bi bi-check-circle-fill"></i> End-to-end encryption</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Advanced access control</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Compliance monitoring</li>
                         </ul>
-                        <button class="btn-plan">Choose Pro</button>
+
+                        <div class="feature-image">
+                            <img class="img-fluid"
+                                src="https://bootstrapmade.com/content/demo/Landify/assets/img/features/features-3.webp"
+                                alt="">
+                        </div>
+
                     </div>
                 </div>
 
-                <!-- Business -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="pricing-card">
-                        <span class="badge-plan">BUSINESS</span>
-                        <div class="plan-name">Porta Parturient</div>
-                        <div class="plan-desc">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse.
+            </div>
+
+            <div class="feature-testimonial ">
+                <div class="row mt-5 pt-5 align-items-center">
+
+                    <div class="col-lg-6">
+                        <div class="testimonial-image">
+                            <img class="img-fluid"
+                                src="https://bootstrapmade.com/content/demo/Landify/assets/img/features/features-4.webp"
+                                alt="">
                         </div>
-                        <div class="price-row">
-                            <span class="currency">$</span>
-                            <span class="amount" data-monthly="59" data-yearly="590">59</span>
-                            <span class="period">/mo</span>
+                    </div>
+
+
+                    <div class="col-lg-6">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="bi bi-quote"></i>
+                            </div>
+                            <p>Curabitur arcu erat accumsan id imperdiet et porttitor at sem. Vivamus magna justo
+                                lacinia
+                                eget consectetur sed convallis at tellus. Curabitur aliquet quam id dui posuere blandit.
+                            </p>
+
+
+                            <div class="testimonial-author">
+                                <h4>Jennifer Austin</h4>
+                                <span>Product Director at TechCorp</span>
+                            </div>
                         </div>
-                        <hr class="divider">
-                        <ul class="feature-list">
-                            <li><span class="icon-check">✓</span> Quam nihil molestiae</li>
-                            <li><span class="icon-check">✓</span> Consequatur vel illum</li>
-                            <li><span class="icon-check">✓</span> Qui dolorem eum fugiat</li>
-                            <li><span class="icon-check">✓</span> Quis nostrum exercitationem</li>
-                            <li><span class="icon-check">✓</span> Ullam corporis suscipit</li>
-                        </ul>
-                        <button class="btn-plan">Start Business</button>
+
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
-</section>
 
+    <!-- ========================================================== -->
+    <!-- * CALL TO ACTION -->
 
-<!-- ========================================================== -->
+    <section class="call-to-action py-5">
+        <div class="container py-lg-5">
+            <div class="row align-items-center">
 
-<!-- * FAQS -->
-<div class="container">
-    <div class="faq-container custom-faq" id="faqGroup">
+                <div class="col-lg-6 col-xl-5 offset-xl-1 order-1 order-lg-2">
+                    <div class="image-wrapper position-relative text-center text-lg-start">
+                        <img src="https://bootstrapmade.com/content/demo/Landify/assets/img/misc/misc-6.webp"
+                            alt="Security Solutions" class="img-fluid main-image">
 
-        <div class="faq-item mb-3 active">
-            <h2 class="faq-header">
-                <button class="faq-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne"
-                    aria-expanded="true" aria-controls="faqCollapseOne">
-                    Non consectetur a erat nam at lectus urna duis?
-                </button>
-            </h2>
-            <div id="faqCollapseOne" class="faq-collapse collapse show" data-bs-parent="#faqGroup">
-                <div class="faq-body text-secondary">
-                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non
-                    curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                        <div class="floating-card">
+                            <div class="card-icon">
+                                <i class="bi bi-shield-lock"></i>
+                            </div>
+                            <div>
+                                <h4>Advanced Security Solutions</h4>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                    laudantium.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <div class="content-area">
+                        <h2>Transform Your Business with Cutting-Edge Technology</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation.</p>
+
+                        <ul class="feature-list">
+                            <li>
+                                <i class="bi bi-check"></i>
+                                <span>Streamline operations and enhance productivity</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-check"></i>
+                                <span>Achieve remarkable cost savings and efficiency gains</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-check"></i>
+                                <span>Scale your business resources intelligently</span>
+                            </li>
+                        </ul>
+
+                        <div class="cta-wrapper">
+                            <a href="#" class="btn btn-cta">Start Your Journey</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
             </div>
         </div>
+    </section>
+    <!-- ========================================================== -->
+    <section class="clients">
+        <div class="container">
+            <div class="slider-container">
+                <div class="slider-track">
+                    <div class="slide"><img
+                            src="https://bootstrapmade.com/content/demo/Landify/assets/img/clients/clients-1.webp"
+                            alt="">
+                    </div>
+                    <div class="slide"><img
+                            src="https://bootstrapmade.com/content/demo/Landify/assets/img/clients/clients-2.webp"
+                            alt="">
+                    </div>
+                    <div class="slide"><img
+                            src="https://bootstrapmade.com/content/demo/Landify/assets/img/clients/clients-3.webp"
+                            alt="">
+                    </div>
+                    <div class="slide"><img
+                            src="https://bootstrapmade.com/content/demo/Landify/assets/img/clients/clients-4.webp"
+                            alt="">
+                    </div>
+                    <div class="slide"><img
+                            src="https://bootstrapmade.com/content/demo/Landify/assets/img/clients/clients-5.webp"
+                            alt="">
+                    </div>
+                    <div class="slide"><img
+                            src="https://bootstrapmade.com/content/demo/Landify/assets/img/clients/clients-6.webp"
+                            alt="">
+                    </div>
+                    <div class="slide"><img
+                            src="https://bootstrapmade.com/content/demo/Landify/assets/img/clients/clients-7.webp"
+                            alt="">
+                    </div>
+                    <div class="slide"><img
+                            src="https://bootstrapmade.com/content/demo/Landify/assets/img/clients/clients-8.webp"
+                            alt="">
+                    </div>
 
-        <div class="faq-item mb-3">
-            <h2 class="faq-header">
-                <button class="faq-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
-                    Feugiat scelerisque varius morbi enim nunc faucibus?
-                </button>
-            </h2>
-            <div id="faqCollapseTwo" class="faq-collapse collapse" data-bs-parent="#faqGroup">
-                <div class="faq-body text-secondary">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id arcu aliquet, elementum nisi
-                    ut, varius nibh.
+
+
                 </div>
             </div>
+
         </div>
-
-        <div class="faq-item mb-3">
-            <h2 class="faq-header">
-                <button class="faq-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
-                    Dolor sit amet consectetur adipiscing elit pellentesque?
-                </button>
-            </h2>
-            <div id="faqCollapseThree" class="faq-collapse collapse" data-bs-parent="#faqGroup">
-                <div class="faq-body text-secondary">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id arcu aliquet, elementum nisi
-                    ut, varius nibh.
-                </div>
-            </div>
-        </div>
-
-        <div class="faq-item mb-3">
-            <h2 class="faq-header">
-                <button class="faq-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
-                    Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
-                </button>
-            </h2>
-            <div id="faqCollapseFour" class="faq-collapse collapse" data-bs-parent="#faqGroup">
-                <div class="faq-body text-secondary">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id arcu aliquet, elementum nisi
-                    ut, varius nibh.
-                </div>
-            </div>
-        </div>
-
-        <div class="faq-item mb-3">
-            <h2 class="faq-header">
-                <button class="faq-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive">
-                    Tempus quam pellentesque nec nam aliquam sem et tortor?
-                </button>
-            </h2>
-            <div id="faqCollapseFive" class="faq-collapse collapse" data-bs-parent="#faqGroup">
-                <div class="faq-body text-secondary">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id arcu aliquet, elementum nisi
-                    ut, varius nibh.
-                </div>
-            </div>
-        </div>
-
-        <div class="faq-item mb-3">
-            <h2 class="faq-header">
-                <button class="faq-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#faqCollapseSix" aria-expanded="false" aria-controls="faqCollapseSix">
-                    Perspiciatis quod quo quos nulla quo illum ullam?
-                </button>
-            </h2>
-            <div id="faqCollapseSix" class="faq-collapse collapse" data-bs-parent="#faqGroup">
-                <div class="faq-body text-secondary">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id arcu aliquet, elementum nisi
-                    ut, varius nibh.
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
+    </section>
 
 
-
-
-
-<!-- ========================================================== -->
-
-<!-- * CONTACT SECTION -->
-<section id="contact" class="contact-section my-5">
-    <div class="conatiner-fluid">
+    <!-- ========================================================== -->
+    <!-- * TESTIMONIAL SECTION -->
+    <section id="testimonials" class="testimonial-section py-5">
         <div class="header-container py-5">
             <div class="title-wrapper">
-                <span class="bg-text" style="color: 
- color-mix(in srgb, var(--heading-color), transparent 95%);">Contact</span>
-                <h2 class="fg-text">Contact</h2>
+                <span class="bg-text">Testimonials</span>
+                <h2 class="fg-text">Testimonials</h2>
+            </div>
+            <p class="subtitle">
+                Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+            </p>
+        </div>
+
+
+        <div class="container">
+            <div class="testimonial-grid">
+
+
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="bi bi-quote"></i>
+                        </div>
+                        <p>Implementing innovative strategies has revolutionized our approach to market challenges and
+                            competitive positioning.</p>
+                        <div class="client-info">
+                            <div class="client-image">
+                                <img src="https://bootstrapmade.com/content/demo/Landify/assets/img/person/person-f-7.webp"
+                                    alt="Client">
+                            </div>
+                            <div class="client-details">
+                                <h3>Rachel Bennett</h3>
+                                <span class="position">Strategy Director</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="testimonial-item highlight py-5">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="bi bi-quote"></i>
+                        </div>
+                        <p>Exceptional service delivery and innovative solutions have transformed our business
+                            operations, leading to remarkable growth and enhanced customer satisfaction across all
+                            touchpoints.</p>
+                        <div class="client-info">
+                            <div class="client-image">
+                                <img src="https://bootstrapmade.com/content/demo/Landify/assets/img/person/person-m-7.webp"
+                                    alt="Client">
+                            </div>
+                            <div class="client-details">
+                                <h3>Daniel Morgan</h3>
+                                <span class="position">Chief Innovation Officer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="testimonial-item py-4">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="bi bi-quote"></i>
+                        </div>
+                        <p>Strategic partnership has enabled seamless digital transformation and operational excellence.
+                        </p>
+                        <div class="client-info">
+                            <div class="client-image">
+                                <img src="https://bootstrapmade.com/content/demo/Landify/assets/img/person/person-f-7.webp"
+                                    alt="Client">
+                            </div>
+                            <div class="client-details">
+                                <h3>Emma Thompson</h3>
+                                <span class="position">Digital Lead</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="bi bi-quote"></i>
+                        </div>
+                        <p>Professional expertise and dedication have significantly improved our project delivery
+                            timelines and quality metrics.</p>
+                        <div class="client-info">
+                            <div class="client-image">
+                                <img src="https://bootstrapmade.com/content/demo/Landify/assets/img/person/person-m-8.webp"
+                                    alt="Client">
+                            </div>
+                            <div class="client-details">
+                                <h3>Christopher Lee</h3>
+                                <span class="position">Technical Director</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="testimonial-item highlight py-5">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="bi bi-quote"></i>
+                        </div>
+                        <p>Collaborative approach and industry expertise have revolutionized our product development
+                            cycle, resulting in faster time-to-market and increased customer engagement levels.</p>
+                        <div class="client-info">
+                            <div class="client-image">
+                                <img src="https://bootstrapmade.com/content/demo/Landify/assets/img/person/person-f-9.webp"
+                                    alt="Client">
+                            </div>
+                            <div class="client-details">
+                                <h3>Olivia Carter</h3>
+                                <span class="position">Product Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="testimonial-item py-4">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="bi bi-quote"></i>
+                        </div>
+                        <p>Innovative approach to user experience design has significantly enhanced our platform's
+                            engagement metrics and customer retention rates.
+                        </p>
+                        <div class="client-info">
+                            <div class="client-image">
+                                <img src="https://bootstrapmade.com/content/demo/Landify/assets/img/person/person-m-13.webp"
+                                    alt="Client">
+                            </div>
+                            <div class="client-details">
+                                <h3>Nathan Brooks</h3>
+                                <span class="position">UX Director</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+    <!-- ========================================================== -->
+    <section class="stats">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h3 class="main-headline">Driving Excellence Through Innovation</h3>
+                    <p class="main-description">
+                        Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet
+                        sodales nisi, quis iaculis nulla iaculis vitae.
+                    </p>
+
+                    <div class="achievement-badge">
+                        <div class="badge-content">
+                            <div class="badge-icon"><i class="bi bi-trophy-fill"></i></div>
+                            <div class="badge-details">
+                                <div class="badge-title">Industry Leader</div>
+                                <div class="badge-subtitle">Recognized by 85+ industry experts</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ------------------------------------ -->
+            <div class="testimonial-stats-grid">
+                <div class="row g-4">
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="bi bi-people-fill"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number">
+                                    <span>285</span>K+
+                                </div>
+                                <div class="stat-label">Happy Customers</div>
+                                <div class="stat-growth">
+                                    <i class="bi bi-arrow-up"></i>
+                                    <span>+12% this year</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="stat-item featured">
+                            <div class="stat-icon">
+                                <i class="bi bi-graph-up-arrow"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number">
+                                    <span>99</span>%
+                                </div>
+                                <div class="stat-label">Success Rate</div>
+                                <div class="stat-growth">
+                                    <i class="bi bi-arrow-up"></i>
+                                    <span>+5% improvement</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="bi bi-award-fill"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number">
+                                    <span>47</span>
+                                </div>
+                                <div class="stat-label">Awards Won</div>
+                                <div class="stat-growth">
+                                    <i class="bi bi-arrow-up"></i>
+                                    <span>+8 this quarter</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="bi bi-globe"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number">
+                                    <span>156</span>
+                                </div>
+                                <div class="stat-label">Global Partners</div>
+                                <div class="stat-growth">
+                                    <i class="bi bi-arrow-up"></i>
+                                    <span>+23 new partners</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- ========================================================== -->
+    <!-- * Services SECTION -->
+    <section id="services" class="services-section pt-5">
+        <div class="header-container py-5">
+            <div class="title-wrapper">
+                <span class="bg-text">Services</span>
+                <h2 class="fg-text">Services</h2>
             </div>
             <p class="subtitle fw-semibold">
                 Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
@@ -1522,198 +1161,600 @@
         </div>
 
 
-
-        <div class="container my-3">
-            <div class="row g-5">
+        <div class="container py-5">
+            <div class="row">
 
                 <div class="col-lg-6">
-                    <div class="contact-content">
-
-                        <div class="contact-us mb-3">Contact Us</div>
-                        <h2 class="display-5 mb-4 fw-bold">Nemo enim ipsam voluptatem quia voluptas aspernatur</h2>
-
-                        <p class="lead mb-4">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-                            suscipit laboriosam.</p>
-
-
-                        <div class="contact-info my-5">
-
-                            <div class="contact-info-item d-flex align-items-center mb-3">
-                                <i class="bi bi-envelope-at me-3"></i>
-                                <span>info@example.com</span>
-                            </div>
-
-                            <div class="contact-info-item d-flex align-items-center mb-3">
-                                <i class="bi bi-telephone me-3"></i> <span>+1 5589 55488 558</span>
-                            </div>
-
-                            <div class="contact-info-item d-flex align-items-center mb-4">
-                                <i class="bi bi-geo-alt me-3"></i> <span>A108 Adam Street, New York, NY
-                                    535022</span>
-                            </div>
-
-
-                            <a href="#" class="contact-info-map d-inline align-items-center">
-                                Open Map
-                                <i class="bi bi-arrow-right ms-2"></i>
-                            </a>
+                    <div class="services-content">
+                        <div class="services-badge mb-3">
+                            <i class="bi bi-star-fill"></i>
+                            <span>WHAT WE DO</span>
                         </div>
 
+                        <h2 class="services-content-heading mb-4">Transforming Ideas into Outstanding Results</h2>
+
+                        <p class="services-content-description">
+                            We believe in crafting exceptional experiences that drive meaningful growth for your
+                            business. Our dedicated team combines creativity with technical excellence to deliver
+                            solutions that make a difference.
+                        </p>
+
+
+
+                        <a href="#" class="services-content-cta-btn">Explore Our Work</a>
                     </div>
+
                 </div>
 
                 <div class="col-lg-6">
-                    <div class="contact-form card">
-                        <div class="contact-card-body p-4 p-lg-5">
+                    <div class="services-img">
+                        <img src="https://bootstrapmade.com/content/demo/Landify/assets/img/services/services-1.webp"
+                            class="img-fluid" alt="">
+                    </div>
+                </div>
 
-                            <!-- Form -->
 
-                            <form action="">
-                                <div class="row g-4">
-                                    <div class="col-12">
-                                        <input type="text" name="name" placeholder="Your Name" class="form-control"
-                                            required>
-                                    </div>
+            </div>
 
-                                    <div class="col-12">
-                                        <input type="email" name="email" placeholder="Your Email" class="form-control"
-                                            required>
-                                    </div>
+            <div class="services-grid my-5">
+                <div class="row g-4">
 
-                                    <div class="col-12">
-                                        <input type="text" name="subject" placeholder="Subject" class="form-control"
-                                            required>
-                                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="services-card">
+                            <div class="services-card-number mb-2">
+                                <span>01</span>
+                            </div>
 
-                                    <div class="col-12">
-                                        <textarea name="message" placeholder="Message" class="form-control" rows="6"
-                                            required></textarea>
-                                    </div>
+                            <div class="services-card-content">
+                                <h5 class="services-card-title">
+                                    <a href="#">Custom Application Development</a>
+                                </h5>
+                                <p class="services-card-description">
+                                    Building robust applications tailored to your specific needs using modern frameworks
+                                    and cutting-edge technologies.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-                                    <div class="col-12 text-center">
-                                        <!-- <div class="loading">Loading</div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="services-card">
+                            <div class="services-card-number mb-2">
+                                <span>02</span>
+                            </div>
+
+                            <div class="services-card-content">
+                                <h5 class="services-card-title">
+                                    <a href="#">Strategic Planning</a>
+                                </h5>
+                                <p class="services-card-description">
+                                    Comprehensive roadmaps that align technology solutions with your business objectives
+                                    and market opportunities.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="services-card">
+                            <div class="services-card-number mb-2">
+                                <span>03</span>
+                            </div>
+
+                            <div class="services-card-content">
+                                <h5 class="services-card-title">
+                                    <a href="#">Identity Design</a>
+                                </h5>
+                                <p class="services-card-description">
+                                    Creating compelling visual narratives that resonate with your audience and
+                                    strengthen brand recognition across all touchpoints.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="services-card">
+                            <div class="services-card-number mb-2">
+                                <span>04</span>
+                            </div>
+
+                            <div class="services-card-content">
+                                <h5 class="services-card-title">
+                                    <a href="#">Digital Marketing</a>
+                                </h5>
+                                <p class="services-card-description">
+                                    Maximizing your online presence through targeted campaigns that drive engagement and
+                                    convert visitors into loyal customers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="services-card">
+                            <div class="services-card-number mb-2">
+                                <span>05</span>
+                            </div>
+
+                            <div class="services-card-content">
+                                <h5 class="services-card-title">
+                                    <a href="#">User Experience Design</a>
+                                </h5>
+                                <p class="services-card-description">
+                                    Crafting intuitive interfaces that prioritize user needs while delivering seamless
+                                    interactions across desktop and mobile platforms.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="services-card">
+                            <div class="services-card-number mb-2">
+                                <span>06</span>
+                            </div>
+
+                            <div class="services-card-content">
+                                <h5 class="services-card-title">
+                                    <a href="#">Data Intelligence</a>
+                                </h5>
+                                <p class="services-card-description">
+                                    Transforming raw data into actionable insights that inform strategic decisions and
+                                    optimize business performance effectively.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+    <!-- ========================================================== -->
+    <!-- * Pricing Section -->
+    <section id="pricing" class="pricing-section mb-5">
+        <div class="header-container pt-5">
+            <div class="title-wrapper">
+                <span class="bg-text">Pricing</span>
+                <h2 class="fg-text">Pricing</h2>
+            </div>
+            <p class="subtitle fw-semibold">
+                Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+            </p>
+        </div>
+
+        <div class="pricing-section">
+            <div class="text-center mb-2">
+                <div class="toggle-wrap">
+                    <span class="toggle-label active" id="labelMonthly">Monthly</span>
+                    <div class="form-check form-switch mb-0">
+                        <input class="form-check-input" type="checkbox" role="switch" id="billingToggle">
+                    </div>
+                    <span class="toggle-label" id="labelYearly">Yearly</span>
+                </div>
+                <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.</p>
+            </div>
+
+            <div class="container mt-5">
+                <div class="row g-4 justify-content-center">
+
+                    <!-- Starter -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="pricing-card">
+                            <span class="badge-plan">STARTER</span>
+                            <div class="plan-name">Lorem Dolor Sit</div>
+                            <div class="plan-desc">Ut enim ad minim veniam quis nostrud exercitation ullamco laboris.
+                            </div>
+                            <div class="price-row">
+                                <span class="currency">$</span>
+                                <span class="amount" data-monthly="12" data-yearly="120">12</span>
+                                <span class="period">/mo</span>
+                            </div>
+                            <hr class="divider">
+                            <ul class="feature-list">
+                                <li><span class="icon-check">✓</span> Lorem ipsum dolor amet</li>
+                                <li><span class="icon-check">✓</span> Consectetur adipiscing elit</li>
+                                <li><span class="icon-check">✓</span> Sed do eiusmod tempor</li>
+                                <li class="disabled"><span class="icon-check">–</span> Incididunt ut labore</li>
+                                <li class="disabled"><span class="icon-check">–</span> Dolore magna aliqua</li>
+                            </ul>
+                            <button class="btn-plan">Get Started</button>
+                        </div>
+                    </div>
+
+                    <!-- Pro -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="pricing-card popular">
+                            <span class="badge-popular">★ Popular</span>
+                            <span class="badge-plan">PRO</span>
+                            <div class="plan-name">Cras Aenean Quam</div>
+                            <div class="plan-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum.</div>
+                            <div class="price-row">
+                                <span class="currency">$</span>
+                                <span class="amount" data-monthly="29" data-yearly="290">29</span>
+                                <span class="period">/mo</span>
+                            </div>
+                            <hr class="divider">
+                            <ul class="feature-list">
+                                <li><span class="icon-check">✓</span> Excepteur sint occaecat</li>
+                                <li><span class="icon-check">✓</span> Cupidatat non proident</li>
+                                <li><span class="icon-check">✓</span> Sunt in culpa qui officia</li>
+                                <li><span class="icon-check">✓</span> Deserunt mollit anim id</li>
+                                <li><span class="icon-check">✓</span> Est laborum commodo</li>
+                            </ul>
+                            <button class="btn-plan">Choose Pro</button>
+                        </div>
+                    </div>
+
+                    <!-- Business -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="pricing-card">
+                            <span class="badge-plan">BUSINESS</span>
+                            <div class="plan-name">Porta Parturient</div>
+                            <div class="plan-desc">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse.
+                            </div>
+                            <div class="price-row">
+                                <span class="currency">$</span>
+                                <span class="amount" data-monthly="59" data-yearly="590">59</span>
+                                <span class="period">/mo</span>
+                            </div>
+                            <hr class="divider">
+                            <ul class="feature-list">
+                                <li><span class="icon-check">✓</span> Quam nihil molestiae</li>
+                                <li><span class="icon-check">✓</span> Consequatur vel illum</li>
+                                <li><span class="icon-check">✓</span> Qui dolorem eum fugiat</li>
+                                <li><span class="icon-check">✓</span> Quis nostrum exercitationem</li>
+                                <li><span class="icon-check">✓</span> Ullam corporis suscipit</li>
+                            </ul>
+                            <button class="btn-plan">Start Business</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========================================================== -->
+
+    <!-- * FAQS -->
+    <div class="container">
+        <div class="faq-container custom-faq" id="faqGroup">
+
+            <div class="faq-item mb-3 active">
+                <h2 class="faq-header">
+                    <button class="faq-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne"
+                        aria-expanded="true" aria-controls="faqCollapseOne">
+                        Non consectetur a erat nam at lectus urna duis?
+                    </button>
+                </h2>
+                <div id="faqCollapseOne" class="faq-collapse collapse show" data-bs-parent="#faqGroup">
+                    <div class="faq-body text-secondary">
+                        Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non
+                        curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item mb-3">
+                <h2 class="faq-header">
+                    <button class="faq-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                        Feugiat scelerisque varius morbi enim nunc faucibus?
+                    </button>
+                </h2>
+                <div id="faqCollapseTwo" class="faq-collapse collapse" data-bs-parent="#faqGroup">
+                    <div class="faq-body text-secondary">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id arcu aliquet, elementum nisi
+                        ut, varius nibh.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item mb-3">
+                <h2 class="faq-header">
+                    <button class="faq-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+                        Dolor sit amet consectetur adipiscing elit pellentesque?
+                    </button>
+                </h2>
+                <div id="faqCollapseThree" class="faq-collapse collapse" data-bs-parent="#faqGroup">
+                    <div class="faq-body text-secondary">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id arcu aliquet, elementum nisi
+                        ut, varius nibh.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item mb-3">
+                <h2 class="faq-header">
+                    <button class="faq-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+                        Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+                    </button>
+                </h2>
+                <div id="faqCollapseFour" class="faq-collapse collapse" data-bs-parent="#faqGroup">
+                    <div class="faq-body text-secondary">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id arcu aliquet, elementum nisi
+                        ut, varius nibh.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item mb-3">
+                <h2 class="faq-header">
+                    <button class="faq-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive">
+                        Tempus quam pellentesque nec nam aliquam sem et tortor?
+                    </button>
+                </h2>
+                <div id="faqCollapseFive" class="faq-collapse collapse" data-bs-parent="#faqGroup">
+                    <div class="faq-body text-secondary">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id arcu aliquet, elementum nisi
+                        ut, varius nibh.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item mb-3">
+                <h2 class="faq-header">
+                    <button class="faq-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faqCollapseSix" aria-expanded="false" aria-controls="faqCollapseSix">
+                        Perspiciatis quod quo quos nulla quo illum ullam?
+                    </button>
+                </h2>
+                <div id="faqCollapseSix" class="faq-collapse collapse" data-bs-parent="#faqGroup">
+                    <div class="faq-body text-secondary">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id arcu aliquet, elementum nisi
+                        ut, varius nibh.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- ========================================================== -->
+
+    <!-- * CONTACT SECTION -->
+    <section id="contact" class="contact-section my-5">
+        <div class="conatiner-fluid">
+            <div class="header-container py-5">
+                <div class="title-wrapper">
+                    <span class="bg-text" style="color: 
+ color-mix(in srgb, var(--heading-color), transparent 95%);">Contact</span>
+                    <h2 class="fg-text">Contact</h2>
+                </div>
+                <p class="subtitle fw-semibold">
+                    Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                </p>
+            </div>
+
+
+
+            <div class="container my-3">
+                <div class="row g-5">
+
+                    <div class="col-lg-6">
+                        <div class="contact-content">
+
+                            <div class="contact-us mb-3">Contact Us</div>
+                            <h2 class="display-5 mb-4 fw-bold">Nemo enim ipsam voluptatem quia voluptas aspernatur</h2>
+
+                            <p class="lead mb-4">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                                suscipit laboriosam.</p>
+
+
+                            <div class="contact-info my-5">
+
+                                <div class="contact-info-item d-flex align-items-center mb-3">
+                                    <i class="bi bi-envelope-at me-3"></i>
+                                    <span>info@example.com</span>
+                                </div>
+
+                                <div class="contact-info-item d-flex align-items-center mb-3">
+                                    <i class="bi bi-telephone me-3"></i> <span>+1 5589 55488 558</span>
+                                </div>
+
+                                <div class="contact-info-item d-flex align-items-center mb-4">
+                                    <i class="bi bi-geo-alt me-3"></i> <span>A108 Adam Street, New York, NY
+                                        535022</span>
+                                </div>
+
+
+                                <a href="#" class="contact-info-map d-inline align-items-center">
+                                    Open Map
+                                    <i class="bi bi-arrow-right ms-2"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="contact-form card">
+                            <div class="contact-card-body p-4 p-lg-5">
+
+                                <!-- Form -->
+
+                                <form action="">
+                                    <div class="row g-4">
+                                        <div class="col-12">
+                                            <input type="text" name="name" placeholder="Your Name" class="form-control"
+                                                required>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <input type="email" name="email" placeholder="Your Email"
+                                                class="form-control" required>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <input type="text" name="subject" placeholder="Subject" class="form-control"
+                                                required>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <textarea name="message" placeholder="Message" class="form-control" rows="6"
+                                                required></textarea>
+                                        </div>
+
+                                        <div class="col-12 text-center">
+                                            <!-- <div class="loading">Loading</div>
                                             <div class="error-message"></div>
                                             <div class="sent-message">Your message has been sent. Thank you!</div> -->
 
-                                        <button type="submit" class="btn btn-submit w-100">Submit Message</button>
+                                            <button type="submit" class="btn btn-submit w-100">Submit Message</button>
+                                        </div>
                                     </div>
-                                </div>
-                            </form>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+
         </div>
-
-
-    </div>
-</section>
+    </section>
 
 
 
-<!-- ========================================================== -->
+    <!-- ========================================================== -->
 
-<!-- * FOOTER SECTION -->
-<footer id="footer" class="footer position-relative">
-    <div class="container footer-top">
-        <div class="row gy-4">
-            <div class="col-lg-5 col-md-12">
-                <div class="footer-about">
-                    <a href="index.html" class="footer-logo d-flex">
-                        <span class="sitename">Landify</span>
-                    </a>
-                    <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
-                        valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+    <!-- * FOOTER SECTION -->
+    <footer id="footer" class="footer position-relative">
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-5 col-md-12">
+                    <div class="footer-about">
+                        <a href="index.html" class="footer-logo d-flex">
+                            <span class="sitename">Landify</span>
+                        </a>
+                        <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
+                            valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
 
-                    <div class="social-links d-flex mt-4">
-                        <a href=""><i class="bi bi-twitter-x"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
+                        <div class="social-links d-flex mt-4">
+                            <a href=""><i class="bi bi-twitter-x"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
                     </div>
                 </div>
+
+
+                <div class="col-lg-2 col-6 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Terms of service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-lg-2 col-6 footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Product Management</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Graphic Design</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-lg-3 col-md-12 text-center text-md-start footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>A108 Adam Street</p>
+                    <p>New York, NY 535022</p>
+                    <p>United States</p>
+
+                    <p class="mt-4">
+                        <strong>Phone:</strong>
+                        <span>+1 5589 55488 55</span>
+                    </p>
+                    <p>
+                        <strong>Email:</strong>
+                        <span>info@example.com</span>
+                    </p>
+                </div>
+
             </div>
-
-
-            <div class="col-lg-2 col-6 footer-links">
-                <h4>Useful Links</h4>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Terms of service</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
-
-
-            <div class="col-lg-2 col-6 footer-links">
-                <h4>Our Services</h4>
-                <ul>
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">Web Development</a></li>
-                    <li><a href="#">Product Management</a></li>
-                    <li><a href="#">Marketing</a></li>
-                    <li><a href="#">Graphic Design</a></li>
-                </ul>
-            </div>
-
-
-            <div class="col-lg-3 col-md-12 text-center text-md-start footer-contact">
-                <h4>Contact Us</h4>
-                <p>A108 Adam Street</p>
-                <p>New York, NY 535022</p>
-                <p>United States</p>
-
-                <p class="mt-4">
-                    <strong>Phone:</strong>
-                    <span>+1 5589 55488 55</span>
-                </p>
-                <p>
-                    <strong>Email:</strong>
-                    <span>info@example.com</span>
-                </p>
-            </div>
-
         </div>
-    </div>
 
-    <div class="container copyright text-center mt-4">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">MyWebsite</strong> <span>All Rights
-                Reserved</span></p>
-        <div class="credits">
-            Designed by <a href="https://github.com/NM71" target="_blank">Nousher Murtaza</a>
+        <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">MyWebsite</strong> <span>All Rights
+                    Reserved</span></p>
+            <div class="credits">
+                Designed by <a href="https://github.com/NM71" target="_blank">Nousher Murtaza</a>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
 
 
 
-<!-- ========================================================== -->
+    <!-- ========================================================== -->
 
 
 
 
 
 
-<!-- ========================================================== -->
-<!-- Bootstrap Script -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+    <!-- ========================================================== -->
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
-<!-- AOS JS -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-<script>
-    AOS.init();
-</script>
+    <script>
+        AOS.init();
+    </script>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

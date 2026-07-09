@@ -1,5 +1,33 @@
 $(document).ready(function () {
 
+    // back to top
+    const backToTop = $("#backToTop");
+
+    $(window).on("scroll", function () {
+
+        if ($(window).scrollTop() > $("#home").outerHeight()) {
+            backToTop.addClass("show");
+        } else {
+            backToTop.removeClass("show");
+        }
+
+    });
+
+    backToTop.on("click", function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+    });
+
+    // navbar mobile toggle JS
+    $('.mobile-nav-toggle').click(function () {
+        $('.nav-links').toggleClass('show');
+
+        // toggle icon change
+        $(this).toggleClass("bi-list bi-x");
+    });
+
+
     // Carousel JS
     var speed = 5000;
 
@@ -18,11 +46,9 @@ $(document).ready(function () {
 
     // Features JS
     $('.nav-tab').on('click', function () {
-        // 1. Manage Active Class UI
         $('.nav-tab').removeClass('active');
         $(this).addClass('active');
 
-        // 2. Fetch data from clicked tab attributes
         var title = $(this).data('title');
         var desc = $(this).data('desc');
         var iconClass = $(this).data('icon');
@@ -41,7 +67,7 @@ $(document).ready(function () {
 
         // 3. Smooth fade transition for the content swap
         $('.tab-data, .tab-visuals').fadeOut(200, function () {
-            // Update Text Data
+            // Updating text data
             $('#dynamic-title').text(title);
             $('#dynamic-desc').text(desc);
 

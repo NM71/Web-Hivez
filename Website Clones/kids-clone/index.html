@@ -5,17 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-    <!-- AOS CDN Link -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- Remix Icons CDN -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="styles.css">
@@ -26,14 +22,13 @@
 <body>
 
 
-    <!-- ========================================================== -->
-    <!-- Home Section -->
 
-    <section id="home" class="fixed-top">
+
+    <header class="fixed-top">
         <div class="container-fluid info-bar d-flex align-items-center">
             <div class="container">
                 <div
-                    class="contact-info d-flex flex-column flex-md-row justify-content-between align-items-center text-white gap-2 py-1 py-md-0">
+                    class="contact-info d-flex flex-column flex-md-row justify-content-between align-items-center text-white gap-2">
                     <div class="left d-flex flex-wrap justify-content-center justify-content-md-start gap-3">
                         <div class="phone">
                             <i class="bi bi-telephone-fill pe-2"></i>
@@ -45,7 +40,7 @@
                         </div>
                     </div>
 
-                    <div class="right d-flex gap-1">
+                    <div class="right d-flex">
                         <i class="ri-facebook-fill" style="background-color: var(--red);"></i>
                         <i class="ri-twitter-fill" style="background-color: var(--teal);"></i>
                         <i class="ri-instagram-line" style="background-color: var(--orange);"></i>
@@ -55,17 +50,17 @@
             </div>
         </div>
 
-        <nav class="navbar navbar-expand-lg bg-white text-black shadow-sm py-2">
+        <nav class="navbar navbar-expand-lg bg-white text-black shadow-sm">
             <div class="container">
                 <a class="navbar-brand nav-logo" href="#">
                     <img src="https://muse.rometheme.pro/kids/images/logo.png?crc=3788995009" class="img-fluid"
                         alt="Kids Logo">
                 </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-items="#navbarNav"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" style="background-color: var(--yellow); color: white;" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="filter: brightness(0) invert(1);"></span>
                 </button>
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -82,82 +77,602 @@
                 </div>
             </div>
         </nav>
+    </header>
 
 
+    <section id="home">
+        <div id="homeSectionCarousel" class="carousel slide position-relative" data-bs-ride="carousel">
+            <div class="carousel-inner h-100">
 
-        <!-- Home Carousel -->
-        <!-- Bootstrap Carousel Container -->
-        <div id="homeSectionCarousel" class="carousel slide" data-bs-ride="carousel"
-            style="height: calc(100vh - 70px);">
-            <div class="carousel-inner">
-
-                <!-- Active Slide -->
-                <div class="carousel-item active h-100"
-                    style="background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://muse.rometheme.pro/kids/images/homeslide.jpg?crc=447550241') no-repeat center center / cover;">
-
-                    <!-- Left-Aligned Content Container -->
-                    <div class="container h-100 d-flex align-items-center">
+                <div class="carousel-item active h-100 position-relative">
+                    <img src="https://muse.rometheme.pro/kids/images/homeslide.jpg?crc=447550241"
+                        style="filter: contrast(0.9);" class="d-block w-100 h-100 object-fit-cover" alt="Slide 1">
+                    <div
+                        class="carousel-caption-custom container h-100 d-flex align-items-center position-absolute top-0 start-0 end-0 bottom-0">
                         <div class="carousel-content text-start text-white p-4"
                             style="max-width: 550px; margin-top: 50px;">
+                            <h3 data-aos="fade-up" data-aos-duration="1000" class="mb-3"
+                                style="letter-spacing: 1px; color: var(--red);">
+                                Welcome to Kids</h3>
+                            <h1 class="display-4 fw-bold mb-4 text-white lh-sm">Fun Learning Program For Your Child
+                            </h1>
+                            <a data-aos="fade-up" data-aos-duration="2000" href="#"
+                                class="btn btn-danger px-4 py-2 rounded-pill fw-bold text-uppercase mb-4"
+                                style="background-color: var(--red); border: none; font-size: 0.85rem; letter-spacing: 1px;">Learn
+                                More</a>
+                        </div>
+                    </div>
+                </div>
 
-                            <!-- Small Orange Tagline -->
-                            <h6 class="fw-bold text-uppercase mb-3" style="letter-spacing: 1px; color: var(--red);">
-                                Welcome to
-                                Kids</h6>
-
-                            <!-- Big Bold Main Title -->
-                            <h1 class="display-4 fw-bold mb-4 text-white lh-sm">Special Program from Expert Teacher</h1>
-
-                            <!-- Red Learn More Button -->
+                <div class="carousel-item h-100 position-relative">
+                    <img src="https://muse.rometheme.pro/kids/images/homeslide2.jpg?crc=27650419"
+                        class="d-block w-100 h-100 object-fit-cover" alt="Slide 2">
+                    <div
+                        class="carousel-caption-custom container h-100 d-flex align-items-center position-absolute top-0 start-0 end-0 bottom-0">
+                        <div class="carousel-content text-start text-white p-4"
+                            style="max-width: 550px; margin-top: 50px;">
+                            <h3 data-aos="fade-up" data-aos-duration="1000" class="mb-3"
+                                style="letter-spacing: 1px; color: var(--red);">
+                                Welcome to Kids</h3>
+                            <h1 class="display-4 fw-bold mb-4 text-white lh-sm">Special Program from Expert Teacher
+                            </h1>
                             <a href="#" class="btn btn-danger px-4 py-2 rounded-pill fw-bold text-uppercase mb-4"
-                                style="background-color: #ff4a4a; border: none; font-size: 0.85rem; letter-spacing: 1px;">
-                                Learn More
-                            </a>
+                                style="background-color: var(--red); border: none; font-size: 0.85rem; letter-spacing: 1px;">Learn
+                                More</a>
+                        </div>
+                    </div>
+                </div>
 
-                            <!-- Grouped Arrow Buttons -->
-                            <div class="d-flex gap-2 mt-2">
-                                <button class="custom-carousel-btn" type="button" data-bs-target="#homeSectionCarousel"
-                                    data-bs-slide="prev">
-                                    <span>&#10094;</span>
-                                </button>
-                                <button class="custom-carousel-btn" type="button" data-bs-target="#homeSectionCarousel"
-                                    data-bs-slide="next">
-                                    <span>&#10095;</span>
-                                </button>
+                <div class="carousel-item h-100 position-relative">
+                    <img src="https://muse.rometheme.pro/kids/images/home2.jpg?crc=175456307"
+                        class="d-block w-100 h-100 object-fit-cover" alt="Slide 3">
+                    <div
+                        class="carousel-caption-custom container h-100 d-flex align-items-center position-absolute top-0 start-0 end-0 bottom-0">
+                        <div class="carousel-content text-start text-white p-4"
+                            style="max-width: 550px; margin-top: 50px;">
+                            <h3 data-aos="fade-up" data-aos-duration="1000" class="mb-3"
+                                style="letter-spacing: 1px; color: var(--red);">
+                                Welcome to Kids</h3>
+                            <h1 class="display-4 fw-bold mb-4 text-white lh-sm">Best Kindergarten at California</h1>
+                            <a href="#" class="btn btn-danger px-4 py-2 rounded-pill fw-bold text-uppercase mb-4"
+                                style="background-color: var(--red); border: none; font-size: 0.85rem; letter-spacing: 1px;">Learn
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="carousel-controls-container container">
+                <div class="d-flex gap-2 px-5">
+                    <button class="custom-carousel-btn" type="button" data-bs-target="#homeSectionCarousel"
+                        data-bs-slide="prev">
+                        <span>&#10094;</span>
+                    </button>
+                    <button class="custom-carousel-btn" type="button" data-bs-target="#homeSectionCarousel"
+                        data-bs-slide="next">
+                        <span>&#10095;</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================================================================================================ -->
+    <!-- <div class="container features-container responsive-breakpoint">
+
+        <div class="features">
+            <div class="row gy-5 gx-0">
+
+                <div class="col-lg-4">
+                    <div class="feature-1">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="ri-time-line"></i>
                             </div>
+
+                            <div data-aos="fade-up" data-aos-duration="1000" class="feature-content">
+                                <h4 class="mb-4 mt-4">Full Day Programs</h4>
+                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                    nonummy nibh
+                                    euismod.</p>
+                                <a href="#"
+                                    class="btn border-1 border px-4 py-2 rounded-pill fw-bold text-white text-uppercase"
+                                    style="background-color: var(--red); border: none; font-size: 0.85rem; letter-spacing: 1px;">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="col-lg-4 mb-4">
+                    <div class="feature-2">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="bi bi-house-fill"></i>
+                            </div>
+
+                            <div data-aos="fade-up" data-aos-duration="1000" class="feature-content">
+                                <h4 class="mb-4 mt-4">Strategic Location </h4>
+                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                    nonummy
+                                    nibh
+                                    euismod.</p>
+                                <a href="#"
+                                    class="btn border-1 border px-4 py-2 rounded-pill fw-bold text-white text-uppercase"
+                                    style="background-color: var(--teal); border: none; font-size: 0.85rem; letter-spacing: 1px;">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-lg-4 mb-4">
+                    <div class="feature-3">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="bi bi-trophy-fill"></i>
+                            </div>
+
+                            <div data-aos="fade-up" data-aos-duration="1000" class="feature-content">
+                                <h4 class="mb-4 mt-4">Expert Teachers</h4>
+                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                    nonummy
+                                    nibh
+                                    euismod.</p>
+                                <a href="#"
+                                    class="btn border-1 border px-4 py-2 rounded-pill fw-bold text-white text-uppercase"
+                                    style="background-color: var(--yellow); border: none; font-size: 0.85rem; letter-spacing: 1px;">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="container features-container responsive-breakpoint">
+        <div class="features">
+            <div class="row gy-0 gx-0">
+                <div class="col-lg-4">
+                    <div class="feature-1">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="ri-time-line"></i>
+                            </div>
+                            <div data-aos="fade-up" data-aos-duration="1000" class="feature-content">
+                                <h4 class="mb-3">Full Day Programs</h4>
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                    nonummy nibh euismod.</p>
+                                <a href="#"
+                                    class="btn btn-feature-1 px-4 py-2 rounded-pill fw-bold text-white text-uppercase">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="feature-2">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="bi bi-house-fill"></i>
+                            </div>
+                            <div data-aos="fade-up" data-aos-duration="1000" class="feature-content">
+                                <h4 class="mb-3">Strategic Location</h4>
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                    nonummy nibh euismod.</p>
+                                <a href="#"
+                                    class="btn btn-feature-2 px-4 py-2 rounded-pill fw-bold text-white text-uppercase">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="feature-3">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="bi bi-trophy-fill"></i>
+                            </div>
+                            <div data-aos="fade-up" data-aos-duration="1000" class="feature-content">
+                                <h4 class="mb-3">Expert Teachers</h4>
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                    nonummy nibh euismod.</p>
+                                <a href="#"
+                                    class="btn btn-feature-3 px-4 py-2 rounded-pill fw-bold text-white text-uppercase">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ================================================================================================ -->
+
+    <section class="welcome-kids my-5 responsive-breakpoint">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="welcome-img">
+                        <img src="https://muse.rometheme.pro/kids/images/homeslide2-u3657-fr.jpg?crc=453156575" alt=""
+                            class="img-fluid">
+                    </div>
+                </div>
+
+
+                <div class="col-lg-6">
+                    <div class="welcome-content" data-aos="fade-left" data-aos-duration="1000">
+                        <h1>Welcome to Kids</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.
+                            Praesent interdum est gravida vehicula est node maecenas loareet morbi a dosis luctus
+                            novum
+                            est praesent. Magna est consectetur interdum modest dictum. Curabitur est faucibus,
+                            malesuada esttincidunt etos et mauris, nunc a libero govum est cuprum.</p>
+
+                        <p>Praesent interdum est gravida vehicula est node maecenas loareet morbi a dosis luctus
+                            novum
+                            est praesent. Magna est consectetur interdum modest dictum. Curabitur est faucibus.</p>
+
+                        <a href="#" class="btn btn-danger px-4 py-2 rounded-pill fw-bold text-uppercase mb-4"
+                            style="background-color: var(--yellow); border: none; font-size: 0.85rem; letter-spacing: 1px;">Discover
+                            More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================================================================================================ -->
+
+
+    </section>
+    <!-- Stats / Counters Section -->
+    <section class="stats-section position-relative py-5"
+        style="background: url('https://muse.rometheme.pro/kids/images/static_bg.jpg?crc=3991059178') center/cover no-repeat; min-height: 450px; display: flex; align-items: center;">
+        <div class="container z-2 position-relative responsive-breakpoint">
+            <div class="row justify-content-center text-center gy-5">
+
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                    <div class="counter-wrapper">
+                        <div class="rhombus-badge" style="background-color: var(--light-blue);">
+                            <span class="rhombus-text">852</span>
+                        </div>
+                        <div class="counter-label text-white" data-aos="fade-up" data-aos-duration="1000">Students</div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                    <div class="counter-wrapper">
+                        <div class="rhombus-badge" style="background-color: var(--yellow);">
+                            <span class="rhombus-text">125</span>
+                        </div>
+                        <div class="counter-label text-white" data-aos="fade-up" data-aos-duration="1000">Teachers</div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                    <div class="counter-wrapper">
+                        <div class="rhombus-badge" style="background-color: var(--teal);">
+                            <span class="rhombus-text">32</span>
+                        </div>
+                        <div class="counter-label text-white" data-aos="fade-up" data-aos-duration="1000">Class Rooms
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                    <div class="counter-wrapper">
+                        <div class="rhombus-badge" style="background-color: var(--red);">
+                            <span class="rhombus-text">15</span>
+                        </div>
+                        <div class="counter-label text-white" data-aos="fade-up" data-aos-duration="1000">Bus Schools
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================================================ -->
+
+    <section class="popular-classes responsive-breakpoint">
+        <div class="container text-center py-5">
+            <h4> - Our Programs -
+            </h4>
+            <h1>Popular Classes</h1>
+        </div>
+
+        <div class="container">
+            <div class="classes">
+                <div class="row ">
+
+
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="class-img">
+                            <img class="img-fluid"
+                                src="https://muse.rometheme.pro/kids/images/static_bg.jpg?crc=3991059178"
+                                alt="Drawing Class">
+                        </div>
+
+                        <div class="class-content">
+                            <div class="class-title">
+                                <span>Drawing Classes</span>
+                                <span>$20</span>
+                            </div>
+
+
+                            <div class="class-timings py-2">
+                                <p> Open Class : <span style="color: var(--gray);">08:00 am - 10:00 am</span> </p>
+                            </div>
+
+                            <div class="class-description">
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                    euismod.</p>
+                            </div>
+
+                            <div class="class-ratios">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-6 class-age">
+                                        <p>Age 2-5 years</p>
+                                    </div>
+                                    <div class="col-6 class-size">
+                                        <p>Class Size 20</p>
+                                    </div>
+                                </div>
+                            </div>
+
 
                         </div>
                     </div>
 
+
+
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="class-card">
+                            <div class="class-img">
+                                <img class="img-fluid"
+                                    src="https://muse.rometheme.pro/kids/images/homeslide2.jpg?crc=27650419"
+                                    style="object-fit: cover;" alt="Gaming Class">
+                            </div>
+
+                            <div class="class-content">
+                                <div class="class-title">
+                                    <span>Gaming Classes</span>
+                                    <span>$20</span>
+                                </div>
+
+
+                                <div class="class-timings py-2">
+                                    <p> Open Class : <span style="color: var(--gray);">08:00 am - 10:00 am</span>
+                                    </p>
+                                </div>
+
+                                <div class="class-description">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                                        nibh
+                                        euismod.</p>
+                                </div>
+
+                                <div class="class-ratios">
+                                    <div class="row d-flex justify-content-center">
+                                        <div class="col-6 class-age">
+                                            <p>Age 2-5 years</p>
+                                        </div>
+                                        <div class="col-6 class-size">
+                                            <p>Class Size 20</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="class-img">
+                            <img class="img-fluid"
+                                src="https://muse.rometheme.pro/kids/images/homeslide.jpg?crc=447550241"
+                                style="object-fit: cover;" alt="Drawing Class">
+                        </div>
+
+                        <div class="class-content">
+                            <div class="class-title">
+                                <span>Learning Classes</span>
+                                <span>$20</span>
+                            </div>
+
+
+                            <div class="class-timings py-2">
+                                <p> Open Class : <span style="color: var(--gray);">08:00 am - 10:00 am</span> </p>
+                            </div>
+
+                            <div class="class-description">
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                    euismod.</p>
+                            </div>
+
+                            <div class="class-ratios">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-6 class-age">
+                                        <p>Age 2-5 years</p>
+                                    </div>
+                                    <div class="col-6 class-size">
+                                        <p>Class Size 20</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
                 </div>
 
+
+                <div class="container text-center py-5">
+                    <a href="#" class="btn text-white px-4 py-2 rounded-pill fw-bold text-uppercase mb-4"
+                        style="background-color: var(--red); border: none; font-size: 0.85rem; letter-spacing: 1px;">See
+                        More Classes</a>
+                </div>
             </div>
         </div>
 
     </section>
 
 
-    <!-- ========================================================== -->
+    <!-- =================================/=============================================================== -->
+
+    <section class="choose-us py-5">
+        <div class="container-fluid choose-us-bg">
+            <div class="container responsive-breakpoint">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="choose-us-content py-5">
+
+                            <div class="choose-us-header py-4">
+                                <p>Why Choose Us</p>
+                                <span class="display-5">Best Kindergarten</span>
+                            </div>
 
 
+                            <div class="choose-us-description text-white pb-4">
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                    euismod. Praesent interdum est gravida vehicula est node maecenas loareet morbi
+                                    a
+                                    dosis luctus novum est praesent. Praesent interdum est gravida vehicula est node
+                                    maecenas loareet morbi a dosis luctus novum est praesent.</p>
+                            </div>
 
 
-    <!-- ========================================================== -->
+                            <div class="choose-us-benefits">
+                                <div class="benefit-item">
+                                    <i class="ri-check-line"></i>
+                                    <span>
+                                        100% education, for your kids, consectetuer adipiscing elit, sed diam
+                                        nonummy
+                                        nibh euismod.
+                                    </span>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="ri-check-line"></i>
+                                    <span>
+                                        More programs activities, sed diam nonummy nibh euismod. Lorem ipsum dolor
+                                        sit
+                                        amet.
+                                    </span>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="ri-check-line"></i>
+                                    <span>
+                                        More benefit nonummy nibh euismod. Lorem ipsum dolor sit amet, consectetuer
+                                        adipiscing elit.
+                                    </span>
+                                </div>
+                            </div>
 
 
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="choose-us-img d-flex justify-content-center">
+                            <img src="https://muse.rometheme.pro/kids/images/teacher_promo.png?crc=4216288850" alt=""
+                                class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================================================ -->
+    <section class="gallery responsive-breakpoint">
+        <div class="container text-center py-5">
+            <h4> - Our Gallery -
+            </h4>
+            <h1>Moment from kids</h1>
+        </div>
+
+        <div class="container text-center">
+            <div class="gallery-grid pb-5">
+                <div class="row g-3">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <img src="https://muse.rometheme.pro/kids/images/painting-1673774_1920420x280.jpg?crc=480635940"
+                            alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <img src="https://muse.rometheme.pro/kids/images/kids-1093758_1920420x280.jpg?crc=368714461"
+                            alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <img src="https://muse.rometheme.pro/kids/images/school-supplies-1695564_1920420x280.jpg?crc=3985648919"
+                            alt="" class="img-fluid">
+                    </div>
 
 
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <img src="https://muse.rometheme.pro/kids/images/school-supplies-1695564_1920420x280.jpg?crc=3985648919"
+                            alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <img src="https://muse.rometheme.pro/kids/images/kindergarten-504672_1920420x280.jpg?crc=3885935963"
+                            alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <img src="https://muse.rometheme.pro/kids/images/rainbow-1140420_1920420x280.jpg?crc=63694852"
+                            alt="" class="img-fluid">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
 
 
-    <!-- ========================================================== -->
-    <!-- Bootstrap Script -->
+    <!-- ================================================================================================ -->
+
+
+    <!-- ================================================================================================ -->
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 
-    <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
@@ -166,6 +681,8 @@
     </script>
 
     <script src="script.js"></script>
+
+
 </body>
 
 </html>
