@@ -1,19 +1,19 @@
 $(document).ready(function () {
 
     // back to top
-    const backToTop = $("#backToTop");
+    const $backToTop = $("#backToTop");
 
     $(window).on("scroll", function () {
 
         if ($(window).scrollTop() > $("#home").outerHeight()) {
-            backToTop.addClass("show");
+            $backToTop.addClass("show");
         } else {
-            backToTop.removeClass("show");
+            $backToTop.removeClass("show");
         }
 
     });
 
-    backToTop.on("click", function () {
+    $backToTop.on("click", function () {
         $("html, body").animate({
             scrollTop: 0
         }, 600);
@@ -45,36 +45,85 @@ $(document).ready(function () {
     // ==========================================================
 
     // Features JS
-    $('.nav-tab').on('click', function () {
-        $('.nav-tab').removeClass('active');
-        $(this).addClass('active');
 
-        var title = $(this).data('title');
-        var desc = $(this).data('desc');
-        var iconClass = $(this).data('icon');
-        var imgUrl = $(this).data('img');
+    // $('.nav-tab').on('click', function () {
+    //     $('.nav-tab').removeClass('active');
+    //     $(this).addClass('active');
 
-        var stat1Num = $(this).data('stat1-num');
-        var stat1Label = $(this).data('stat1-label');
-        var stat2Num = $(this).data('stat2-num');
-        var stat2Label = $(this).data('stat2-label');
-        var stat3Num = $(this).data('stat3-num');
-        var stat3Label = $(this).data('stat3-label');
+    //     var title = $(this).data('title');
+    //     var desc = $(this).data('desc');
+    //     var iconClass = $(this).data('icon');
+    //     var imgUrl = $(this).data('img');
 
-        var cardText = $(this).data('badge-text');
-        var cardVal = $(this).data('badge-val');
-        var cardIcon = $(this).data('badge-icon');
+    //     var stat1Num = $(this).data('stat1-num');
+    //     var stat1Label = $(this).data('stat1-label');
+    //     var stat2Num = $(this).data('stat2-num');
+    //     var stat2Label = $(this).data('stat2-label');
+    //     var stat3Num = $(this).data('stat3-num');
+    //     var stat3Label = $(this).data('stat3-label');
 
-        // 3. Smooth fade transition for the content swap
+    //     var cardText = $(this).data('badge-text');
+    //     var cardVal = $(this).data('badge-val');
+    //     var cardIcon = $(this).data('badge-icon');
+
+    //     // 3. Smooth fade transition for the content swap
+    //     $('.tab-data, .tab-visuals').fadeOut(200, function () {
+    //         // Updating text data
+    //         $('#dynamic-title').text(title);
+    //         $('#dynamic-desc').text(desc);
+
+    //         // Update Top Left Icon Badge
+    //         $('#dynamic-badge-icon').attr('class', 'bi ' + iconClass);
+
+    //         // Update Stats
+    //         $('#dynamic-stat1-num').text(stat1Num);
+    //         $('#dynamic-stat1-label').text(stat1Label);
+    //         $('#dynamic-stat2-num').text(stat2Num);
+    //         $('#dynamic-stat2-label').text(stat2Label);
+    //         $('#dynamic-stat3-num').text(stat3Num);
+    //         $('#dynamic-stat3-label').text(stat3Label);
+
+    //         // Update Visuals & Floating Card
+    //         $('#dynamic-img').attr('src', imgUrl);
+    //         $('#dynamic-card-icon').attr('class', 'bi ' + cardIcon);
+    //         $('#dynamic-card-text').text(cardText);
+    //         $('#dynamic-card-val').text(cardVal);
+
+    //         // Fade components back in
+    //         $('.tab-data, .tab-visuals').fadeIn();
+    //     });
+    // });
+
+
+
+    let tabInterval;
+    const tabs = $('.nav-tab');
+
+    function switchTab(element) {
+        tabs.removeClass('active');
+        $(element).addClass('active');
+
+        var title = $(element).data('title');
+        var desc = $(element).data('desc');
+        var iconClass = $(element).data('icon');
+        var imgUrl = $(element).data('img');
+
+        var stat1Num = $(element).data('stat1-num');
+        var stat1Label = $(element).data('stat1-label');
+        var stat2Num = $(element).data('stat2-num');
+        var stat2Label = $(element).data('stat2-label');
+        var stat3Num = $(element).data('stat3-num');
+        var stat3Label = $(element).data('stat3-label');
+
+        var cardText = $(element).data('badge-text');
+        var cardVal = $(element).data('badge-val');
+        var cardIcon = $(element).data('badge-icon');
+
         $('.tab-data, .tab-visuals').fadeOut(200, function () {
-            // Updating text data
             $('#dynamic-title').text(title);
             $('#dynamic-desc').text(desc);
-
-            // Update Top Left Icon Badge
             $('#dynamic-badge-icon').attr('class', 'bi ' + iconClass);
 
-            // Update Stats
             $('#dynamic-stat1-num').text(stat1Num);
             $('#dynamic-stat1-label').text(stat1Label);
             $('#dynamic-stat2-num').text(stat2Num);
@@ -82,16 +131,32 @@ $(document).ready(function () {
             $('#dynamic-stat3-num').text(stat3Num);
             $('#dynamic-stat3-label').text(stat3Label);
 
-            // Update Visuals & Floating Card
             $('#dynamic-img').attr('src', imgUrl);
             $('#dynamic-card-icon').attr('class', 'bi ' + cardIcon);
             $('#dynamic-card-text').text(cardText);
             $('#dynamic-card-val').text(cardVal);
 
-            // Fade components back in
             $('.tab-data, .tab-visuals').fadeIn();
         });
+    }
+
+    function autoRotate() {
+        tabInterval = setInterval(function () {
+            let activeIndex = tabs.index($('.nav-tab.active'));
+            let nextIndex = (activeIndex + 1) % tabs.length;
+            switchTab(tabs.eq(nextIndex));
+        }, 3000);
+    }
+
+    tabs.on('click', function () {
+        clearInterval(tabInterval);
+        switchTab(this);
+        autoRotate();
     });
+
+    autoRotate();
+
+
 
     // ==========================================================
 
@@ -103,7 +168,7 @@ $(document).ready(function () {
             const $this = $(this);
             const target = parseInt($this.text(), 10);
 
-            $this.text('0'); // reset starting point visually
+            $this.text('0'); // start point 0
 
             $({ count: 0 }).animate(
                 { count: target },
@@ -121,16 +186,16 @@ $(document).ready(function () {
         });
     }
 
-    const statsSection = document.querySelector('.testimonial-stats-grid');
+    const $statsSection = $('.testimonial-stats-grid');
 
-    if (statsSection) {
+    if ($statsSection.length) {
         const observer = new IntersectionObserver(
             function (entries) {
-                entries.forEach(function (entry) {
+                $.each(entries, function (index, entry) {
                     if (entry.isIntersecting && !statsAnimated) {
                         statsAnimated = true;
                         animateStats();
-                        observer.unobserve(statsSection); // only trigger once
+                        observer.unobserve($statsSection[0]);
                     }
                 });
             },
@@ -139,8 +204,29 @@ $(document).ready(function () {
             }
         );
 
-        observer.observe(statsSection);
+        observer.observe($statsSection[0]);
     }
+
+    // const statsSection = document.querySelector('.testimonial-stats-grid');
+
+    // if (statsSection) {
+    //     const observer = new IntersectionObserver(
+    //         function (entries) {
+    //             entries.forEach(function (entry) {
+    //                 if (entry.isIntersecting && !statsAnimated) {
+    //                     statsAnimated = true;
+    //                     animateStats();
+    //                     observer.unobserve(statsSection); // only trigger once
+    //                 }
+    //             });
+    //         },
+    //         {
+    //             threshold: 0.3
+    //         }
+    //     );
+
+    //     observer.observe(statsSection);
+    // }
     // ==========================================================
 
 

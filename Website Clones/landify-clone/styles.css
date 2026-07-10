@@ -59,7 +59,7 @@
         background: var(--primary-color);
         color: #fff;
 
-        font-size: 22px;
+        font-size: 1.3rem;
         cursor: pointer;
 
         display: flex;
@@ -103,7 +103,7 @@
     .mobile-nav-toggle {
         display: none;
         color: black;
-        font-size: 28px;
+        font-size: 1.5rem;
         line-height: 0;
         margin-right: 10px;
         cursor: pointer;
@@ -1182,15 +1182,16 @@
     .slider-container {
         /* width: 100%; */
         overflow: hidden;
-        background: #fff;
+        /* background: #fff; */
         padding: 40px 0;
-        display: flex;
-        align-items: center;
+        /* display: flex; */
+        /* align-items: center; */
         margin: 30px;
     }
 
     .slider-track {
         display: flex;
+        gap: 20px;
         width: 1200px;
     }
 
@@ -1205,7 +1206,7 @@
     }
 
     .slide img {
-        max-width: 75%;
+        max-width: 80%;
         height: auto;
         transition: all ease 0.2s;
     }
@@ -1232,12 +1233,9 @@
         padding: 2rem;
         position: relative;
         transition: all 0.3s ease;
-        border: 1px solid color-mix(in srgb, var(--default-color), transparent 92%);
     }
 
-    .testimonial-content:hover {
-        transform: translateY(-5px);
-    }
+
 
     .testimonial-content .testimonial-quote {
         position: absolute;
@@ -1286,6 +1284,10 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+
+    .testimonial-item .testimonial-content {
+        border: 1px solid color-mix(in srgb, var(--default-color), transparent 92%);
     }
 
     .testimonial-item.highlight .testimonial-content {
@@ -1614,6 +1616,7 @@
     .services-grid .services-card:hover {
         transform: translateY(-10px);
         box-shadow: 0 25px 50px color-mix(in srgb, var(--default-color), transparent 80%);
+        border-top: 6px solid var(--primary-color);
     }
 
     .services-grid .services-card:hover .services-card-number span {
@@ -2025,8 +2028,8 @@
     } */
 
     .subtitle {
-        color: var(--text-muted);
-        font-size: 0.95rem;
+        color: black;
+        font-size: 1.1rem;
         margin-top: 16px;
     }
 
@@ -2055,7 +2058,7 @@
 
     .badge-plan {
         display: inline-block;
-        font-size: 0.72rem;
+        font-size: 0.80rem;
         font-weight: 700;
         letter-spacing: 0.06em;
         color: var(--teal-dark);
@@ -2072,22 +2075,23 @@
         right: 24px;
         background: var(--teal);
         color: #fff;
-        font-size: 0.75rem;
-        font-weight: 600;
+        font-size: 0.85rem;
+        font-weight: 700;
         padding: 6px 14px;
         border-radius: 20px;
     }
 
     .plan-name {
-        font-weight: 700;
-        font-size: 1.3rem;
+        font-weight: 600;
+        font-size: 1.5rem;
         margin-bottom: 10px;
     }
 
     .plan-desc {
         color: var(--text-muted);
-        font-size: 0.9rem;
-        line-height: 1.5;
+        font-size: 1.1rem;
+        /* line-height: 1.5; */
+        font-weight: 500;
         min-height: 48px;
     }
 
@@ -2133,7 +2137,7 @@
         align-items: center;
         gap: 10px;
         padding: 7px 0;
-        font-size: 0.92rem;
+        font-size: 1.1rem;
     }
 
     .feature-list li .icon-check {
@@ -2150,12 +2154,12 @@
     }
 
     .feature-list li.disabled {
-        color: #c3cad4;
+        color: var(--text-muted);
     }
 
     .feature-list li.disabled .icon-check {
-        color: #d7dce2;
-        border-color: #d7dce2;
+        color: var(--text-muted);
+        border-color: var(--text-muted);
     }
 
     .btn-plan {
@@ -2326,7 +2330,7 @@
 
     @media (max-width: 480px) {
         .responsive-breakpoint {
-            width: 320px;
+            width: 380px;
             /* min-height: 1827.9687499999945px; */
         }
     }

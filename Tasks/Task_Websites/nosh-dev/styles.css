@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+
+    --primary-color: #9a110a;
+    --secondary-color: #e5f5f5;
+    --navlink-color: #3b5353;
+    --heading-color: #193838;
+    --default-color: #3b5353;
+    --heading-color: #193838;
+    --surface-color: #0f302f;
+    --accent-soft: color-mix(in srgb, var(--primary-color), transparent 85%);
+    --card-shadow: 0 10px 30px color-mix(in srgb, var(--default-color), transparent 92%);
+
+    /* For pricing only */
+    --teal: #14b8a6;
+    --teal-dark: #0f766e;
+    --teal-light: #e6faf7;
+    --text-dark: #1f2937;
+    --text-muted: #8a94a3;
+    --border-color: #e8ecf1;
+
+    --light-background: {
+        --background-color: #f0f6f5;
+        --surface-color: #ffffff;
+    }
+
+}
+
+
+
+* {
+    font-family: "Geist Mono", monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #F5F5DC;
+}
+
+
+
+/* ================================================================================= */
+
+/* NAVBAR */
+nav {
+    padding: 1rem 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+}
+
+nav ul span.my-name {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    transition: 0.5s ease-out;
+}
+
+nav ul span.my-name:hover {
+    transform: scale(1.1);
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+nav ul li.nav-hire {
+    text-transform: uppercase;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+}
+
+nav ul i {
+    display: none;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+nav ul i:hover {
+    transform: translateX(-10px);
+}
+
+nav ul li {
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    padding: 0.6rem 0.8rem;
+}
+
+nav ul li:hover {
+    transform: scale(1.05);
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 0.3rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ================================================================================= */
+
+/* HERO SECTION */
+
+.hero-visual {
+    perspective: 1000px;
+}
+
+
+.hero-visual .hero-img img {
+    border: 10px solid rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    animation: floatUpDown 2s ease-in-out infinite alternate;
+    transition: transform 0.1s ease-out, box-shadow 0.1s ease-out;
+
+}
+
+.hero-visual .hero-img img:hover {
+    animation-play-state: paused;
+
+}
+
+.hero-heading h1 {
+    font-size: 4rem;
+}
+
+.hero-description p {
+    font-size: 1.3rem;
+}
+
+.hero-cta-btns button {
+    background-color: transparent;
+    border-radius: 8px;
+    width: 200px;
+    height: 50px;
+    /* padding: 10px 20px; */
+    transition: 0.3s ease-in;
+}
+
+.hero-cta-btns button:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: scale(1.05);
+}
+
+
+
+/* ================================================================================= */
+
+
+
+/* ================================================================================= */
+
+
+/* 2. Laptops / Small Desktops (1200px and down) */
+@media (max-width: 1200px) {}
+
+/* 3. Tablets (991x and down) */
+@media (max-width: 991px) {
+    nav ul li {
+        display: none;
+    }
+
+    nav ul {
+        justify-content: space-between;
+    }
+
+    nav ul i {
+        display: inline;
+    }
+
+    .hero-heading h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero-description p {
+        font-size: 1.1rem;
+    }
+
+    .hero-visual .hero-img {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .hero-cta-btns button {
+        margin-bottom: 10px;
+    }
+}
+
+/* 4. Mobile landscape (767px and down) */
+@media (max-width: 767px) {
+    .hero-heading h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .hero-description p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .hero-cta-btns {
+        text-align: center;
+    }
+
+    .hero-visual .hero-img {
+        display: none !important;
+
+    }
+
+
+
+
+}
+
+/* 5. Mobile portrait (480px and down) */
+@media (max-width: 480px) {
+    nav ul span.my-name {
+        font-size: 2.5rem;
+    }
+
+    .hero-heading h1 {
+        font-size: 2.3rem;
+        text-align: center;
+    }
+
+    .hero-description p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .hero-cta-btns {
+        text-align: center;
+    }
+
+    .hero-cta-btns button {
+        margin-bottom: 1rem;
+
+    }
+
+    .hero-visual .hero-img {
+        display: none !important;
+
+    }
+
+
+}
+
+@media (max-width: 360px) {
+    nav ul span.my-name {
+        font-size: 2rem;
+    }
+}
+
+
+
+/* ================================================================= */
+
+
+
+/* ================================================================= */
+
+
+
+/* ================================================================= */
+/* ANIMATIONS */
+
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+
+/* ================================================================= */

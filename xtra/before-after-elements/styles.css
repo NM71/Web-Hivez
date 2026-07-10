@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+    position: absolute;
+    font-size: 6rem;
+}
+
+/* h1::before {
+    content: 'Some Text';
+    position: absolute;
+
+    z-index: -1;
+    --webkit-text-stroke-width: 2px;
+    --webkit-text-stroke-color: black;
+} */
