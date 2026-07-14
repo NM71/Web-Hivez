@@ -5,24 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-    <!-- AOS CDN Link -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-
-    <!-- Remix Icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="styles.css">
-
 
     <title>Nousher Murtaza | Software Engineer</title>
 </head>
@@ -30,59 +28,69 @@
 <body>
 
 
-    <!-- ========================================================== -->
 
-    <div class="container-fluid shadow-sm mb-5">
+    <!-- NAVBAR & MOBILE DROPDOWN -->
+    <div class="container-fluid shadow-sm sticky-top" style="background-color: #F5F5DC; z-index: 1050;">
         <div class="container">
             <nav>
                 <ul class="m-0">
-                    <li>.projects</li>
-                    <li>.experience</li>
+                    <li><a href="#projects-section">.projects</a></li>
+                    <li><a href="#experience-section">.experience</a></li>
                     <span class="my-name">NM.</span>
-                    <i class="ri-bar-chart-horizontal-line"></i>
-                    <li>.about</li>
-                    <li class="nav-hire">Hire Me</li>
+                    <i class="ri-menu-line" id="openMenuIcon"></i>
+                    <li><a href="#about-section">.about</a></li>
+                    <li class="nav-hire"><a href="#contact-section">Hire Me</a></li>
                 </ul>
             </nav>
+
+            <!-- NEW MOBILE DROPDOWN -->
+            <div class="mobile-dropdown" id="mobileNav">
+                <ul class="mobile-links">
+                    <li><a href="#projects-section">.projects</a></li>
+                    <li><a href="#experience-section">.experience</a></li>
+                    <li><a href="#about-section">.about</a></li>
+                    <li class="nav-hire-mobile"><a href="#contact-section">Hire Me</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 
-
-    <!-- ========================================================== -->
 
     <section id="hero-section">
         <div class="container-fluid">
             <div class="container">
                 <div class="row">
 
-                    <!-- hero-visual -->
                     <div class="col-lg-6 col-md-6 order-lg-2 order-1">
                         <div class="hero-visual">
                             <div class="hero-img">
-                                <img src="assets/images/Nousher_anime_transparent.png" class="img-fluid"
+                                <img src="assets/images/Nousher_anime_transparent_cropped.png" class="img-fluid"
                                     alt="nousher murtaza image">
                             </div>
                         </div>
                     </div>
 
-
-                    <!-- hero-content -->
                     <div class="col-lg-6 col-md-6 order-lg-1 order-2 d-flex align-items-center">
                         <div class="hero-content">
-                            <div class="hero-heading pb-3">
+                            <!-- <div class="hero-heading pb-3">
                                 <h1>Turning Ideas into Products.</h1>
+                            </div> -->
+                            <div class="hero-heading pb-3">
+                                <h1 class="m-0" style="min-height: 1.2em;">
+                                    <span id="typewriter-text"></span><span class="blinking-cursor">|</span>
+                                </h1>
                             </div>
                             <div class="hero-description pb-3">
                                 <p>A web and mobile developer focused on clean architecture and smooth user experiences.
                                 </p>
                             </div>
                             <div class="hero-cta-btns">
-                                <button>
-                                    Explore my work
-                                </button>
-                                <button>
-                                    <i class="ri-download-cloud-2-line"></i> Download CV
-                                </button>
+                                <a href="#projects-section"><button>Explore my work</button></a>
+                                <a href="assets/Nousher-CV.pdf">
+                                    <button>
+                                        <i class="ri-download-cloud-2-line"></i> Download CV
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -93,28 +101,510 @@
     </section>
 
 
+    <!-- ================================================================== -->
 
 
-    <!-- ========================================================== -->
+    <section id="services-section" class="py-5 mt-5">
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title mb-5">.services()</h2>
+
+            <div class="row g-3">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card p-4 h-100 d-flex flex-column border border-dark rounded">
+                        <div class="service-icon mb-3">
+                            <i class="ri-code-s-slash-line fs-1" style="color: var(--primary-color);"></i>
+                        </div>
+                        <h3 class="fw-bold fs-4 mb-2 text-dark">Custom Web Solutions</h3>
+                        <p class="text-muted flex-grow-1 small">
+                            Designing responsive, high-converting websites and administrative portals. Proficient in
+                            crafting robust systems built using modern frontend styles, customized setups, or
+                            professional CMS solutions like WordPress and Elementor.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card p-4 h-100 d-flex flex-column border border-dark rounded">
+                        <div class="service-icon mb-3">
+                            <i class="ri-smartphone-line fs-1" style="color: var(--primary-color);"></i>
+                        </div>
+                        <h3 class="fw-bold fs-4 mb-2 text-dark">Mobile App Development</h3>
+                        <p class="text-muted flex-grow-1 small">
+                            Engineering high-performance, cross-platform mobile applications using Flutter and Dart.
+                            Focused on clean architecture, smooth native animations, and resilient offline-first data
+                            structures.
+                        </p>
+                    </div>
+                </div>
 
 
-    <!-- ========================================================== -->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card p-4 h-100 d-flex flex-column border border-dark rounded">
+                        <div class="service-icon mb-3">
+                            <i class="ri-database-2-line fs-1" style="color: var(--primary-color);"></i>
+                        </div>
+                        <h3 class="fw-bold fs-4 mb-2 text-dark">Backend & Cloud Integrations</h3>
+                        <p class="text-muted flex-grow-1 small">
+                            Building secure cloud backend connections and API environments. Expertly managing data sync
+                            features using Firebase Ecosystem, Supabase, MySQL databases, PHP backend paths, and safe
+                            Stripe payment systems.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-    <!-- ========================================================== -->
-    <!-- Bootstrap Script -->
+    <section id="skills-carousel-section" class="py-5 bg-transparent">
+        <div class="container">
+            <div class="marquee-wrapper-icon">
+                <div class="marquee-content-icon">
+                    <i class="ri-braces-fill" title="Code"></i>
+                    <i class="ri-flutter-fill" title="Flutter"></i>
+                    <i class="fa-brands fa-dart-lang" title="Dart"></i>
+                    <i class="ri-html5-fill" title="HTML5"></i>
+                    <i class="ri-css3-fill" title="CSS3"></i>
+                    <i class="ri-javascript-fill" title="JavaScript"></i>
+                    <i class="ri-database-2-fill" title="Databases"></i>
+                    <i class="ri-github-fill" title="GitHub"></i>
+                    <i class="ri-layout-masonry-fill" title="Layouts/Elementor"></i>
+
+                    <i class="ri-braces-fill" title="Code"></i>
+                    <i class="ri-flutter-fill" title="Flutter"></i>
+                    <i class="fa-brands fa-dart-lang" title="Dart"></i>
+                    <i class="ri-html5-fill" title="HTML5"></i>
+                    <i class="ri-css3-fill" title="CSS3"></i>
+                    <i class="ri-javascript-fill" title="JavaScript"></i>
+                    <i class="ri-database-2-fill" title="Databases"></i>
+                    <i class="ri-github-fill" title="GitHub"></i>
+                    <i class="ri-layout-masonry-fill" title="Layouts/Elementor"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================================================================== -->
+
+
+    <section id="projects-section" class="py-5 mt-5">
+        <div class="container" data-aos="fade-up">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4">
+                <h2 class="section-title m-0">.projects()</h2>
+
+                <div class="project-tabs mt-3 mt-md-0 d-flex gap-2">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="other">Others</button>
+                </div>
+            </div>
+
+            <div class="row g-4" id="project-container">
+
+                <div class="col-lg-6 project-item" data-category="mobile">
+                    <div class="compact-card-new" data-title="Rhythm" data-tech="Flutter / Firebase"
+                        data-full="A production-ready full-stack eCommerce mobile application with Flutter frontend and Firebase backend. Includes a product catalog, real-time cart system, secure payments via Stripe, and push notifications."
+                        data-images='["https://placehold.co/800x500/9a110a/ffffff?text=Rhythm+Home", "https://placehold.co/800x500/0f302f/ffffff?text=Rhythm+Cart", "https://placehold.co/800x500/193838/ffffff?text=Rhythm+Checkout"]'>
+
+                        <div class="card-bg-img"
+                            style="background-image: url('https://media.licdn.com/dms/image/v2/D4D2DAQHOSmJnk-O9vw/profile-treasury-image-shrink_8192_8192/B4DZyHUzuGIYAg-/0/1771796906886?e=1784314800&v=beta&t=8gl1d5ueUc5U02ojy496NlGGv_R9tQkarsdyWv6mY-E');">
+                        </div>
+                        <div class="card-overlay">
+                            <div class="mt-auto">
+                                <span class="tech-badge-transparent mb-2 d-inline-block">Flutter / Firebase</span>
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div>
+                                        <h3 class="m-0 fw-bold text-white">Rhythm</h3>
+                                        <p class="text-light m-0 mt-1 card-short-desc">Full-stack eCommerce ecosystem.
+                                        </p>
+                                    </div>
+                                    <div class="icon-circle">
+                                        <i class="ri-arrow-right-up-line fs-4"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 project-item" data-category="mobile">
+                    <div class="compact-card-new" data-title="RefreshKicks" data-tech="Flutter / PHP / MySQL"
+                        data-full="Built complete full-stack mobile application from ground up with custom PHP backend and MySQL database for a service-based business, including automated notification systems."
+                        data-images='["https://media.licdn.com/dms/image/v2/D4D2DAQHG-1gHtcspdw/profile-treasury-document-images_1280/B4DZyuAWVCKQAU-/1/1772445860585?e=1784764800&v=beta&t=5ucfgbtv2w7e1aC3tV2cegWFZxWwzLl1JTSP8io9bZg", "https://placehold.co/800x500/9a110a/ffffff?text=RefreshKicks+Orders"]'>
+
+                        <div class="card-bg-img"
+                            style="background-image: url('https://media.licdn.com/dms/image/v2/D4D2DAQHG-1gHtcspdw/profile-treasury-document-images_1280/B4DZyuAWVCKQAU-/1/1772445860585?e=1784764800&v=beta&t=5ucfgbtv2w7e1aC3tV2cegWFZxWwzLl1JTSP8io9bZg');">
+                        </div>
+                        <div class="card-overlay">
+                            <div class="mt-auto">
+                                <span class="tech-badge-transparent mb-2 d-inline-block">Flutter / PHP</span>
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div>
+                                        <h3 class="m-0 fw-bold text-white">RefreshKicks</h3>
+                                        <p class="text-light m-0 mt-1 card-short-desc">On-demand shoe care service app.
+                                        </p>
+                                    </div>
+                                    <div class="icon-circle">
+                                        <i class="ri-arrow-right-up-line fs-4"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 project-item" data-category="web">
+                    <div class="compact-card-new" data-title="Calculators Site" data-tech="Web"
+                        data-full="Developed a comprehensive web admin dashboard for managing products, customers, orders, brands, and deep business analytics for the Rhythm ecosystem."
+                        data-images='["https://placehold.co/800x500/0f302f/ffffff?text=Admin+Panel+1", "https://placehold.co/800x500/9a110a/ffffff?text=Admin+Panel+2"]'>
+
+                        <div class="card-bg-img"
+                            style="background-image: url('https://media.licdn.com/dms/image/v2/D4E2DAQFjwoQiSY9nUQ/profile-treasury-image-shrink_1280_1280/B4EZjHz8wVHgAQ-/0/1755698943892?e=1784314800&v=beta&t=sgztgP_wU1k8-ZpFDvWH_ZkREWyLaAtO7QLMJtSuGjU');">
+                        </div>
+                        <div class="card-overlay">
+                            <div class="mt-auto">
+                                <span class="tech-badge-transparent mb-2 d-inline-block">Web</span>
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div>
+                                        <h3 class="m-0 fw-bold text-white">Calculators Site</h3>
+                                        <p class="text-light m-0 mt-1 card-short-desc">Use daily life calculators at one
+                                            place
+                                        </p>
+                                    </div>
+                                    <div class="icon-circle">
+                                        <i class="ri-arrow-right-up-line fs-4"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 project-item" data-category="mobile">
+                    <div class="compact-card-new" data-title="DairyBook" data-tech="Flutter / Hive"
+                        data-full="Developed a business management application for dairy vendors. Implemented offline-first architecture using Hive, enabling reliable usage in low connectivity areas with automated PDF receipt generation."
+                        data-images='["https://placehold.co/800x500/3b5353/ffffff?text=DairyBook+Main", "https://placehold.co/800x500/193838/ffffff?text=DairyBook+Receipts"]'>
+
+                        <div class="card-bg-img"
+                            style="background-image: url('https://raw.githubusercontent.com/NM71/dairykhata/master/screenshots/SplashScreen.jpg');">
+                        </div>
+                        <div class="card-overlay">
+                            <div class="mt-auto">
+                                <span class="tech-badge-transparent mb-2 d-inline-block">Flutter / Hive</span>
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div>
+                                        <h3 class="m-0 fw-bold text-white">DairyBook</h3>
+                                        <p class="text-light m-0 mt-1 card-short-desc">Offline-first milk sales manager.
+                                        </p>
+                                    </div>
+                                    <div class="icon-circle">
+                                        <i class="ri-arrow-right-up-line fs-4"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-5">
+                <button id="loadMoreBtn" class="btn-primary-custom" style="display: none;">Show More Projects</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content custom-modal-content">
+                <div class="modal-header border-0 pb-2 align-items-start">
+                    <div>
+                        <h2 class="modal-title fw-bold text-dark" id="modalTitle">Project Title</h2>
+                        <span class="tech-badge mt-1 d-inline-block" id="modalTech">Tech</span>
+                    </div>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body pt-2">
+
+                    <div id="projectCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+                        <div class="carousel-indicators" id="carouselIndicators"></div>
+
+                        <div class="carousel-inner rounded border border-dark" id="carouselInner"
+                            style="border-width: 2px !important;"></div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark rounded-circle p-2"
+                                aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-dark rounded-circle p-2"
+                                aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <p id="modalFullDesc" class="fs-5 text-dark mb-4">Full description goes here.</p>
+
+                    <div class="d-flex flex-wrap gap-3 btn-custom">
+                        <a href="#" class="btn-primary-custom"><i class="ri-git-branch-line"></i> View Source</a>
+                        <a href="#" class="btn-secondary-custom"><i class="ri-external-link-line"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =================================================================== -->
+
+    <section id="experience-section" class="py-5 bg-section-alt">
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title mb-5">.professionalHistory()</h2>
+            <div class="timeline">
+                <div class="timeline-item mb-5 pb-4">
+                    <div class="row align-items-start">
+                        <div class="col-md-4 timeline-meta">
+                            <span class="timeline-date">May 2025 — Present</span>
+                            <h4 class="company-name text-muted">WebHivez</h4>
+                            <p class="location-tag">Burewala, Pakistan</p>
+                        </div>
+                        <div class="col-md-8 timeline-details">
+                            <h3 class="role-title">Web Developer</h3>
+                            <p>Responsible for designing and maintaining professional websites using WordPress and
+                                Elementor.
+                                Focused on developing functional, responsive web layouts, managing site configurations,
+                                and optimizing user interfaces to meet client requirements while ensuring high
+                                performance
+                                across various web platforms.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="timeline-item mb-5 pb-4">
+                    <div class="row align-items-start">
+                        <div class="col-md-4 timeline-meta">
+                            <span class="timeline-date">Feb 2025 — Mar 2026</span>
+                            <h4 class="company-name text-muted">Devstrix Pvt. Ltd</h4>
+                            <p class="location-tag">Islamabad, Pakistan</p>
+                        </div>
+                        <div class="col-md-8 timeline-details">
+                            <h3 class="role-title">Flutter Developer</h3>
+                            <p>Engineered and sustained responsive multi-platform layout nodes for global production
+                                users. Addressed performance regressions across view architectures, ensuring seamless
+                                cross-device performance profiles.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item mb-5 pb-4">
+                    <div class="row align-items-start">
+                        <div class="col-md-4 timeline-meta">
+                            <span class="timeline-date">Oct 2024 — Feb 2025</span>
+                            <h4 class="company-name text-muted">Acceltor Ltd</h4>
+                            <p class="location-tag">Islington, UK (Remote)</p>
+                        </div>
+                        <div class="col-md-8 timeline-details">
+                            <h3 class="role-title">Flutter Developer</h3>
+                            <p>Programmed client-facing mobile storefront structures integrated into remote secure
+                                billing services. Implemented resilient continuous state-synchronization handlers
+                                communicating with cloud microservices.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item mb-5 pb-4">
+                    <div class="row align-items-start">
+                        <div class="col-md-4 timeline-meta">
+                            <span class="timeline-date">Jun 2024 — Sep 2024</span>
+                            <h4 class="company-name text-muted">Bytewise Ltd</h4>
+                            <p class="location-tag">Islamabad, Pakistan</p>
+                        </div>
+                        <div class="col-md-8 timeline-details">
+                            <h3 class="role-title">Flutter Intern</h3>
+                            <p>Worked with the Flutter development team following Git-based collaborative workflows.
+                                Participated in code reviews, assisted in building mobile features, and handled issue
+                                debugging.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================= -->
+
+    <!-- ABOUT SECTION -->
+    <section id="about-section" class="py-5">
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title mb-4">.aboutMe()</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p class="fs-5 text-dark">
+                        I am a professional <strong>Mobile App Developer</strong> dedicated to building high-quality,
+                        scalable, and user-centric digital products. Holding a Bachelor of Computer Science from Air
+                        University, my technical journey encompasses deep expertise in mobile architecture alongside
+                        robust full-stack web capabilities.
+                    </p>
+                    <p class="text-dark">
+                        <em>Whether I am architecting a complex offline-first mobile application, designing responsive
+                            web
+                            layouts, or integrating secure backend infrastructure, my goal remains the same: to deliver
+                            clean code and intuitive interfaces that solve real-world problems. Backed by professional
+                            certifications in Front-End Development from Meta and Back-End Apps from IBM, I thrive on
+                            bridging the gap between design and functionality to provide the best possible user
+                            experience
+                            across all platforms.</em>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CORE COMPETENCIES SECTION -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="section-title mb-4">.skills()</h2>
+
+            <!-- Tabs -->
+            <ul class="nav nav-pills mb-4 gap-2" id="compTabs" role="tablist">
+                <li class="nav-item">
+                    <button class="filter-btn active" data-bs-toggle="pill"
+                        data-bs-target="#mobile-comp">Mobile</button>
+                </li>
+                <li class="nav-item">
+                    <button class="filter-btn" data-bs-toggle="pill" data-bs-target="#web-comp">Web</button>
+                </li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <!-- Mobile Skills -->
+                <div class="tab-pane fade show active" id="mobile-comp">
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <div class="skill-card">
+                                <h5>Flutter & Dart</h5>
+                                <p>Cross-platform development</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="skill-card">
+                                <h5>State Management</h5>
+                                <p>Provider, Bloc, GetX</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="skill-card">
+                                <h5>Local Databases</h5>
+                                <p>Hive, SQLite, Firebase</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Skills -->
+                <div class="tab-pane fade" id="web-comp">
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <div class="skill-card">
+                                <h5>WordPress & Elementor</h5>
+                                <p>CMS & Custom Page Building</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="skill-card">
+                                <h5>Frontend Basics</h5>
+                                <p>HTML5, CSS3, JavaScript</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="skill-card">
+                                <h5>Optimization</h5>
+                                <p>SEO & Site Performance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills-carousel-section" class="py-5 bg-transparent">
+        <div class="container">
+            <div class="marquee-wrapper-icon">
+                <div class="marquee-content-icon">
+                    <i class="ri-braces-fill" title="Code"></i>
+                    <i class="ri-flutter-fill" title="Flutter"></i>
+                    <i class="fa-brands fa-dart-lang" title="Dart"></i>
+                    <i class="ri-html5-fill" title="HTML5"></i>
+                    <i class="ri-css3-fill" title="CSS3"></i>
+                    <i class="ri-javascript-fill" title="JavaScript"></i>
+                    <i class="ri-database-2-fill" title="Databases"></i>
+                    <i class="ri-github-fill" title="GitHub"></i>
+                    <i class="ri-layout-masonry-fill" title="Layouts/Elementor"></i>
+
+                    <i class="ri-braces-fill" title="Code"></i>
+                    <i class="ri-flutter-fill" title="Flutter"></i>
+                    <i class="fa-brands fa-dart-lang" title="Dart"></i>
+                    <i class="ri-html5-fill" title="HTML5"></i>
+                    <i class="ri-css3-fill" title="CSS3"></i>
+                    <i class="ri-javascript-fill" title="JavaScript"></i>
+                    <i class="ri-database-2-fill" title="Databases"></i>
+                    <i class="ri-github-fill" title="GitHub"></i>
+                    <i class="ri-layout-masonry-fill" title="Layouts/Elementor"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-section" class="py-5 bg-section-alt">
+        <div class="container text-center py-4" data-aos="zoom-in">
+            <h2 class="section-title justify-content-center mb-4">.connect()</h2>
+            <p class="mb-5 mx-auto max-width-600">Have a system that needs development or an architectural issue that
+                needs solving? Let's connect.</p>
+            <div class="d-flex flex-wrap justify-content-center gap-4">
+                <a href="mailto:noushermurtaza456@gmail.com" class="btn-contact-action"><i
+                        class="ri-mail-send-line"></i> Mail Direct</a>
+                <a href="https://www.linkedin.com/in/nousher-murtaza/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BD7VBlL6QSKuyXqIOrTILFg%3D%3D"
+                    target="_blank" class="btn-contact-action"><i class="ri-linkedin-box-line"></i> LinkedIn Link</a>
+                <a href="https://github.com/NM71" target="_blank" class="btn-contact-action"><i
+                        class="ri-github-line"></i> GitHub
+                    Workspace</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="p-5 text-center border-top">
+        <p class="m-0 small"><strong>&copy; 2026 Nousher Murtaza</strong>.
+        </p>
+    </footer>
+
+    <button id="backToTopBtn" aria-label="Go to top">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+
+    <!-- ================================================================================================== -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 
-    <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <script>
-        AOS.init();
+        AOS.init({
+            once: true,
+            offset: 100
+        });
     </script>
 
     <script src="script.js"></script>
