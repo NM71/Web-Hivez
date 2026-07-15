@@ -23,6 +23,48 @@ $(document).ready(function () {
     $(window).on('resize', setScrollOffset);
 
 
+
+    // ==========================================
+    // NEUBRUTALIST CUSTOM CURSOR LOGIC
+    // ==========================================
+    const brutalCursor = document.getElementById('brutalist-cursor');
+
+    // 1. Snappy, zero-latency movement tracking
+    document.addEventListener('mousemove', (e) => {
+        if (brutalCursor) {
+            brutalCursor.style.left = `${e.clientX}px`;
+            brutalCursor.style.top = `${e.clientY}px`;
+        }
+    });
+
+    // 2. Define exactly what triggers the aggressive hover state.
+    // Included your specific classes like .compact-card-new, .service-card, etc.
+    const interactiveSelectors = 'a, button, .compact-card-new, .service-card, .skill-card-v2, input, textarea, .icon-circle';
+
+    // 3. Trigger hover state (Event Delegation handles dynamically loaded modals)
+    document.addEventListener('mouseover', (e) => {
+        if (e.target.closest(interactiveSelectors)) {
+            brutalCursor.classList.add('hover');
+        }
+    });
+
+    // 4. Remove hover state
+    document.addEventListener('mouseout', (e) => {
+        if (e.target.closest(interactiveSelectors)) {
+            brutalCursor.classList.remove('hover');
+        }
+    });
+
+    // Optional: Hide cursor when leaving the browser window entirely
+    document.addEventListener('mouseleave', () => {
+        if (brutalCursor) brutalCursor.style.opacity = '0';
+    });
+
+    document.addEventListener('mouseenter', () => {
+        if (brutalCursor) brutalCursor.style.opacity = '1';
+    });
+
+
     // ==========================================
     // Hero Img 3D Hover JS
     // ==========================================

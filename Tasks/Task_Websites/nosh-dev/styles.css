@@ -1405,3 +1405,64 @@ footer:hover {
     color: #444;
     line-height: 1.5;
 }
+
+
+/* ======================================================================= */
+
+
+/* ==========================================
+   CUSTOM NEUBRUTALIST CURSOR
+   ========================================== */
+
+/* Hide the default cursor globally for mouse users */
+@media (pointer: fine) {
+    * {
+        cursor: none !important;
+    }
+}
+
+#brutalist-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-color: #000000;
+    /* Hard geometric edges */
+    border-radius: 0px;
+    /* Ensures the cursor never interferes with clicking elements below it */
+    pointer-events: none;
+    z-index: 999999;
+    /* Centers the 16x16 square directly on the mouse coordinate */
+    transform: translate(-50%, -50%) scale(1);
+
+    /* VERY IMPORTANT: Notice we only transition transform, background, and shadow. 
+       We DO NOT transition 'left' or 'top' to ensure 0-latency snappy movement. */
+    transition: transform 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+        background-color 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+/* Hover State: 
+   Scales up 2x, turns neon yellow, gains the heavy brutalist drop shadow 
+*/
+#brutalist-cursor.hover {
+    transform: translate(-50%, -50%) scale(1.5);
+    background-color: var(--secondary-color);
+    /* Clashing Neon Yellow */
+    border: 2px solid #000000;
+    /* Keeps the edge sharp when colored */
+    box-shadow: 4px 4px 0px #000000;
+}
+
+/* Fallback: Hide custom cursor entirely on touch devices (phones/tablets) */
+@media (pointer: coarse) {
+    #brutalist-cursor {
+        display: none !important;
+    }
+
+    * {
+        cursor: auto !important;
+        /* Restores standard touch behaviors */
+    }
+}
