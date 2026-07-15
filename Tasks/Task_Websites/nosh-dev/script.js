@@ -134,54 +134,132 @@ $(document).ready(function () {
     });
 
 
-
+    // ==================================================================================
     // Click to Expand Modal & Build Carousel
 
-    const projectModal = new bootstrap.Modal(document.getElementById('projectModal'));
+    // const projectModal = new bootstrap.Modal(document.getElementById('projectModal'));
 
-    $('.compact-card-new').on('click', function () {
+    // $('.compact-card-new').on('click', function () {
 
-        // Populate text data
-        $('#modalTitle').text($(this).data('title'));
-        $('#modalTech').text($(this).data('tech'));
-        $('#modalFullDesc').text($(this).data('full'));
+    //     // Populate text data
+    //     $('#modalTitle').text($(this).data('title'));
+    //     $('#modalTech').text($(this).data('tech'));
+    //     $('#modalFullDesc').text($(this).data('full'));
 
-        // Extract JSON array of images from data attribute
-        const images = $(this).data('images');
+    //     // Extract JSON array of images from data attribute
+    //     const images = $(this).data('images');
 
+    //     let carouselInnerHtml = '';
+    //     let carouselIndicatorsHtml = '';
+
+    //     // Build Slider HTML dynamically
+    //     if (images && images.length > 0) {
+    //         images.forEach((imgUrl, index) => {
+    //             const activeClass = index === 0 ? 'active' : '';
+
+    //             // Add Image Slide
+    //             carouselInnerHtml += `
+    //         <div class="carousel-item ${activeClass}">
+    //         <img src="${imgUrl}" class="d-block w-100 modal-carousel-img" alt="Project Screen ${index + 1}">
+    //         </div>
+    //         `;
+
+    //             // Add Indicator Buttons
+    //             carouselIndicatorsHtml += `
+    //         <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="${index}" class="${activeClass}" aria-label="Slide ${index + 1}"></button>
+    //         `;
+    //         });
+
+    //         $('#projectCarousel').show(); // Show carousel if images exist
+    //     } else {
+    //         $('#projectCarousel').hide(); // Hide if no images
+    //     }
+
+    //     // Inject built HTML into the DOM
+    //     $('#carouselInner').html(carouselInnerHtml);
+    //     $('#carouselIndicators').html(carouselIndicatorsHtml);
+
+    //     // Open modal
+    //     projectModal.show();
+    // });
+
+
+
+    // ==========================================
+    // DYNAMIC PROJECT PREVIEW LOGIC
+    // ==========================================
+    $(document).on('click', '.compact-card-new', function () {
+        const $card = $(this);
+
+        // 1. Gather Project Configuration
+        const title = $card.data('title');
+        const tech = $card.data('tech');
+        const desc = $card.data('full');
+        const layout = $card.data('layout') || 'landscape'; // fallback to landscape
+        const sourceUrl = $card.data('source');
+        const liveUrl = $card.data('live');
+        const images = $card.data('images');
+
+        // 2. Set Sizing Classes on Modal Wrapper
+        const $dialog = $('#modalDialogWrapper');
+        $dialog.removeClass('modal-portrait modal-landscape');
+
+        if (layout === 'portrait') {
+            $dialog.addClass('modal-portrait');
+        } else {
+            $dialog.addClass('modal-landscape');
+        }
+
+        // 3. Inject Descriptive Text fields
+        $('#modalTitle').text(title);
+        $('#modalTech').text(tech);
+        $('#modalFullDesc').text(desc);
+
+        // 4. Update Dynamic External Links (Hide button if URL isn't set)
+        const $sourceBtn = $('#modalSourceBtn');
+        const $liveBtn = $('#modalLiveBtn');
+
+        if (sourceUrl && sourceUrl.trim() !== "") {
+            $sourceBtn.attr('href', sourceUrl).attr('target', '_blank').show();
+        } else {
+            $sourceBtn.hide();
+        }
+
+        if (liveUrl && liveUrl.trim() !== "") {
+            $liveBtn.attr('href', liveUrl).attr('target', '_blank').show();
+        } else {
+            $liveBtn.hide();
+        }
+
+        // 5. Generate Carousel Indicators and Elements
         let carouselInnerHtml = '';
         let carouselIndicatorsHtml = '';
 
-        // Build Slider HTML dynamically
         if (images && images.length > 0) {
             images.forEach((imgUrl, index) => {
                 const activeClass = index === 0 ? 'active' : '';
-
-                // Add Image Slide
                 carouselInnerHtml += `
                     <div class="carousel-item ${activeClass}">
-                        <img src="${imgUrl}" class="d-block w-100 modal-carousel-img" alt="Project Screen ${index + 1}">
+                        <img src="${imgUrl}" class="d-block w-100" alt="${title} Screen ${index + 1}">
                     </div>
                 `;
-
-                // Add Indicator Buttons
                 carouselIndicatorsHtml += `
                     <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="${index}" class="${activeClass}" aria-label="Slide ${index + 1}"></button>
                 `;
             });
-
-            $('#projectCarousel').show(); // Show carousel if images exist
+            $('#projectCarousel').show();
         } else {
-            $('#projectCarousel').hide(); // Hide if no images
+            $('#projectCarousel').hide();
         }
 
-        // Inject built HTML into the DOM
         $('#carouselInner').html(carouselInnerHtml);
         $('#carouselIndicators').html(carouselIndicatorsHtml);
 
-        // Open modal
-        projectModal.show();
+        // 6. Launch Project Modal window
+        const projectModalInstance = new bootstrap.Modal(document.getElementById('projectModal'));
+        projectModalInstance.show();
     });
+    // ==================================================================================
 
 
     /* ================================================================================= */

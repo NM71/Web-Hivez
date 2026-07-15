@@ -72,11 +72,76 @@ nav ul span.my-name:hover {
     color: var(--primary-color);
 }
 
-nav ul li.nav-hire {
+/* nav ul a.nav-hire {
     text-transform: uppercase;
-    border: 1px solid var(--primary-color);
+    border: 2px solid var(--primary-color);
     border-radius: 8px;
+} */
+
+nav ul a.nav-hire {
+
+    text-transform: uppercase;
+    border: 2px solid var(--primary-color);
+
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+    padding: 8px;
+    /* 1. Default static physical shadow */
+    /* box-shadow: 0 4px 0 var(--primary-color); */
+    transform: translateY(0);
+
+    /* Transition background/text smoothly, but make transform snappy for the click */
+    /* transition: background-color 0.2s ease, transform 0.08s ease, box-shadow 0.08s ease; */
+    color: var(--primary-color);
+    /* transition: color 0.2s ease; */
+
+    text-decoration: none;
+    transition: all 0.2s ease;
+    box-shadow: 4px 4px 0px #000;
+    font-weight: bold;
+    width: 8rem;
+    text-align: center;
 }
+
+
+
+/* Ensure the link text transitions its color smoothly too */
+nav ul a.nav-hire:hover {
+    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
+
+    color: white;
+
+    transform: translate(-3px, -3px);
+    /* border: 2px solid var(--secondary-color); */
+}
+
+
+
+/* ==========================================
+   HOVER STATE: Just change colors
+   ========================================== */
+nav ul a.nav-hire:hover {
+    transform: translateY(-2px);
+    /* background-color: var(--primary-color); */
+    /* color: white; */
+    /* box-shadow: 0 4px 0 transparent; */
+    /* Keeps the button elevated—no translateY change here */
+}
+
+/* ==========================================
+   ACTIVE STATE (The actual click): Physical press
+   ========================================== */
+nav ul a.nav-hire:active {
+    transform: translateY(3px);
+    /* Physically pushes down on mouse click */
+    box-shadow: 0 1px 0 var(--primary-color);
+    /* Flattens the shadow to match */
+}
+
+
+
+/* ==================================================== */
 
 nav ul i {
     display: none;
@@ -226,7 +291,9 @@ nav ul li a {
 
 .hero-visual .hero-img img {
     /* border: 10px solid rgba(0, 0, 0, 0.8); */
-    border-radius: 50px;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    /* border-radius: 50px; */
     animation: floatUpDown 2s ease-in-out infinite alternate;
     transition: transform 0.1s ease-out, box-shadow 0.1s ease-out;
 }
@@ -237,6 +304,8 @@ nav ul li a {
 
 .hero-heading h1 {
     font-size: 4rem;
+    min-height: 2.5em;
+    line-height: 1.2;
 }
 
 .hero-description p {
@@ -254,11 +323,106 @@ nav ul li a {
     cursor: pointer;
 }
 
+.hero-cta-btns button.hire-me {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+
+
 .hero-cta-btns button:hover {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
     color: white;
     transform: scale(1.05);
+}
+
+.nav-hire i {
+    display: inline-block !important;
+    margin-right: 8px !important;
+    font-size: 1.15rem !important;
+    vertical-align: middle !important;
+}
+
+/* HERO SOCIAL BUTTONS */
+
+.hero-social-links {
+    margin-top: 1.8rem;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    /* Matches the 8px of your CTA buttons */
+    border: 2px solid #000;
+    /* Matches your black outline style */
+    background-color: transparent;
+    color: #000;
+    /* Matches outline color */
+    font-size: 1.3rem;
+    /* Perfectly sized inside the box */
+    text-decoration: none;
+    position: relative;
+    /* Essential for containing the absolute tooltip */
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hover State */
+.social-btn:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+    transform: translateY(-3px) scale(1.05);
+    /* Sleek floating bounce */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Pure CSS Tooltip (Information Box on Hover) */
+.social-btn::after {
+    content: attr(data-info);
+    /* Dynamically grabs label text from HTML data-info */
+    position: absolute;
+    bottom: 125%;
+    /* Places it above the button */
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    background-color: #000;
+    color: #fff;
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: 6px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Tooltip Little Indicator Arrow */
+.social-btn::before {
+    content: '';
+    position: absolute;
+    bottom: 112%;
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    border-width: 6px;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Active Tooltip Reveal */
+.social-btn:hover::after,
+.social-btn:hover::before {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
 }
 
 /* ================================================================================= */
@@ -319,7 +483,7 @@ nav ul li a {
 
 /* ========================================================== */
 /* SERVICES */
-.service-card {
+/* .service-card {
     background-color: #ffffff;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-width: 2px !important;
@@ -328,6 +492,39 @@ nav ul li a {
 .service-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--card-shadow);
+} */
+
+/* ==========================================
+   SERVICES CARDS (BRUTALIST STYLE)
+   ========================================== */
+.service-card {
+    background-color: #ffffff;
+    border: 2px solid #000 !important;
+    border-radius: 8px;
+    /* Hard brutalist shadow matching projects */
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.service-card:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 10px 10px 0px var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.service-icon i {
+    font-size: 3.5rem;
+    color: #000;
+    /* Starts black for contrast */
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.service-card:hover .service-icon i {
+    color: var(--primary-color);
+    /* Pops to red */
+    transform: scale(1.1) rotate(-5deg);
+    /* Slight tilt for character */
 }
 
 
@@ -359,11 +556,14 @@ nav ul li a {
 /* V2 Compact Card with Background Image */
 .compact-card-new {
     position: relative;
-    height: 350px;
+    /* height: 350px; */
+    min-height: 300px;
     /* Increased height for desktop */
-    border-radius: 12px;
+    border-radius: 8px;
     border: 2px solid #000;
-    box-shadow: 4px 4px 0px rgba(0, 0, 0, 1);
+    transform: translate(-4px, -4px);
+    box-shadow: 8px 8px 0px var(--primary-color);
+    /* box-shadow: 4px 4px 0px rgba(0, 0, 0, 1); */
     overflow: hidden;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -378,8 +578,8 @@ nav ul li a {
 }
 
 .compact-card-new:hover {
-    transform: translate(-4px, -4px);
-    box-shadow: 8px 8px 0px var(--primary-color);
+    transform: translate(2px, 2px);
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 1);
     border-color: var(--primary-color);
 }
 
@@ -446,8 +646,62 @@ nav ul li a {
     transform: rotate(45deg);
 }
 
-/* Modal Styling for Slider */
+
+/* ==========================================
+   DYNAMIC PROJECT PREVIEW MODAL
+   ========================================== */
+
+/* Hard Brutalist Outline for the Preview Container */
 .custom-modal-content {
+    border: 3px solid #000 !important;
+    border-radius: 12px;
+    box-shadow: 8px 8px 0px rgba(0, 0, 0, 1);
+    background-color: #ffffff;
+}
+
+/* Base dialog transition handling */
+#modalDialogWrapper {
+    transition: max-width 0.3s ease-in-out;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Portrait Sizing Rules (Optimized for Mobile Screens) */
+.modal-portrait {
+    max-width: 440px !important;
+}
+
+/* Landscape Sizing Rules (Optimized for Web Desktop Screens) */
+.modal-landscape {
+    max-width: 850px !important;
+}
+
+/* Carousel Image Aspects */
+.modal-portrait .carousel-item img {
+    aspect-ratio: 9 / 16;
+    object-fit: contain;
+    background-color: #121212;
+    /* Keeps screenshot backdrop clean and visible */
+    width: 100%;
+    max-height: 50vh !important;
+}
+
+.modal-landscape .carousel-item img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    background-color: #121212;
+    width: 100%;
+    max-height: 60vh !important;
+}
+
+/* Hide action container if all links are empty */
+.btn-custom:empty {
+    display: none !important;
+}
+
+/* Modal Styling for Slider */
+/* .custom-modal-content {
     border: 3px solid #000;
     border-radius: 12px;
     box-shadow: 10px 10px 0px var(--primary-color);
@@ -462,14 +716,12 @@ nav ul li a {
 
 .modal-lg {
     max-width: 80% !important;
-    /* Makes it 90% of screen width */
 }
 
 @media (max-width: 768px) {
     .modal-carousel-img {
-        /* height: 250px; */
     }
-}
+} */
 
 /* ========================================================== */
 /* ================================================================================= */
@@ -540,8 +792,8 @@ nav ul li a {
 
 /* ========================================================== */
 
-/* Timeline Layout */
-.timeline {
+/* Experience Timeline Layout */
+/* .timeline {
     position: relative;
     border-left: 2px solid rgba(0, 0, 0, 0.8);
     padding-left: 2rem;
@@ -571,6 +823,62 @@ nav ul li a {
 .role-title {
     font-weight: 700;
     margin-bottom: 0.5rem;
+} */
+
+/* ==========================================
+   PROFESSIONAL HISTORY (BRUTALIST STYLE)
+   ========================================== */
+.timeline {
+    position: relative;
+    border-left: 3px solid #000;
+    /* Thicker, bolder line */
+    padding-left: 2rem;
+    margin-left: 1rem;
+}
+
+.timeline-item {
+    position: relative;
+}
+
+/* Thicker timeline dots to match the aesthetic */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: calc(-2rem - 9px);
+    /* Adjusted to center over the 3px line */
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    border: 3px solid #000;
+}
+
+/* Job Description Cards */
+.history-card-brutalist {
+    background-color: #ffffff;
+    border: 2px solid #000;
+    border-radius: 8px;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.history-card-brutalist:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 10px 10px 0px var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* High-contrast Date Badges */
+.brutalist-date-badge {
+    background-color: #000;
+    color: #fff;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    border: 2px solid #000;
+    box-shadow: 3px 3px 0px var(--primary-color);
 }
 
 /* Skills Layout */
@@ -590,7 +898,7 @@ nav ul li a {
 }
 
 /* Contact actions */
-.btn-contact-action {
+/* .btn-contact-action {
     background: transparent;
     border: 2px solid rgba(0, 0, 0, 0.8);
     border-radius: 8px;
@@ -605,6 +913,91 @@ nav ul li a {
     background-color: var(--primary-color);
     color: #fff;
     transform: translateY(-2px);
+} */
+/* ==========================================
+   CONTACT SECTION & FORM (BRUTALIST STYLE)
+   ========================================== */
+.terminal-form-card {
+    background-color: #ffffff;
+    border-width: 2px !important;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.terminal-form-card:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 8px 8px 0px var(--primary-color);
+}
+
+.terminal-form-header {
+    background-color: var(--secondary-color);
+    border-width: 2px !important;
+}
+
+/* Form Inputs */
+.brutalist-input {
+    border: 2px solid #000;
+    border-radius: 4px;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 1);
+    transition: all 0.2s ease;
+    background-color: #fafafa;
+}
+
+.brutalist-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 5px 5px 0px var(--primary-color);
+    transform: translate(-2px, -2px);
+    background-color: #ffffff;
+}
+
+/* Submit Button */
+.btn-submit-brutalist {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: 2px solid #000;
+    border-radius: 6px;
+    padding: 0.8rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 1);
+    transition: all 0.2s ease;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn-submit-brutalist:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px #000;
+}
+
+.btn-submit-brutalist:active {
+    transform: translate(2px, 2px);
+    box-shadow: 0px 0px 0px #000;
+}
+
+/* Social Link Buttons */
+.btn-contact-brutalist {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 0.8rem 1.5rem;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 4px 4px 0px #000;
+    transition: all 0.2s ease;
+    width: fit-content;
+}
+
+.btn-contact-brutalist:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    transform: translate(-3px, -3px);
+    box-shadow: 7px 7px 0px #000;
 }
 
 /* Drawer Interaction Rules */
@@ -688,6 +1081,10 @@ nav ul li a {
         display: none;
     }
 
+    nav ul a {
+        display: none;
+    }
+
     nav ul {
         justify-content: space-between;
     }
@@ -698,6 +1095,7 @@ nav ul li a {
 
     .hero-heading h1 {
         font-size: 3rem;
+        min-height: 3.6em;
     }
 
     .hero-description p {
@@ -721,6 +1119,7 @@ nav ul li a {
 @media (max-width: 767px) {
     .hero-heading h1 {
         font-size: 4rem;
+        min-height: 3.6em;
         text-align: center;
     }
 
@@ -897,4 +1296,112 @@ footer:hover {
         padding-left: 1.25rem !important;
         padding-right: 1.25rem !important;
     }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+}
+
+#about-section p {
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+
+/* ==========================================
+   ABOUT ME TERMINAL CARD
+   ========================================== */
+.about-card {
+    background-color: #ffffff;
+    border-width: 2px !important;
+    /* Uses the same brutalist shadow style as your projects */
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 10px 10px 0px var(--primary-color);
+}
+
+.about-header {
+    background-color: var(--secondary-color);
+    /* Matches your site background */
+    border-width: 2px !important;
+}
+
+.terminal-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    /* Thick border on dots to match theme */
+}
+
+.terminal-prompt {
+    color: var(--primary-color);
+    font-weight: 900;
+    margin-right: 8px;
+}
+
+.text-primary-custom {
+    color: var(--primary-color);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+
+
+/* ================================================================ */
+
+
+
+/* ==========================================
+   V2 SKILL CARDS (BRUTALIST STYLE)
+   ========================================== */
+.skill-card-v2 {
+    background-color: #ffffff;
+    border: 2px solid #000;
+    padding: 2rem 1.5rem;
+    border-radius: 8px;
+    height: 100%;
+    /* Hard brutalist shadow matching your other cards */
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.skill-card-v2:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 8px 8px 0px var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 1rem;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.skill-card-v2:hover .skill-icon {
+    color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+.skill-card-v2 h5 {
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.skill-card-v2 p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.5;
 }

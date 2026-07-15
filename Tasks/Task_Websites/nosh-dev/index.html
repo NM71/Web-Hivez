@@ -29,7 +29,6 @@
 
 
 
-    <!-- NAVBAR & MOBILE DROPDOWN -->
     <div class="container-fluid shadow-sm sticky-top" style="background-color: #F5F5DC; z-index: 1050;">
         <div class="container">
             <nav>
@@ -39,17 +38,22 @@
                     <span class="my-name">NM.</span>
                     <i class="ri-menu-line" id="openMenuIcon"></i>
                     <li><a href="#about-section">.about</a></li>
-                    <li class="nav-hire"><a href="#contact-section">Hire Me</a></li>
+                    <a class="nav-hire" href="assets/Nousher-CV.pdf" target="_blank">
+                        <i class="ri-download-cloud-2-line"></i> CV
+                    </a>
                 </ul>
             </nav>
 
-            <!-- NEW MOBILE DROPDOWN -->
             <div class="mobile-dropdown" id="mobileNav">
                 <ul class="mobile-links">
                     <li><a href="#projects-section">.projects</a></li>
                     <li><a href="#experience-section">.experience</a></li>
                     <li><a href="#about-section">.about</a></li>
-                    <li class="nav-hire-mobile"><a href="#contact-section">Hire Me</a></li>
+                    <li class="nav-hire-mobile">
+                        <a href="assets/Nousher-CV.pdf" target="_blank">
+                            <i class="ri-download-cloud-2-line"></i> Download CV
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -72,11 +76,8 @@
 
                     <div class="col-lg-6 col-md-6 order-lg-1 order-2 d-flex align-items-center">
                         <div class="hero-content">
-                            <!-- <div class="hero-heading pb-3">
-                                <h1>Turning Ideas into Products.</h1>
-                            </div> -->
                             <div class="hero-heading pb-3">
-                                <h1 class="m-0" style="min-height: 1.2em;">
+                                <h1 class="m-0">
                                     <span id="typewriter-text"></span><span class="blinking-cursor">|</span>
                                 </h1>
                             </div>
@@ -86,12 +87,15 @@
                             </div>
                             <div class="hero-cta-btns">
                                 <a href="#projects-section"><button>Explore my work</button></a>
-                                <a href="assets/Nousher-CV.pdf">
-                                    <button>
-                                        <i class="ri-download-cloud-2-line"></i> Download CV
+                                <a href="#contact-section">
+                                    <button class="hire-me">
+                                        Hire Me
                                     </button>
                                 </a>
                             </div>
+
+
+
                         </div>
                     </div>
 
@@ -101,19 +105,16 @@
     </section>
 
 
-    <!-- ================================================================== -->
-
-
     <section id="services-section" class="py-5 mt-5">
         <div class="container" data-aos="fade-up">
             <h2 class="section-title mb-5">.services()</h2>
 
-            <div class="row g-3">
+            <div class="row g-4">
 
                 <div class="col-lg-4 col-md-6">
-                    <div class="service-card p-4 h-100 d-flex flex-column border border-dark rounded">
+                    <div class="service-card p-4 h-100 d-flex flex-column">
                         <div class="service-icon mb-3">
-                            <i class="ri-code-s-slash-line fs-1" style="color: var(--primary-color);"></i>
+                            <i class="ri-code-s-slash-line"></i>
                         </div>
                         <h3 class="fw-bold fs-4 mb-2 text-dark">Custom Web Solutions</h3>
                         <p class="text-muted flex-grow-1 small">
@@ -125,9 +126,9 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6">
-                    <div class="service-card p-4 h-100 d-flex flex-column border border-dark rounded">
+                    <div class="service-card p-4 h-100 d-flex flex-column">
                         <div class="service-icon mb-3">
-                            <i class="ri-smartphone-line fs-1" style="color: var(--primary-color);"></i>
+                            <i class="ri-smartphone-line"></i>
                         </div>
                         <h3 class="fw-bold fs-4 mb-2 text-dark">Mobile App Development</h3>
                         <p class="text-muted flex-grow-1 small">
@@ -138,12 +139,10 @@
                     </div>
                 </div>
 
-
-
                 <div class="col-lg-4 col-md-6">
-                    <div class="service-card p-4 h-100 d-flex flex-column border border-dark rounded">
+                    <div class="service-card p-4 h-100 d-flex flex-column">
                         <div class="service-icon mb-3">
-                            <i class="ri-database-2-line fs-1" style="color: var(--primary-color);"></i>
+                            <i class="ri-database-2-line"></i>
                         </div>
                         <h3 class="fw-bold fs-4 mb-2 text-dark">Backend & Cloud Integrations</h3>
                         <p class="text-muted flex-grow-1 small">
@@ -153,6 +152,7 @@
                         </p>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -187,9 +187,6 @@
     </section>
 
 
-    <!-- ================================================================== -->
-
-
     <section id="projects-section" class="py-5 mt-5">
         <div class="container" data-aos="fade-up">
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4">
@@ -206,9 +203,10 @@
             <div class="row g-4" id="project-container">
 
                 <div class="col-lg-6 project-item" data-category="mobile">
-                    <div class="compact-card-new" data-title="Rhythm" data-tech="Flutter / Firebase"
-                        data-full="A production-ready full-stack eCommerce mobile application with Flutter frontend and Firebase backend. Includes a product catalog, real-time cart system, secure payments via Stripe, and push notifications."
-                        data-images='["https://placehold.co/800x500/9a110a/ffffff?text=Rhythm+Home", "https://placehold.co/800x500/0f302f/ffffff?text=Rhythm+Cart", "https://placehold.co/800x500/193838/ffffff?text=Rhythm+Checkout"]'>
+                    <div class="compact-card-new" data-title="Rhythm" data-layout="portrait"
+                        data-tech="Flutter / Firebase"
+                        data-full="An offline music player for mobile. Built with Flutter, it combines a beautiful Neumorphic design with high-performance audio engine optimizations."
+                        data-images='["https://media.licdn.com/dms/image/v2/D4D2DAQHOSmJnk-O9vw/profile-treasury-image-shrink_8192_8192/B4DZyHUzuGIYAg-/0/1771796906886?e=1784314800&v=beta&t=8gl1d5ueUc5U02ojy496NlGGv_R9tQkarsdyWv6mY-E", "https://github.com/NM71/rhythm/blob/main/screenshots/2.webp?raw=true", "https://github.com/NM71/rhythm/blob/main/screenshots/3%20(dark).webp?raw=true", "https://github.com/NM71/rhythm/blob/main/screenshots/4.webp?raw=true", "https://github.com/NM71/rhythm/blob/main/screenshots/5.webp?raw=true", "https://github.com/NM71/rhythm/blob/main/screenshots/8.webp?raw=true"]'>
 
                         <div class="card-bg-img"
                             style="background-image: url('https://media.licdn.com/dms/image/v2/D4D2DAQHOSmJnk-O9vw/profile-treasury-image-shrink_8192_8192/B4DZyHUzuGIYAg-/0/1771796906886?e=1784314800&v=beta&t=8gl1d5ueUc5U02ojy496NlGGv_R9tQkarsdyWv6mY-E');">
@@ -233,8 +231,8 @@
 
                 <div class="col-lg-6 project-item" data-category="mobile">
                     <div class="compact-card-new" data-title="RefreshKicks" data-tech="Flutter / PHP / MySQL"
-                        data-full="Built complete full-stack mobile application from ground up with custom PHP backend and MySQL database for a service-based business, including automated notification systems."
-                        data-images='["https://media.licdn.com/dms/image/v2/D4D2DAQHG-1gHtcspdw/profile-treasury-document-images_1280/B4DZyuAWVCKQAU-/1/1772445860585?e=1784764800&v=beta&t=5ucfgbtv2w7e1aC3tV2cegWFZxWwzLl1JTSP8io9bZg", "https://placehold.co/800x500/9a110a/ffffff?text=RefreshKicks+Orders"]'>
+                        data-full="Built complete full-stack mobile application from ground up with custom PHP backend and MySQL database for a service-based business, "
+                        data-images='["https://media.licdn.com/dms/image/v2/D4D2DAQHG-1gHtcspdw/profile-treasury-document-images_1280/B4DZyuAWVCKQAU-/1/1772445860585?e=1784764800&v=beta&t=5ucfgbtv2w7e1aC3tV2cegWFZxWwzLl1JTSP8io9bZg", "/Screenshots/rfk-app/2.png", "/Screenshots/rfk-app/3.png", "/Screenshots/rfk-app/4.png"]'>
 
                         <div class="card-bg-img"
                             style="background-image: url('https://media.licdn.com/dms/image/v2/D4D2DAQHG-1gHtcspdw/profile-treasury-document-images_1280/B4DZyuAWVCKQAU-/1/1772445860585?e=1784764800&v=beta&t=5ucfgbtv2w7e1aC3tV2cegWFZxWwzLl1JTSP8io9bZg');">
@@ -259,11 +257,11 @@
 
                 <div class="col-lg-6 project-item" data-category="web">
                     <div class="compact-card-new" data-title="Calculators Site" data-tech="Web"
-                        data-full="Developed a comprehensive web admin dashboard for managing products, customers, orders, brands, and deep business analytics for the Rhythm ecosystem."
-                        data-images='["https://placehold.co/800x500/0f302f/ffffff?text=Admin+Panel+1", "https://placehold.co/800x500/9a110a/ffffff?text=Admin+Panel+2"]'>
+                        data-full="Access 25+ professional calculators for math, finance, health, business and more. Clean, fast, and mobile-friendly."
+                        data-images='["/Screenshots/calculator-site/calculator-site-ss.png", "/Screenshots/calculator-site/age-calculator-ss.png", "/Screenshots/calculator-site/data-storage-calculator-ss.png", "/Screenshots/calculator-site/qr-code-generator-ss.png"]'>
 
                         <div class="card-bg-img"
-                            style="background-image: url('https://media.licdn.com/dms/image/v2/D4E2DAQFjwoQiSY9nUQ/profile-treasury-image-shrink_1280_1280/B4EZjHz8wVHgAQ-/0/1755698943892?e=1784314800&v=beta&t=sgztgP_wU1k8-ZpFDvWH_ZkREWyLaAtO7QLMJtSuGjU');">
+                            style="background-image: url('/Screenshots/calculator-site/calculator-site-ss.png');">
                         </div>
                         <div class="card-overlay">
                             <div class="mt-auto">
@@ -285,12 +283,12 @@
                 </div>
 
                 <div class="col-lg-6 project-item" data-category="mobile">
-                    <div class="compact-card-new" data-title="DairyBook" data-tech="Flutter / Hive"
-                        data-full="Developed a business management application for dairy vendors. Implemented offline-first architecture using Hive, enabling reliable usage in low connectivity areas with automated PDF receipt generation."
-                        data-images='["https://placehold.co/800x500/3b5353/ffffff?text=DairyBook+Main", "https://placehold.co/800x500/193838/ffffff?text=DairyBook+Receipts"]'>
+                    <div class="compact-card-new" data-title="DairyBook" data-layout="portrait"
+                        data-tech="Flutter / Hive"
+                        data-full="Developed a business management application for dairy vendors. Implemented offline-first architecture using Hive with automated PDF receipt generation."
+                        data-images='["/Screenshots/dairybook.png", "https://github.com/NM71/dairykhata/blob/master/screenshots/HomePage.png?raw=true", "https://github.com/NM71/dairykhata/blob/master/screenshots/AddNewRecord.png?raw=true", "https://github.com/NM71/dairykhata/blob/master/screenshots/RecordsPage.png?raw=true", "https://github.com/NM71/dairykhata/blob/master/screenshots/Settings.png?raw=true", "https://github.com/NM71/dairykhata/blob/master/screenshots/GenerateReceipt.jpg?raw=true"]'>
 
-                        <div class="card-bg-img"
-                            style="background-image: url('https://raw.githubusercontent.com/NM71/dairykhata/master/screenshots/SplashScreen.jpg');">
+                        <div class="card-bg-img" style="background-image: url('/Screenshots/dairybook.png');">
                         </div>
                         <div class="card-overlay">
                             <div class="mt-auto">
@@ -310,6 +308,7 @@
                     </div>
                 </div>
 
+
             </div>
 
             <div class="text-center mt-5">
@@ -319,7 +318,7 @@
     </section>
 
     <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-dialog modal-dialog-centered modal-lg" id="modalDialogWrapper">
             <div class="modal-content custom-modal-content">
                 <div class="modal-header border-0 pb-2 align-items-start">
                     <div>
@@ -363,117 +362,148 @@
         </div>
     </div>
 
-    <!-- =================================================================== -->
-
     <section id="experience-section" class="py-5 bg-section-alt">
         <div class="container" data-aos="fade-up">
-            <h2 class="section-title mb-5">.professionalHistory()</h2>
+            <h2 class="section-title mb-5">.careerHistory()</h2>
+
             <div class="timeline">
-                <div class="timeline-item mb-5 pb-4">
+
+                <div class="timeline-item mb-5 pb-2">
                     <div class="row align-items-start">
-                        <div class="col-md-4 timeline-meta">
-                            <span class="timeline-date">May 2025 — Present</span>
-                            <h4 class="company-name text-muted">WebHivez</h4>
-                            <p class="location-tag">Burewala, Pakistan</p>
+                        <div class="col-lg-3 col-md-4 timeline-meta mb-3 mb-md-0">
+                            <div class="brutalist-date-badge d-inline-block mb-2">
+                                May 2025 — Present
+                            </div>
+                            <h4 class="company-name fw-bold text-dark m-0">WebHivez</h4>
+                            <p class="location-tag text-muted small fw-bold mt-1">
+                                <i class="ri-map-pin-line"></i> Burewala, Pakistan
+                            </p>
                         </div>
-                        <div class="col-md-8 timeline-details">
-                            <h3 class="role-title">Web Developer</h3>
-                            <p>Responsible for designing and maintaining professional websites using WordPress and
-                                Elementor.
-                                Focused on developing functional, responsive web layouts, managing site configurations,
-                                and optimizing user interfaces to meet client requirements while ensuring high
-                                performance
-                                across various web platforms.</p>
+                        <div class="col-lg-9 col-md-8 timeline-details">
+                            <div class="history-card-brutalist p-4">
+                                <h3 class="role-title fw-bold text-primary-custom mb-3">Frontend Intern</h3>
+                                <p class="m-0 text-dark">Responsible for designing and maintaining professional websites
+                                    using WordPress and Elementor. Focused on developing functional, responsive web
+                                    layouts, managing site configurations, and optimizing user interfaces to meet client
+                                    requirements while ensuring high performance across various web platforms.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
+                <div class="timeline-item mb-5 pb-2">
+                    <div class="row align-items-start">
+                        <div class="col-lg-3 col-md-4 timeline-meta mb-3 mb-md-0">
+                            <div class="brutalist-date-badge d-inline-block mb-2">
+                                Feb 2025 — Mar 2026
+                            </div>
+                            <h4 class="company-name fw-bold text-dark m-0">Devstrix Pvt. Ltd</h4>
+                            <p class="location-tag text-muted small fw-bold mt-1">
+                                <i class="ri-map-pin-line"></i> Islamabad, Pakistan
+                            </p>
+                        </div>
+                        <div class="col-lg-9 col-md-8 timeline-details">
+                            <div class="history-card-brutalist p-4">
+                                <h3 class="role-title fw-bold text-primary-custom mb-3">Flutter Developer</h3>
+                                <p class="m-0 text-dark">Engineered and sustained responsive multi-platform layout nodes
+                                    for global production users. Addressed performance regressions across view
+                                    architectures, ensuring seamless cross-device performance profiles.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                <div class="timeline-item mb-5 pb-4">
+                <div class="timeline-item mb-5 pb-2">
                     <div class="row align-items-start">
-                        <div class="col-md-4 timeline-meta">
-                            <span class="timeline-date">Feb 2025 — Mar 2026</span>
-                            <h4 class="company-name text-muted">Devstrix Pvt. Ltd</h4>
-                            <p class="location-tag">Islamabad, Pakistan</p>
+                        <div class="col-lg-3 col-md-4 timeline-meta mb-3 mb-md-0">
+                            <div class="brutalist-date-badge d-inline-block mb-2">
+                                Oct 2024 — Feb 2025
+                            </div>
+                            <h4 class="company-name fw-bold text-dark m-0">Acceltor Ltd</h4>
+                            <p class="location-tag text-muted small fw-bold mt-1">
+                                <i class="ri-map-pin-line"></i> Islington, UK (Remote)
+                            </p>
                         </div>
-                        <div class="col-md-8 timeline-details">
-                            <h3 class="role-title">Flutter Developer</h3>
-                            <p>Engineered and sustained responsive multi-platform layout nodes for global production
-                                users. Addressed performance regressions across view architectures, ensuring seamless
-                                cross-device performance profiles.</p>
+                        <div class="col-lg-9 col-md-8 timeline-details">
+                            <div class="history-card-brutalist p-4">
+                                <h3 class="role-title fw-bold text-primary-custom mb-3">Flutter Developer</h3>
+                                <p class="m-0 text-dark">Programmed client-facing mobile storefront structures
+                                    integrated into remote secure billing services. Implemented resilient continuous
+                                    state-synchronization handlers communicating with cloud microservices.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="timeline-item mb-5 pb-4">
+
+                <div class="timeline-item mb-5 pb-2">
                     <div class="row align-items-start">
-                        <div class="col-md-4 timeline-meta">
-                            <span class="timeline-date">Oct 2024 — Feb 2025</span>
-                            <h4 class="company-name text-muted">Acceltor Ltd</h4>
-                            <p class="location-tag">Islington, UK (Remote)</p>
+                        <div class="col-lg-3 col-md-4 timeline-meta mb-3 mb-md-0">
+                            <div class="brutalist-date-badge d-inline-block mb-2">
+                                Jun 2024 — Sep 2024
+                            </div>
+                            <h4 class="company-name fw-bold text-dark m-0">Bytewise Ltd</h4>
+                            <p class="location-tag text-muted small fw-bold mt-1">
+                                <i class="ri-map-pin-line"></i> Islamabad, Pakistan
+                            </p>
                         </div>
-                        <div class="col-md-8 timeline-details">
-                            <h3 class="role-title">Flutter Developer</h3>
-                            <p>Programmed client-facing mobile storefront structures integrated into remote secure
-                                billing services. Implemented resilient continuous state-synchronization handlers
-                                communicating with cloud microservices.</p>
+                        <div class="col-lg-9 col-md-8 timeline-details">
+                            <div class="history-card-brutalist p-4">
+                                <h3 class="role-title fw-bold text-primary-custom mb-3">Flutter Intern</h3>
+                                <p class="m-0 text-dark">Worked with the Flutter development team following Git-based
+                                    collaborative workflows. Participated in code reviews, assisted in building mobile
+                                    features, and handled issue debugging.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="timeline-item mb-5 pb-4">
-                    <div class="row align-items-start">
-                        <div class="col-md-4 timeline-meta">
-                            <span class="timeline-date">Jun 2024 — Sep 2024</span>
-                            <h4 class="company-name text-muted">Bytewise Ltd</h4>
-                            <p class="location-tag">Islamabad, Pakistan</p>
-                        </div>
-                        <div class="col-md-8 timeline-details">
-                            <h3 class="role-title">Flutter Intern</h3>
-                            <p>Worked with the Flutter development team following Git-based collaborative workflows.
-                                Participated in code reviews, assisted in building mobile features, and handled issue
-                                debugging.</p>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- ========================================================= -->
-
-    <!-- ABOUT SECTION -->
     <section id="about-section" class="py-5">
         <div class="container" data-aos="fade-up">
             <h2 class="section-title mb-4">.aboutMe()</h2>
             <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <p class="fs-5 text-dark">
-                        I am a professional <strong>Mobile App Developer</strong> dedicated to building high-quality,
-                        scalable, and user-centric digital products. Holding a Bachelor of Computer Science from Air
-                        University, my technical journey encompasses deep expertise in mobile architecture alongside
-                        robust full-stack web capabilities.
-                    </p>
-                    <p class="text-dark">
-                        <em>Whether I am architecting a complex offline-first mobile application, designing responsive
-                            web
-                            layouts, or integrating secure backend infrastructure, my goal remains the same: to deliver
-                            clean code and intuitive interfaces that solve real-world problems. Backed by professional
-                            certifications in Front-End Development from Meta and Back-End Apps from IBM, I thrive on
-                            bridging the gap between design and functionality to provide the best possible user
-                            experience
-                            across all platforms.</em>
-                    </p>
+                <div class="col-lg-10">
+                    <div class="about-card border border-dark rounded">
+
+                        <div class="about-header border-bottom border-dark px-3 py-2 d-flex gap-2 align-items-center">
+                            <span class="terminal-dot bg-danger"></span>
+                            <span class="terminal-dot bg-warning"></span>
+                            <span class="terminal-dot bg-success"></span>
+                            <span class="ms-2 small fw-bold text-muted">user@nousher:~</span>
+                        </div>
+
+
+                        <div class="about-body p-4 p-md-5 bg-white">
+                            <p class="fs-5 text-dark mb-4">
+                                <span class="terminal-prompt">></span> I am a <strong
+                                    class="text-primary-custom">Software Developer</strong> with a solid background in
+                                mobile engineering and a current focus on frontend web development. My day-to-day
+                                revolves around writing maintainable code, translating UI designs into responsive
+                                layouts, and integrating APIs to build functional, everyday applications.
+                            </p>
+                            <p class="text-dark fs-6 m-0">
+                                <span class="terminal-prompt">></span> With a CS degree from Air University, my approach
+                                is highly practical. Rather than chasing buzzwords, I focus on real
+                                problem-solving—whether that means debugging complex state issues, optimizing web
+                                performance, or just making sure a feature works exactly as expected in production. I
+                                value clean architecture and systems that are reliable.
+                            </p>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
 
-    <!-- CORE COMPETENCIES SECTION -->
     <section id="skills" class="py-5">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <h2 class="section-title mb-4">.skills()</h2>
 
-            <!-- Tabs -->
             <ul class="nav nav-pills mb-4 gap-2" id="compTabs" role="tablist">
                 <li class="nav-item">
                     <button class="filter-btn active" data-bs-toggle="pill"
@@ -484,51 +514,60 @@
                 </li>
             </ul>
 
-            <!-- Tab Content -->
             <div class="tab-content">
-                <!-- Mobile Skills -->
                 <div class="tab-pane fade show active" id="mobile-comp">
-                    <div class="row g-3">
+                    <div class="row g-4">
                         <div class="col-md-4">
-                            <div class="skill-card">
+                            <div class="skill-card-v2">
+                                <i class="ri-flutter-fill skill-icon"></i>
                                 <h5>Flutter & Dart</h5>
-                                <p>Cross-platform development</p>
+                                <p>Building cross-platform mobile applications with stable performance and complex UI
+                                    layouts.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="skill-card">
+                            <div class="skill-card-v2">
+                                <i class="ri-trello-line skill-icon"></i>
                                 <h5>State Management</h5>
-                                <p>Provider, Bloc, GetX</p>
+                                <p>Architecting scalable data flows and state handlers using Provider, Bloc, and GetX.
+                                </p>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="skill-card">
+                            <div class="skill-card-v2">
+                                <i class="ri-database-2-line skill-icon"></i>
                                 <h5>Local Databases</h5>
-                                <p>Hive, SQLite, Firebase</p>
+                                <p>Implementing offline-first architectures and data persistence using Hive, SQLite, and
+                                    Firebase.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Web Skills -->
                 <div class="tab-pane fade" id="web-comp">
-                    <div class="row g-3">
+                    <div class="row g-4">
                         <div class="col-md-4">
-                            <div class="skill-card">
-                                <h5>WordPress & Elementor</h5>
-                                <p>CMS & Custom Page Building</p>
+                            <div class="skill-card-v2">
+                                <i class="ri-layout-masonry-fill skill-icon"></i>
+                                <h5>CMS & Builders</h5>
+                                <p>Developing custom sites, handling CMS administration, and managing
+                                    WordPress/Elementor setups.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="skill-card">
-                                <h5>Frontend Basics</h5>
-                                <p>HTML5, CSS3, JavaScript</p>
+                            <div class="skill-card-v2">
+                                <i class="ri-code-box-line skill-icon"></i>
+                                <h5>Frontend Foundations</h5>
+                                <p>Writing semantic HTML5, styling responsive grids with CSS3, and practical JavaScript
+                                    DOM manipulation.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="skill-card">
+                            <div class="skill-card-v2">
+                                <i class="ri-speed-up-line skill-icon"></i>
                                 <h5>Optimization</h5>
-                                <p>SEO & Site Performance</p>
+                                <p>Ensuring fast browser load times, debugging web performance, and applying standard
+                                    technical SEO.</p>
                             </div>
                         </div>
                     </div>
@@ -565,19 +604,67 @@
         </div>
     </section>
 
+
     <section id="contact-section" class="py-5 bg-section-alt">
-        <div class="container text-center py-4" data-aos="zoom-in">
-            <h2 class="section-title justify-content-center mb-4">.connect()</h2>
-            <p class="mb-5 mx-auto max-width-600">Have a system that needs development or an architectural issue that
-                needs solving? Let's connect.</p>
-            <div class="d-flex flex-wrap justify-content-center gap-4">
-                <a href="mailto:noushermurtaza456@gmail.com" class="btn-contact-action"><i
-                        class="ri-mail-send-line"></i> Mail Direct</a>
-                <a href="https://www.linkedin.com/in/nousher-murtaza/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BD7VBlL6QSKuyXqIOrTILFg%3D%3D"
-                    target="_blank" class="btn-contact-action"><i class="ri-linkedin-box-line"></i> LinkedIn Link</a>
-                <a href="https://github.com/NM71" target="_blank" class="btn-contact-action"><i
-                        class="ri-github-line"></i> GitHub
-                    Workspace</a>
+        <div class="container py-4" data-aos="zoom-in">
+            <div class="row align-items-center justify-content-between">
+
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <h2 class="section-title mb-4">.connect()</h2>
+                    <p class="mb-4 fs-5 text-dark">Have a system that needs development or an architectural issue that
+                        needs solving? Drop a message or connect with me directly.</p>
+                    <div class="d-flex flex-column gap-3">
+                        <a href="mailto:noushermurtaza456@gmail.com" class="btn-contact-brutalist">
+                            <i class="ri-mail-send-line fs-5"></i> noushermurtaza456@gmail.com
+                        </a>
+                        <a href="https://www.linkedin.com/in/nousher-murtaza/" target="_blank"
+                            class="btn-contact-brutalist">
+                            <i class="ri-linkedin-box-line fs-5"></i> LinkedIn Profile
+                        </a>
+                        <a href="https://github.com/NM71" target="_blank" class="btn-contact-brutalist">
+                            <i class="ri-github-line fs-5"></i> GitHub Workspace
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="terminal-form-card border border-dark rounded">
+
+                        <div
+                            class="terminal-form-header border-bottom border-dark px-3 py-2 d-flex gap-2 align-items-center">
+                            <span class="terminal-dot bg-danger"></span>
+                            <span class="terminal-dot bg-warning"></span>
+                            <span class="terminal-dot bg-success"></span>
+                            <span class="ms-2 small fw-bold text-muted">guest@nousher:~/contact$
+                                ./send_message.sh</span>
+                        </div>
+
+                        <div class="p-4 p-md-5 bg-white">
+                            <form action="#" method="POST">
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Name</label>
+                                    <input type="text" class="form-control brutalist-input" placeholder="John Doe"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Email</label>
+                                    <input type="email" class="form-control brutalist-input"
+                                        placeholder="john@example.com" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label fw-bold">Message</label>
+                                    <textarea class="form-control brutalist-input" rows="4"
+                                        placeholder="How can I help you?" required></textarea>
+                                </div>
+                                <button type="submit" class="btn-submit-brutalist w-100">
+                                    <i class="ri-send-plane-fill"></i> Execute_
+                                </button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -590,8 +677,6 @@
     <button id="backToTopBtn" aria-label="Go to top">
         <i class="ri-arrow-up-line"></i>
     </button>
-
-    <!-- ================================================================================================== -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
