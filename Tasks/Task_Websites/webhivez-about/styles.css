@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+
+
+:root {
+    --primary-color: #1b75ff;
+    --secondary-color: #f5f5dc;
+    --navlink-color: #3b5353;
+    --heading-color: #193838;
+    --heading-description: #414141;
+
+    --default-color: #3b5353;
+    --surface-color: #0f302f;
+    --accent-soft: color-mix(in srgb, var(--primary-color), transparent 85%);
+    --card-shadow: 0 10px 30px color-mix(in srgb, var(--default-color), transparent 92%);
+
+    /* For pricing only */
+    --teal: #14b8a6;
+    --teal-dark: #0f766e;
+    --teal-light: #e6faf7;
+    --text-dark: #1f2937;
+    --text-muted: #8a94a3;
+    --border-color: #e8ecf1;
+
+    --light-background: {
+        --background-color: #f0f6f5;
+        --surface-color: #ffffff;
+    }
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    /* overflow-x: hidden; */
+    overflow-x: clip;
+}
+
+section {
+    scroll-margin-top: var(--scroll-offset, 80px);
+    /* 80px is a fallback just in case */
+}
+
+
+/* ======================================================== */
+
+/* Logo Styling */
+.logo-icon {
+    width: 28px;
+    height: 28px;
+}
+
+.logo-text {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #1b75ff;
+    letter-spacing: 0.5px;
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+.nav-link {
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.nav-link:hover {
+    background-color: #f0f0f0;
+    color: #000000;
+    border: 2px solid black;
+}
+
+/* Caret icon for Services dropdown */
+.dropdown-toggle-custom {
+    gap: 4px;
+}
+
+.caret-icon {
+    width: 16px;
+    height: 16px;
+}
+
+/* Right Side CTA Button */
+.btn-action {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    text-decoration: none;
+    padding: 8px 10px 8px 18px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    transition: 0.2s ease-out;
+
+}
+
+.btn-action-secondary {
+    background-color: black;
+    border-radius: 6px;
+    padding: 10px 10px 10px 18px;
+    ;
+}
+
+.btn-action:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.04);
+    border: 2px solid black;
+}
+
+
+
+/* Icon Box inside CTA */
+.btn-action .arrow-box {
+    background-color: #ffffff;
+    color: #1b75ff;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-action:hover .arrow-box {
+    background-color: white;
+    color: var(--primary-color);
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-header .hero-title h1 {
+    /* font-family: "Plus Jakarta Sans", sans-serif; */
+    font-size: 4.875rem;
+    font-weight: 800;
+    line-height: 5.8125rem;
+    color: black;
+}
+
+.hero-header .hero-description p {
+    text-align: center;
+    /* font-family: "Plus Jakarta Sans", Sans-serif; */
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    color: var(--heading-description);
+}
+
+.hero-header .hero-explore-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: auto;
+}
+
+
+/* Optional: Add a break for larger screens if you want them on one line later */
+/* @media (min-width: 768px) {
+    .hero-explore-title h1 {
+        display: block;
+    }
+
+    .hero-explore-title .line-one {
+        display: inline;
+    }
+} */
+
+
+.hero-header .hero-explore-title h1 {
+    /* font-family: "Poppins", Sans-serif; */
+    /* font-family: "Plus Jakarta Sans", sans-serif; */
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 52px;
+    color: black;
+}
+
+.full-screen-bg {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+    /* Centers image, forces it to scale to fill, and prevents repeating */
+    background-image: url('https://webhivez.com/wp-content/uploads/2026/05/background-1.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.full-screen-bg>.container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-header {
+    width: 100%;
+}
+
+
+
+
+/* ==================================================== */
+/* ANIMATIONS */
+
+.slow-float {
+    animation: floatUpDown 3s ease-in-out infinite alternate;
+}
+
+
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+/* ==================================================== */
+
+/* RESPONSIVE QUERIES */
+/* Hide desktop nav below 1024px */
+@media (max-width: 1023px) {
+    .nav-capsule {
+        display: none !important;
+    }
+
+    nav ul li .nav-link {
+        display: none;
+    }
+
+    .dropdown.d-lg-none {
+        display: block !important;
+    }
+
+}
+
+/* Force mobile dropdown to show only below 1024px */
+@media (min-width: 1024px) {
+    .dropdown.d-lg-none {
+        display: none !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-header .hero-title h1 {
+        font-size: 3.875rem;
+        line-height: 4.8125rem;
+    }
+
+    .hero-header .hero-description p {
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+
+}
