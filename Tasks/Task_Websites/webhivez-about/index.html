@@ -29,7 +29,749 @@
 </head>
 
 <body>
-    <div class="container-fluid full-screen-bg">
+
+    <!-- Custom Cursor Elements -->
+    <div class="custom-cursor-dot"></div>
+    <div class="custom-cursor-ring"></div>
+
+    <header class="container-fluid full-screen-bg p-0 m-0">
+
+        <div id="main-nav" class="container-fluid fixed-top py-3" style="z-index: 1050; background: transparent;">
+            <div class="container d-flex align-items-center justify-content-between position-relative">
+
+                <div class="navbar-brand d-flex align-items-center p-3 gap-2">
+                    <a href="https://webhivez.com"> <img
+                            src="https://webhivez.com/wp-content/uploads/2025/07/Webhivez.logo_.svg"
+                            alt="Webhivez Logo">
+                    </a>
+                </div>
+
+                <nav class="nav-capsule d-none d-lg-block">
+                    <ul class="m-0 list-unstyled d-flex align-items-center gap-2">
+                        <li><a href="#" class="nav-link">About Us</a></li>
+                        <!-- <li>
+                            <a href="#" class="nav-link dropdown-toggle-custom">
+                                Services
+                                <svg class="caret-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M7 10l5 5 5-5H7z" />
+                                </svg>
+                            </a>
+                        </li> -->
+                        <!-- Hover Dropdown Wrapper -->
+                        <li class="nav-dropdown-wrapper position-relative">
+                            <a href="#" class="nav-link dropdown-toggle-custom">
+                                Services
+                                <svg class="caret-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M7 10l5 5 5-5H7z" />
+                                </svg>
+                            </a>
+
+                            <!-- White BG Hover Dropdown Menu -->
+                            <ul class="dropdown-menu-custom list-unstyled position-absolute rounded-3 p-3 shadow">
+                                <li><a href="#">Web Design & UI/UX</a></li>
+                                <li><a href="#">Custom Web Development</a></li>
+                                <li><a href="#">WordPress Development</a></li>
+                                <li><a href="#">E-Commerce Solutions</a></li>
+                                <li><a href="#">SEO & Digital Marketing</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="https://webhivez.com/portfolio/" class="nav-link">Portfolio</a></li>
+                        <li><a href="#" class="nav-link">Blog</a></li>
+                        <li><a href="#" class="nav-link">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+                <div class="d-flex align-items-center gap-2">
+                    <div class="dropdown d-lg-none position-static">
+                        <button class="btn btn-outline-primary border-2" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-list fs-5"></i>
+                        </button>
+
+                        <ul class="dropdown-menu mobile-dropdown-menu w-100 text-center border-0 rounded-0 mt-4 p-5">
+                            <li><a class="dropdown-item py-3" href="#">About Us</a></li>
+                            <li><a class="dropdown-item py-3" href="#">Services</a></li>
+                            <li><a class="dropdown-item py-3" href="#">Portfolio</a></li>
+                            <li><a class="dropdown-item py-3" href="#">Blog</a></li>
+                            <li><a class="dropdown-item py-3" href="#">Contact Us</a></li>
+                            <hr class="border-secondary my-3">
+                            <li class="px-3">
+                                <a href="#" class="btn-action w-100 justify-content-center py-3">
+                                    <span>Request Free Audit</span>
+                                    <span class="arrow-box ms-2">
+                                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                            <polyline points="12 5 19 12 12 19"></polyline>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="btn-action d-none d-lg-inline-flex">
+                        <span>Request Free Audit</span>
+                        <span class="arrow-box">
+                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container hero-center-container">
+            <div class="hero-header">
+                <div class="row">
+                    <div class="col-12 hero-col-container text-center p-4 mx-auto">
+                        <div class="hero-title">
+                            <h1>Crafting <span style="color: var(--primary-color);">Digital Excellence</span></h1>
+                        </div>
+
+                        <div class="hero-description mt-4 mb-5">
+                            <p>Webhivez is a full-service agency delivering high-performance web design, development,
+                                and
+                                digital marketing. We build scalable UI/UX, e-commerce, and SEO solutions that drive
+                                business growth.</p>
+                        </div>
+
+                        <div class="hero-explore-title">
+                            <h1>
+                                <span class="line-one">Explore Our Services and</span>
+                                <span style="color: var(--primary-color);">Client Stories</span>
+                            </h1>
+                            <img src="assets/svg/down-arrow.svg" height="90" width="90" alt="Scroll Down"
+                                class="scroll-arrow my-2">
+                            <a href="https://webhivez.com/portfolio/" target="_blank"
+                                class="btn-action btn-action-secondary slow-float mt-3 mb-5">
+                                <span>Dive Into Our Portfolio</span>
+                                <span class="arrow-box">
+                                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- <section class="py-5">
+        <div class="container my-5 px-3">
+            <div class="section-title text-center mb-5">
+                <h1><span style="color: var(--primary-color);">CEO'S Message</span></h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-1 mb-3 mb-lg-0">
+                    <img src="assets/images/s-img.png" class="img-fluid rounded outlined-image glowing-image"
+                        alt="Leader Profile">
+                </div>
+                <div class="col-lg-6 order-2 ceo-msg-card p-4" style="text-align: justify;">
+                    <p class="text-muted fst-italic fst-italic">At WebHivez, we believe a strong digital presence is
+                        built on more
+                        than just
+                        great design. It requires strategy, innovation, and reliability. Since our inception, our
+                        mission
+                        has been to help businesses establish a meaningful online presence through high-quality digital
+                        solutions tailored to their goals.
+                    </p>
+
+                    <p class="text-muted fst-italic">As Managing Director and CEO, I am committed to ensuring every
+                        project
+                        reflects our core values
+                        of quality, transparency, and client satisfaction. Our experienced team combines technical
+                        expertise with creative thinking to deliver websites and digital solutions that are modern,
+                        scalable, and results-driven.</p>
+
+                    <p class="text-muted fst-italic">We value long-term relationships over one-time projects. By
+                        understanding your
+                        business, maintaining open communication, and delivering on our commitments, we strive to become
+                        a trusted digital partner you can rely on as your business grows.</p>
+
+                    <p class="text-muted fst-italic">
+                        Thank you for considering WebHivez. We look forward to helping you transform your ideas into
+                        impactful digital experiences and achieve lasting success online.
+                    </p>
+                    <p class="mt-5"> <strong>— Managing Director & CEO, WebHivez</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="py-5 position-relative overflow-hidden">
+        <div class="container my-4 my-lg-5 px-3">
+            <!-- Section Title -->
+            <div class="section-title text-center mb-5" data-aos="fade-up">
+                <h1 class="fw-800 text-dark">
+                    <span style="color: var(--primary-color);">CEO'S </span>Message
+                </h1>
+            </div>
+
+            <div class="row align-items-center g-4 g-lg-5">
+                <!-- CEO Image (5 columns wide on desktop to prevent bloating) -->
+                <div class="col-md-8 col-lg-5 mx-auto order-1 mb-4 mb-lg-0" data-aos="fade-right">
+                    <div class="image-wrapper position-relative">
+                        <img src="assets/images/s-img.png" class="img-fluid rounded-4 outlined-image glowing-image"
+                            alt="Leader Profile">
+                    </div>
+                </div>
+
+                <!-- CEO Message Card (7 columns wide for highly legible line lengths) -->
+                <div class="col-lg-7 order-2" data-aos="fade-left">
+                    <div class="ceo-msg-card position-relative p-4 p-md-5 rounded-4 shadow-sm ">
+                        <!-- Elegant Background Quote Watermark -->
+                        <i class="bi bi-quote position-relative quote-icon"></i>
+
+                        <div class="position-relative z-1">
+                            <p class="text-muted ">
+                                "At WebHivez, we believe a strong digital presence is built on more than just great
+                                design. It requires strategy, innovation, and reliability. Since our inception, our
+                                mission has been to help businesses establish a meaningful online presence through
+                                high-quality digital solutions tailored to their goals."
+                            </p>
+                            <p class="text-muted ">
+                                "As Managing Director and CEO, I am committed to ensuring every project reflects our
+                                core values of quality, transparency, and client satisfaction. Our experienced team
+                                combines technical expertise with creative thinking to deliver websites and digital
+                                solutions that are modern, scalable, and results-driven."
+                            </p>
+                            <p class="text-muted ">
+                                "We value long-term relationships over one-time projects. By understanding your
+                                business, maintaining open communication, and delivering on our commitments, we strive
+                                to become a trusted digital partner you can rely on as your business grows."
+                            </p>
+                            <p class="text-muted ">
+                                "Thank you for considering WebHivez. We look forward to helping you transform your ideas
+                                into impactful digital experiences and achieve lasting success online."
+                            </p>
+
+                            <div class="mt-4 pt-3 border-top border-light">
+                                <h5 class="fw-bold mb-1 text-dark">Managing Director & CEO</h5>
+                                <span class="text-primary fw-semibold fs-7">WebHivez Agency</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==================================================== -->
+    <!-- ABOUT US / CORE VALUES SECTION -->
+    <section class="py-5 bg-light position-relative">
+        <div class="container my-4 my-lg-5 px-3">
+
+            <!-- Header Text Block -->
+            <div class="row mb-5" data-aos="fade-up">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="section-title mb-3">
+                        <h1 class="fw-800 text-dark">
+                            Our Commitment to <span style="color: var(--primary-color);">Excellence</span>
+                        </h1>
+                    </div>
+                    <p class="text-muted fs-5 section-description">
+                        At WebHivez, excellence isn’t just a goal; it’s our way of life. We are committed to shifting
+                        digital perspectives through foundational values.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Interactive Stats/Values Grid -->
+            <div class="row g-4 justify-content-center">
+
+                <!-- Card 1: Expertise -->
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="value-card p-4 p-md-5 rounded-4 h-100 position-relative">
+                        <div
+                            class="value-icon-box mb-4 d-flex align-items-center justify-content-center text-primary rounded-3">
+                            <i class="bi bi-star-fill fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold text-dark mb-3">Expertise</h4>
+                        <p class="text-muted m-0">
+                            A team of highly skilled professionals dedicated to mastering their craft and delivering
+                            flawless architecture.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Innovation -->
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="value-card p-4 p-md-5 rounded-4 h-100 position-relative">
+                        <div
+                            class="value-icon-box mb-4 d-flex align-items-center justify-content-center text-primary rounded-3">
+                            <i class="bi bi-cpu fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold text-dark mb-3">Innovation</h4>
+                        <p class="text-muted m-0">
+                            Embracing the latest technologies, modern engineering stacks, and industry best practices.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3: Quality Assurance -->
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="value-card p-4 p-md-5 rounded-4 h-100 position-relative">
+                        <div
+                            class="value-icon-box mb-4 d-flex align-items-center justify-content-center text-primary rounded-3">
+                            <i class="bi bi-shield-check fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold text-dark mb-3">Quality Assurance</h4>
+                        <p class="text-muted m-0">
+                            Rigorous quality control measures and continuous checking systems to ensure flawless
+                            production deployment.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 4: Client Satisfaction -->
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="value-card p-4 p-md-5 rounded-4 h-100 position-relative">
+                        <div
+                            class="value-icon-box mb-4 d-flex align-items-center justify-content-center text-primary rounded-3">
+                            <i class="bi bi-emoji-smile fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold text-dark mb-3">Client Satisfaction</h4>
+                        <p class="text-muted m-0">
+                            Going the extra mile to make sure our workflows are fully transparent and our clients are
+                            delighted.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 5: Continuous Improvement -->
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="value-card p-4 p-md-5 rounded-4 h-100 position-relative">
+                        <div
+                            class="value-icon-box mb-4 d-flex align-items-center justify-content-center text-primary rounded-3">
+                            <i class="bi bi-arrow-repeat fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold text-dark mb-3">Continuous Improvement</h4>
+                        <p class="text-muted m-0">
+                            A culture of permanent learning, optimizations, and active skill enhancement that
+                            continuously drives us forward.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================================================================== -->
+
+    <section class="py-5" style="background-color: #121721;">
+        <div class="container-fluid">
+            <div class="container my-4 my-lg-5 px-3">
+                <div class="row">
+                    <div class="col-12" data-aos="fade-up">
+
+                        <div class="text-center mb-5">
+                            <div class="section-title mb-3">
+                                <span class="text-uppercase fw-extrabold tracking-wider fs-7 d-block mb-2"
+                                    style="color: var(--primary-color);">Our Purpose</span>
+                                <h1 class="fw-800 text-white display-6">
+                                    Driven by a <span style="color: var(--primary-color);">Simple </span>
+                                    yet Profound
+                                    <span style="color: var(--primary-color);">Mission</span>
+
+                                </h1>
+                            </div>
+                            <p class="section-description text-white-50 max-width-700 mx-auto">
+                                At WebHivez, our mission is to leverage our technical prowess and creative flair to
+                                deliver digital solutions that empower businesses and individuals to thrive in the
+                                online world. We are committed to:
+                            </p>
+                        </div>
+
+                        <div class="row g-4 justify-content-center">
+
+                            <div class="col-md-6">
+                                <div class="mission-item-flat p-4 d-flex align-items-start gap-3 rounded-3 h-100">
+                                    <div
+                                        class="mission-icon-flat d-flex align-items-center justify-content-center rounded-circle flex-shrink-0">
+                                        <i class="bi bi-award-fill"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-bold text-white mb-2">Quality</h5>
+                                        <p class=" small mb-0 lh-base">Delivering flawless execution and
+                                            pixel-perfect software engineering.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="mission-item-flat p-4 d-flex align-items-start gap-3 rounded-3 h-100">
+                                    <div
+                                        class="mission-icon-flat d-flex align-items-center justify-content-center rounded-circle flex-shrink-0">
+                                        <i class="bi bi-lightbulb-fill"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-bold text-white mb-2">Innovation</h5>
+                                        <p class=" small mb-0 lh-base">Implementing next-gen technology
+                                            stacks to solve complex digital roadblocks.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="mission-item-flat p-4 d-flex align-items-start gap-3 rounded-3 h-100">
+                                    <div
+                                        class="mission-icon-flat d-flex align-items-center justify-content-center rounded-circle flex-shrink-0">
+                                        <i class="bi bi-patch-check-fill"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-bold text-white mb-2">Ethical Practices</h5>
+                                        <p class=" small mb-0 lh-base">Maintaining absolute transparency,
+                                            data safety, and fair collaboration mechanics.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="mission-item-flat p-4 d-flex align-items-start gap-3 rounded-3 h-100">
+                                    <div
+                                        class="mission-icon-flat d-flex align-items-center justify-content-center rounded-circle flex-shrink-0">
+                                        <i class="bi bi-people-fill"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-bold text-white mb-2">Client-Centricity</h5>
+                                        <p class=" small mb-0 lh-base">Placing your target benchmarks at
+                                            the core of our iterative design loops.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-8">
+                                <div class="mission-item-flat p-4 d-flex align-items-start gap-3 rounded-3 h-100">
+                                    <div
+                                        class="mission-icon-flat d-flex align-items-center justify-content-center rounded-circle flex-shrink-0">
+                                        <i class="bi bi-lightning-charge-fill"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-bold text-white mb-2">Team Empowerment</h5>
+                                        <p class=" small mb-0 lh-base">Nurturing continuous learning,
+                                            structural ownership, and collective success.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="text-center mt-5">
+                            <a href="https://webhivez.com/portfolio/" target="_blank" class="btn-action px-5 py-3">
+                                <span>View All</span>
+                                <span class="arrow-box">
+                                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================================================== -->
+
+    <section class=" stats-section py-5">
+        <div class="container-fluid">
+            <div class="container my-4 px-3">
+                <div class="row g-4 justify-content-center">
+
+                    <div class="col-6 col-lg-3">
+                        <div class="stat-card p-4 text-center rounded-1 h-100">
+                            <div class="stat-number-wrapper mb-2">
+                                <span class="stat-number fw-800" data-target="10">0</span><span
+                                    class="stat-suffix fw-800">+</span>
+                            </div>
+                            <p class="stat-label small mb-0 text-uppercase tracking-wider">Years of
+                                Experience</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-3">
+                        <div class="stat-card p-4 text-center rounded-1 h-100">
+                            <div class="stat-number-wrapper mb-2">
+                                <span class="stat-number fw-800" data-target="98">0</span><span
+                                    class="stat-suffix fw-800">%</span>
+                            </div>
+                            <p class="stat-label small mb-0 text-uppercase tracking-wider">Success Rate
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-3">
+                        <div class="stat-card p-4 text-center rounded-1 h-100">
+                            <div class="stat-number-wrapper mb-2">
+                                <span class="stat-number fw-800" data-target="500">0</span><span
+                                    class="stat-suffix fw-800">+</span>
+                            </div>
+                            <p class="stat-label small mb-0 text-uppercase tracking-wider">Projects
+                                Delivered</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-3">
+                        <div class="stat-card p-4 text-center rounded-1 h-100">
+                            <div class="stat-number-wrapper mb-2">
+                                <span class="stat-number fw-800" data-target="25">0</span><span
+                                    class="stat-suffix fw-800">+</span>
+                            </div>
+                            <p class="stat-label small mb-0 text-uppercase tracking-wider">Industries
+                                Served</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================================================================== -->
+
+    <!-- ==================================================== -->
+    <!-- ENGAGEMENT MODELS SECTION (WITH SYSTEM DEPTH SHADOW) -->
+    <section class="py-5 position-relative bg-white">
+        <div class="container my-4 my-lg-5 px-3">
+            <div class="engagement-models-container p-4 p-md-5 rounded-4" data-aos="fade-up">
+
+                <!-- Section Header (Using your pre-defined layout standards) -->
+                <div class="row mb-5">
+                    <div class="col-lg-9 mx-auto text-center">
+                        <div class="section-title mb-3">
+                            <span class=" fw-extrabold tracking-wider fs-7 d-block mb-2">Fuel Success
+                                Through Collaboration</span>
+                            <h1 class="fw-800 text-dark">
+                                With Our <span style="color: var(--primary-color);">Engagement Models</span>
+                            </h1>
+                        </div>
+                        <p class="text-muted fs-5 section-description mb-0">
+                            Experience a development journey like never before with our dynamic engagement models,
+                            ensuring a stress-free path to growth.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Engagement Models Grid System -->
+                <div class="row g-4 justify-content-center mb-5">
+
+                    <!-- Model 1: Staff Augmentation -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="value-card p-4 p-md-5 rounded-4 h-100 position-relative">
+                            <div class="value-icon-box mb-4 d-flex align-items-center justify-content-center rounded-3">
+                                <i class="bi bi-people-fill fs-3"></i>
+                            </div>
+                            <h4 class="fw-bold text-dark mb-3">Staff Augmentation</h4>
+                            <p class="text-muted m-0">
+                                Scale your team dynamically with skilled resources ready to integrate flawlessly into
+                                your existing pipeline workflows.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Model 2: Dedicated Teams -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="value-card p-4 p-md-5 rounded-4 h-100 position-relative">
+                            <div class="value-icon-box mb-4 d-flex align-items-center justify-content-center rounded-3">
+                                <i class="bi bi-person-workspace fs-3"></i>
+                            </div>
+                            <h4 class="fw-bold text-dark mb-3">Dedicated Teams</h4>
+                            <p class="text-muted m-0">
+                                Acquire a fully managed end-to-end squad focused exclusively on turning your business
+                                objectives into production code.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Model 3: Product Development -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="value-card p-4 p-md-5 rounded-4 h-100 position-relative">
+                            <div class="value-icon-box mb-4 d-flex align-items-center justify-content-center rounded-3">
+                                <i class="bi bi-layers-half fs-3"></i>
+                            </div>
+                            <h4 class="fw-bold text-dark mb-3">Product Development</h4>
+                            <p class="text-muted m-0">
+                                From discovery mappings through design to actual architecture buildouts, we turn your
+                                raw concepts into powerful market tools.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Bottom Call to Action Grid Alignment -->
+                <div class="text-center mt-4">
+                    <a href="#" class="btn-action">
+                        <span>Secure a Free Quote Today!</span>
+                        <span class="arrow-box">
+                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =============================================================================================== -->
+
+    <!-- FAQ SECTION -->
+    <section class="py-5 position-relative">
+        <div class="container my-4 my-lg-5 px-3">
+
+            <!-- Section Header -->
+            <div class="row mb-5" data-aos="fade-up">
+                <div class="col-lg-7 mx-auto text-center">
+                    <div class="section-title mb-3">
+                        <h1 class="fw-800 text-dark">
+                            Frequently Asked <span style="color: var(--primary-color);">Questions</span>
+                        </h1>
+                    </div>
+                    <p class="text-muted section-description">
+                        We've got answers to your questions. Explore our commonly asked infrastructure and process
+                        inquiries.
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- Accordion Wrapper -->
+            <div class="row">
+                <div class="col-lg-9 mx-auto">
+                    <div class="accordion custom-faq-accordion" id="faqAccordion">
+
+                        <!-- FAQ Item 1 -->
+                        <div class="accordion-item mb-4 p-2 border-0 rounded-3 overflow-hidden" data-aos="fade-up"
+                            data-aos-delay="100">
+                            <h2 class="accordion-header" id="faqHeadingOne">
+                                <button class="accordion-button fw-bold text-dark collapsed py-3 px-4" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="false"
+                                    aria-controls="faqCollapseOne">
+                                    What services does WebHivez offer?
+                                </button>
+                            </h2>
+                            <div id="faqCollapseOne" class="accordion-collapse collapse" aria-labelledby="faqHeadingOne"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted pt-3 px-4 pb-4">
+                                    WebHivez provides a full range of digital services including web design, web
+                                    development, UI/UX design, SEO, e-commerce development, project management, and
+                                    digital marketing to help businesses grow online.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 2 -->
+                        <div class="accordion-item mb-4 p-2 border-0 rounded-3 overflow-hidden" data-aos="fade-up"
+                            data-aos-delay="150">
+                            <h2 class="accordion-header" id="faqHeadingTwo">
+                                <button class="accordion-button fw-bold text-dark collapsed py-3 px-4" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false"
+                                    aria-controls="faqCollapseTwo">
+                                    What makes WebHivez different from other web development companies?
+                                </button>
+                            </h2>
+                            <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted pt-3 px-4 pb-4">
+                                    We focus on delivering real results, not just projects. Our approach combines
+                                    innovation, performance, and strategy to create high-quality digital solutions that
+                                    drive long-term business growth.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 3 -->
+                        <div class="accordion-item mb-4 p-2 border-0 rounded-3 overflow-hidden" data-aos="fade-up"
+                            data-aos-delay="200">
+                            <h2 class="accordion-header" id="faqHeadingThree">
+                                <button class="accordion-button fw-bold text-dark collapsed py-3 px-4" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false"
+                                    aria-controls="faqCollapseThree">
+                                    How experienced is the WebHivez team?
+                                </button>
+                            </h2>
+                            <div id="faqCollapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="faqHeadingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted pt-3 px-4 pb-4">
+                                    Our team has over 10+ years of experience and has successfully delivered 500+
+                                    digital projects across 25+ industries worldwide.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 4 -->
+                        <div class="accordion-item mb-4 p-2 border-0 rounded-3 overflow-hidden" data-aos="fade-up"
+                            data-aos-delay="250">
+                            <h2 class="accordion-header" id="faqHeadingFour">
+                                <button class="accordion-button fw-bold text-dark collapsed py-3 px-4" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faqCollapseFour" aria-expanded="false"
+                                    aria-controls="faqCollapseFour">
+                                    Do you work with startups as well as established businesses?
+                                </button>
+                            </h2>
+                            <div id="faqCollapseFour" class="accordion-collapse collapse"
+                                aria-labelledby="faqHeadingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted pt-3 px-4 pb-4">
+                                    Yes, we work with startups, small businesses, and enterprise-level clients. Our
+                                    solutions are tailored to meet the unique needs and growth stage of each business.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 5 -->
+                        <div class="accordion-item border-0 p-2 rounded-3 overflow-hidden" data-aos="fade-up"
+                            data-aos-delay="300">
+                            <h2 class="accordion-header" id="faqHeadingFive">
+                                <button class="accordion-button fw-bold text-dark collapsed py-3 px-4" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faqCollapseFive" aria-expanded="false"
+                                    aria-controls="faqCollapseFive">
+                                    How does WebHivez ensure quality in its projects?
+                                </button>
+                            </h2>
+                            <div id="faqCollapseFive" class="accordion-collapse collapse"
+                                aria-labelledby="faqHeadingFive" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted pt-3 px-4 pb-4">
+                                    We follow strict quality assurance processes, use modern technologies, and perform
+                                    thorough testing to ensure every project is delivered with high performance,
+                                    security, and reliability.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =============================================================================================== -->
+
+    <!-- <div class="container-fluid full-screen-bg">
 
         <div class="container-fluid sticky-top py-3" style="z-index: 1050; background: transparent;">
 
@@ -91,7 +833,6 @@
                 <div class="row">
                     <div class="col-12 text-center p-4 mx-auto">
                         <div class="hero-title">
-                            <!-- <h1>About <span style="color: var(--primary-color);">WebHivez</span></h1> -->
                             <h1>Crafting <span style="color: var(--primary-color);">Digital Excellence</span></h1>
                         </div>
 
@@ -103,16 +844,10 @@
                         </div>
 
 
-                        <!-- <div class="hero-explore-title">
-                            <h1>Ready To Explore Our <br><span style="color: var(--primary-color);">Services</span> &
-                                <span style="color: var(--primary-color);">Client</span>
-                                Stories?
-                            </h1>
-                        </div> -->
+
                         <div class="hero-explore-title">
                             <h1>
                                 <span class="line-one">Explore Our Services and</span>
-                                <!-- <span class="line-two"><span style="color: var(--primary-color);"></span> & -->
                                 <span style="color: var(--primary-color);">Client Stories</span>
                             </h1>
                             <img src="assets/svg/down-arrow.svg" height="100" width="100" alt="">
@@ -149,8 +884,138 @@
                 <div class="col-lg-6 order-2"></div>
             </div>
         </div>
-    </section>
+    </section> -->
 
+    <!-- =============================================================================================== -->
+
+    <!-- ==================================================== -->
+    <!-- SITE FOOTER -->
+    <footer class="site-footer pt-5 pb-0" style="background-color: #090d16;">
+        <div class="container pt-4 px-3">
+            <div class="row g-5 justify-content-between">
+
+                <!-- Left Panel Card Column -->
+                <div class="col-lg-4 order-lg-0 order-5 col-md-6 mb-4 mb-lg-0">
+                    <div class="footer-contact-card p-4 rounded-4 h-100">
+
+                        <!-- Direct Call -->
+                        <div class="footer-contact-item d-flex align-items-center gap-3 mb-4">
+                            <div
+                                class="footer-icon-circle d-flex align-items-center justify-content-center rounded-circle flex-shrink-0">
+                                <i class="bi bi-telephone-fill text-white fs-5"></i>
+                            </div>
+                            <div>
+                                <span class="text-white-50 small d-block mb-1">Direct Call</span>
+                                <a href="tel:+923042957540"
+                                    class="text-white text-decoration-none fw-bold tracking-wide">+92 304 2957540</a>
+                            </div>
+                        </div>
+
+                        <!-- Email Us -->
+                        <div class="footer-contact-item d-flex align-items-center gap-3 mb-4">
+                            <div
+                                class="footer-icon-circle d-flex align-items-center justify-content-center rounded-circle flex-shrink-0">
+                                <i class="bi bi-envelope-fill text-white fs-5"></i>
+                            </div>
+                            <div>
+                                <span class="text-white-50 small d-block mb-1">Email Us</span>
+                                <a href="mailto:contact@webhivez.com"
+                                    class="text-white text-decoration-none fw-semibold">contact@webhivez.com</a>
+                            </div>
+                        </div>
+
+                        <hr class="border-secondary opacity-25 my-4">
+
+                        <!-- Social Media Handles -->
+                        <div>
+                            <h6 class="text-white fw-bold mb-3">Our Socials</h6>
+                            <div class="d-flex align-items-center gap-2">
+                                <a href="#"
+                                    class="footer-social-icon d-flex align-items-center justify-content-center rounded-circle border ">
+                                    <i class="ri-facebook-fill"></i>
+                                </a>
+                                <a href="#"
+                                    class="footer-social-icon d-flex align-items-center justify-content-center rounded-circle border ">
+                                    <i class="ri-linkedin-box-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Column 2: Our Service -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h5 class="text-white fw-bold mb-4 footer-column-title">Our Service</h5>
+                    <ul class="list-unstyled footer-links-list">
+                        <li><a href="#">Custom Web Development</a></li>
+                        <li><a href="#">WordPress Development</a></li>
+                        <li><a href="#">Webflow Development</a></li>
+                        <li><a href="#">SEO</a></li>
+                        <li><a href="#">UI/UX</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Industries We Serve -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h5 class="text-white fw-bold mb-4 footer-column-title">Industries We Serve</h5>
+                    <ul class="list-unstyled footer-links-list">
+                        <li><a href="#">Healthcare</a></li>
+                        <li><a href="#">IT Services</a></li>
+                        <li><a href="#">Law Firm</a></li>
+                        <li><a href="#">Home Services</a></li>
+                        <li><a href="#">Travel & Tours</a></li>
+                        <li><a href="#">Video Production</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Quick Links -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h5 class="text-white fw-bold mb-4 footer-column-title">Quick Links</h5>
+                    <ul class="list-unstyled footer-links-list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 5: Get in Touch -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h5 class="text-white fw-bold mb-4 footer-column-title">Get in Touch</h5>
+                    <ul class="list-unstyled footer-links-list">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Request Free Audit</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- Bottom Copyright Strip Wrapper -->
+            <div class="footer-copyright-strip py-3 px-5 mt-5 rounded-top-4"
+                style="background-color: var(--primary-color);">
+                <div class="container px-3">
+                    <div class="row align-items-center justify-content-between g-2">
+                        <div class="col-sm-auto text-center text-sm-start">
+                            <p class="text-white m-0 opacity-90 fw-medium">
+                                © Copyright 2026 All rights reserved.
+                            </p>
+                        </div>
+                        <div class="col-sm-auto text-center text-sm-end">
+                            <div class="footer-sub-links small fw-medium">
+                                <a href="#" class="text-white text-decoration-none opacity-90">Sitemap</a>
+                                <span class="text-white mx-2 opacity-50">|</span>
+                                <a href="#" class="text-white text-decoration-none opacity-90">Privacy Policy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
     <!-- =============================================================================================== -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
