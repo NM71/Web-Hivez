@@ -1,36 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
-
-
-
 :root {
     --primary-color: #1b75ff;
     --secondary-color: #f5f5dc;
     --section-bg-color: #1a202c;
-    --navlink-color: #3b5353;
     --heading-color: #193838;
-    --heading-description: #414141;
-
     --default-color: #3b5353;
-    --surface-color: #0f302f;
     --accent-soft: color-mix(in srgb, var(--primary-color), transparent 85%);
     --card-shadow: 0 10px 30px color-mix(in srgb, var(--default-color), transparent 92%);
-
-    /* For pricing only */
-    --teal: #14b8a6;
-    --teal-dark: #0f766e;
-    --teal-light: #e6faf7;
-    --text-dark: #1f2937;
-    --text-muted: #8a94a3;
-    --border-color: #e8ecf1;
-
-    --light-background: {
-        --background-color: #f0f6f5;
-        --surface-color: white;
-    }
 }
-
-
 
 * {
     margin: 0;
@@ -43,11 +21,8 @@
 html,
 body {
     width: 100%;
-    /* overflow-x: hidden; */
     overflow-x: clip;
 }
-
-/* Nav BG on scroll */
 
 section {
     scroll-margin-top: var(--scroll-offset, 80px);
@@ -63,104 +38,6 @@ section {
     padding-top: 12px !important;
     padding-bottom: 12px !important;
 }
-
-
-/* ======================================================== */
-/* ==========================================
-   Custom Fluid Cursor Styles
-   ========================================== */
-
-/* Hide native cursor globally on desktop viewports */
-@media (min-width: 992px) {
-
-    html,
-    body {
-        cursor: none !important;
-    }
-
-    a,
-    button,
-    .accordion-button,
-    .value-card,
-    .clickable {
-        cursor: none !important;
-    }
-}
-
-/* Inner Solid Core Dot */
-.custom-cursor-dot {
-    width: 8px;
-    height: 8px;
-    background-color: var(--primary-color);
-    position: fixed;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9999;
-    opacity: 0;
-    transition: width 0.2s, height 0.2s, background-color 0.2s, opacity 0.3s;
-}
-
-/* Outer Trailing Lag Ring */
-.custom-cursor-ring {
-    width: 36px;
-    height: 36px;
-    border: 1.5px solid color-mix(in srgb, var(--primary-color), transparent 40%);
-    position: fixed;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9998;
-    opacity: 0;
-    /* Uses hardware acceleration matrix parameters for smooth 60fps tracking */
-    transition: width 0.3s cubic-bezier(0.25, 1, 0.5, 1),
-        height 0.3s cubic-bezier(0.25, 1, 0.5, 1),
-        border-color 0.3s,
-        background-color 0.3s,
-        opacity 0.3s;
-}
-
-/* Interactive Hover/Expansion State class */
-.custom-cursor-active.custom-cursor-ring {
-    width: 56px;
-    height: 56px;
-    border-color: var(--primary-color);
-    background-color: color-mix(in srgb, var(--primary-color), transparent 93%);
-}
-
-.custom-cursor-active.custom-cursor-dot {
-    width: 4px;
-    height: 4px;
-}
-
-/* Hide on standard mobile touch screens automatically */
-@media (max-width: 991px) {
-
-    .custom-cursor-dot,
-    .custom-cursor-ring {
-        display: none !important;
-    }
-}
-
-
-
-/* ======================================================== */
-
-/* Logo Styling */
-.logo-icon {
-    width: 28px;
-    height: 28px;
-}
-
-.logo-text {
-    font-size: 1.15rem;
-    font-weight: 800;
-    color: #1b75ff;
-    letter-spacing: 0.5px;
-    font-family: 'Inter', sans-serif;
-}
-
-
 
 .nav-link {
     background-color: var(--primary-color);
@@ -182,24 +59,48 @@ section {
     border: 2px solid black;
 }
 
+.about-hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
 
-/* ================================================================ */
-/* ==========================================
-   Desktop Hover Navigation Dropdown
-   ========================================== */
+.about-hero-bg {
+    background-image: url('https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
-/* Maintain layout alignment context */
+.about-hero-overlay {
+    background: radial-gradient(circle at center, rgba(15, 48, 47, 0.95) 0%, rgba(11, 18, 32, 0.88) 100%);
+}
+
+.hero-content-wrapper {
+    flex: 1;
+    padding-top: 160px;
+    padding-bottom: 100px;
+}
+
+.max-width-800 {
+    max-width: 800px;
+}
+
+.hero-bottom-fade {
+    height: 20px;
+    background: linear-gradient(to top, #ffffff, transparent);
+    z-index: 2;
+}
+
 .nav-dropdown-wrapper {
     padding-bottom: 10px;
     margin-bottom: -10px;
 }
 
-/* Dropdown Menu Container Settings */
 .dropdown-menu-custom {
     top: 100%;
     left: 50%;
     transform: translateX(-50%) translateY(15px);
-    /* Centers menu under button */
     min-width: 240px;
     background-color: white !important;
     border: 1px solid rgba(0, 0, 0, 0.06);
@@ -210,7 +111,6 @@ section {
     transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), visibility 0.3s;
 }
 
-/* Individual Links */
 .dropdown-menu-custom li a {
     display: block;
     color: black !important;
@@ -222,42 +122,30 @@ section {
     transition: all 0.2s ease-in-out;
 }
 
-/* Hover Interaction over Dropdown Links */
 .dropdown-menu-custom li a:hover {
     color: var(--primary-color) !important;
-    /* padding-left: 18px; */
-    /* Elegant subtle slide step effect */
 }
 
-/* Rotates the caret smoothly on hover */
 .nav-dropdown-wrapper:hover .caret-icon {
     transform: rotate(180deg);
 }
 
 .caret-icon {
     transition: transform 0.25s ease;
+    width: 16px;
+    height: 16px;
 }
 
-/* Activation Trigger States on Hover */
 .nav-dropdown-wrapper:hover .dropdown-menu-custom {
     opacity: 1;
     visibility: visible;
     transform: translateX(-50%) translateY(5px);
 }
 
-/* ================================================================ */
-
-/* Caret icon for Services dropdown */
 .dropdown-toggle-custom {
     gap: 4px;
 }
 
-.caret-icon {
-    width: 16px;
-    height: 16px;
-}
-
-/* Right Side CTA Button */
 .btn-action {
     background-color: var(--primary-color);
     color: white;
@@ -271,32 +159,15 @@ section {
     align-items: center;
     gap: 12px;
     transition: 0.2s ease-out;
-
-}
-
-.btn-action-secondary {
-    background-color: var(--section-bg-color);
-    border-radius: 6px;
-    font-size: 1.1rem;
-    padding: 10px 10px 10px 18px;
-    ;
-}
-
-.btn-action-secondary svg {
-    height: 1rem;
-    width: 1rem;
 }
 
 .btn-action:hover {
     background-color: white;
     color: black;
-    transform: scale(1.04);
     border: 2px solid black;
+    transform: scale(1.04);
 }
 
-
-
-/* Icon Box inside CTA */
 .btn-action .arrow-box {
     background-color: white;
     color: #1b75ff;
@@ -319,94 +190,6 @@ section {
     justify-content: center;
 }
 
-.hero-col-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
-.hero-header .hero-title h1 {
-    /* font-family: "Plus Jakarta Sans", sans-serif; */
-    font-size: 4.875rem;
-    font-weight: 800;
-    line-height: 5.8125rem;
-    color: black;
-}
-
-.hero-header .hero-description p {
-    text-align: center;
-    /* font-family: "Plus Jakarta Sans", Sans-serif; */
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 26px;
-    color: var(--heading-description);
-}
-
-.hero-header .hero-explore-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    margin: auto;
-}
-
-
-.hero-header .hero-explore-title h1 {
-    /* font-family: "Poppins", Sans-serif; */
-    /* font-family: "Plus Jakarta Sans", sans-serif; */
-    display: flex;
-    flex-direction: column;
-    font-size: 3rem;
-    font-weight: 800;
-    line-height: 52px;
-    color: black;
-}
-
-.full-screen-bg {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    /* Centers image, forces it to scale to fill, and prevents repeating */
-    background-image: url('https://webhivez.com/wp-content/uploads/2026/05/background-1.svg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.hero-center-container {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero-center-container {
-    /* Accounts for the height of the fixed navbar + extra padding */
-    padding-top: 100px;
-}
-
-/* Optional responsive tweak if you want tighter spacing on desktop */
-@media (min-width: 992px) {
-    .hero-center-container {
-        padding-top: 120px;
-    }
-}
-
-
-/* .full-screen-bg>.container {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
-.hero-header {
-    width: 100%;
-}
-
 .mobile-dropdown-menu .dropdown-item {
     font-size: 1.25rem;
     font-weight: 600;
@@ -419,9 +202,6 @@ section {
     color: white !important;
 }
 
-
-/* ==================================================== */
-/* Section CSS */
 .section-title h1 {
     font-size: 3.5rem;
     font-weight: 800;
@@ -429,42 +209,13 @@ section {
     color: black;
 }
 
-/* .ceo-msg-card {
-    background-color: white;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
-} */
-
-/* ==================================================== */
-/* CEO Message Section Custom Styling */
-
-
-/* Quote Card Styling */
 .ceo-msg-card {
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    background: white;
-    text-align: left;
-    border-radius: 6px;
-
+    border: none;
 }
 
-/* Elegant Watermark Quote Icon */
-.ceo-msg-card .quote-icon {
-    font-size: 5rem;
-    color: color-mix(in srgb, var(--primary-color), transparent 40%);
-    /* top: -10px; */
-    pointer-events: none;
-}
-
-/* Font weight helper */
 .fw-800 {
     font-weight: 800;
 }
-
-/* ==================================================== */
-/* ==========================================
-   About Us - Value Cards Styling
-   ========================================== */
 
 .value-card {
     background: white;
@@ -473,7 +224,6 @@ section {
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-/* Responsive Icon Container Box */
 .value-icon-box {
     width: 60px;
     height: 60px;
@@ -482,7 +232,6 @@ section {
     transition: all 0.3s ease;
 }
 
-/* Clean Micro-Interaction Lift State */
 .value-card:hover {
     transform: translateY(-8px);
     background: white;
@@ -496,7 +245,6 @@ section {
     transform: rotate(8deg) scale(1.05);
 }
 
-/* Value Typography Details */
 .value-card h4 {
     font-size: 1.35rem;
     letter-spacing: -0.3px;
@@ -507,12 +255,6 @@ section {
     line-height: 1.6;
 }
 
-
-/* ==================================================== */
-/* ==========================================
-   FAQ Custom Accordion Styling (Updated)
-   ========================================== */
-
 .custom-faq-accordion .accordion-item {
     background-color: white;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
@@ -520,40 +262,29 @@ section {
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Question Button - Default State */
 .custom-faq-accordion .accordion-button {
     font-size: 1.1rem;
     background-color: transparent !important;
-    /* Keep it transparent */
     color: var(--heading-color) !important;
     box-shadow: none !important;
     transition: color 0.3s ease;
 }
 
-/* Question Button - Expanded/Active State (No BG change) */
 .custom-faq-accordion .accordion-button:not(.collapsed) {
     background-color: transparent !important;
-    /* Forces background to stay the same */
     color: var(--primary-color) !important;
-    /* Only change text color to primary */
 }
 
-/* Smooth Slide-Down / Slide-Up Animation Fine-Tuning */
-.custom-faq-accordion .collapsing {
-    transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
-}
-
+.custom-faq-accordion .collapsing,
 .custom-faq-accordion .collapse {
     transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Subtle Hover Card Lift */
 .custom-faq-accordion .accordion-item:hover {
     border-color: rgba(27, 117, 255, 0.45) !important;
     box-shadow: 0 10px 25px rgba(27, 117, 255, 0.04);
 }
 
-/* Chevron Icon Smooth Rotation */
 .custom-faq-accordion .accordion-button::after {
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -564,14 +295,6 @@ section {
     background-color: transparent;
 }
 
-/* ==================================================== */
-
-
-/* ==========================================
-   Mission Section Custom Styling
-   ========================================== */
-
-/* Keep "Our Purpose" spaced elegantly above the primary heading */
 .tracking-wider {
     letter-spacing: 2px;
 }
@@ -580,89 +303,27 @@ section {
     max-width: 720px;
 }
 
-/* Flat solid containers matching site styles */
-.mission-item-flat {
-    background-color: var(--section-bg-color);
-    /* Slight depth contrast against #121721 */
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-.mission-item-flat p {
-    color: white;
-    opacity: 0.5;
-}
-
-/* Icon box matching core primary system */
-.mission-icon-flat {
-    min-width: 48px;
-    height: 48px;
-    background-color: var(--primary-color);
-    color: white;
-    font-size: 1.15rem;
-    transition: all 0.25s ease-out;
-}
-
-/* Elevate hover state to align with standard site cards */
-.mission-item-flat:hover {
-    background-color: #1d2534;
-    border-color: rgba(27, 117, 255, 0.3);
-    transform: translateY(-4px);
-}
-
-.mission-item-flat:hover .mission-icon-flat {
-    background-color: white;
-    color: var(--primary-color);
-    transform: scale(1.05);
-}
-
-.mission-item-flat:hover p {
-    color: white;
-    opacity: 1;
-}
-
-/* ==================================================== */
-
-/* ==========================================
-   Animated Stats Section Styling
-   ========================================== */
 .stats-section {
     border-top: 1px solid rgba(255, 255, 255, 0.03);
     border-bottom: 1px solid rgba(255, 255, 255, 0.03);
 }
 
-/* Stat Cards matching your brand-flat style */
 .stat-card {
-    /* background-color: var(--section-bg-color);
+    background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.05);
-    transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1); */
-
-
-    background-color: white;
-    border: 2px solid var(--primary-color);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-
 }
 
 .stat-card:hover {
     transform: translateY(-5px);
-    /* background-color: white;
-    border: 2px solid var(--primary-color);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); */
     background-color: var(--section-bg-color);
     border: 1px solid rgba(255, 255, 255, 0.05);
     transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
-
 }
 
 .stat-card:hover .stat-label {
-    /* color: var(--section-bg-color); */
     color: white;
 }
 
-.stat-label
-
-/* Big Bold Numbers */
 .stat-number-wrapper {
     display: flex;
     justify-content: center;
@@ -670,7 +331,7 @@ section {
 }
 
 .stat-number {
-    font-size: 5.25rem;
+    font-size: 3.5rem;
     color: var(--primary-color);
     line-height: 1;
     letter-spacing: -1px;
@@ -683,39 +344,19 @@ section {
     margin-left: 2px;
 }
 
-/* Stat Subtext */
 .stat-label {
     font-size: 0.9rem;
     letter-spacing: 1.5px;
     font-weight: 500;
-    /* color: white; */
     color: var(--section-bg-color);
 }
 
-/* Responsive adjustments */
-@media (max-width: 767px) {
-    .stat-number {
-        font-size: 2.5rem;
-    }
-
-    .stat-suffix {
-        font-size: 1.85rem;
-    }
-}
-
-/* ==================================================== */
-
-/* ==========================================
-   Engagement Models Card Wrapper
-   ========================================== */
 .engagement-models-container {
     background-color: white;
     border: 1px solid rgba(0, 0, 0, 0.04);
-    /* Leverages your custom design tokens safely */
     box-shadow: var(--card-shadow);
 }
 
-/* Subtle border color cleanup for inner items so they rest nicely on white */
 .engagement-models-container .value-card {
     background-color: #fafbfc;
     border: 1px solid rgba(0, 0, 0, 0.03);
@@ -725,26 +366,12 @@ section {
     background-color: white;
 }
 
-@media (max-width: 767px) {
-    .engagement-models-container {
-        padding: 2rem 1.25rem !important;
-    }
-}
-
-
-/* ==================================================== */
-
-/* ==========================================
-   Pixel-Perfect Footer Style Systems
-   ========================================== */
-
 .site-footer {
     letter-spacing: -0.1px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
 }
 
-/* Contact Card Utility Frame */
 .footer-contact-card {
     border: 1px solid #444444;
 }
@@ -755,7 +382,6 @@ section {
     background-color: var(--primary-color);
 }
 
-/* Interactive Link Lists CSS rules */
 .footer-column-title {
     font-size: 1.15rem;
     letter-spacing: -0.2px;
@@ -779,7 +405,6 @@ section {
     padding-left: 4px;
 }
 
-/* Social Icon Roundels */
 .footer-social-icon {
     width: 50px;
     height: 50px;
@@ -791,48 +416,23 @@ section {
 
 .footer-social-icon:hover {
     background-color: var(--primary-color);
-    /* color: var(--primary-color) !important; */
-    /* border-color: white !important; */
-    /* transform: translateY(-3px); */
 }
 
-/* Copyright Strip Overrides */
 .footer-copyright-strip .opacity-90:hover {
     opacity: 1 !important;
 }
 
-/* Quick Responsiveness adjustments */
-@media (max-width: 991px) {
-    .footer-column-title {
-        margin-top: 1rem;
-        font-size: 1.05rem;
-    }
-}
-
-/* ==================================================== */
-/* FILTERS */
-
 .outlined-image {
-    /* Syntax: drop-shadow(X-offset Y-offset Blur-radius Color) */
-    filter:
-        /* Invisible gap */
-        /* drop-shadow(3px 3px 0px white) drop-shadow(-3px -3px 0px white) drop-shadow(3px -3px 0px white) drop-shadow(-3px 3px 0px white) */
-
-
-        drop-shadow(2px 2px 0px var(--primary-color)) drop-shadow(-2px -2px 0px var(--primary-color)) drop-shadow(2px -2px 0px var(--primary-color)) drop-shadow(-2px 2px 0px var(--primary-color));
+    filter: drop-shadow(2px 2px 0px var(--primary-color)) drop-shadow(-2px -2px 0px var(--primary-color)) drop-shadow(2px -2px 0px var(--primary-color)) drop-shadow(-2px 2px 0px var(--primary-color));
 }
 
 .glowing-image {
     filter: drop-shadow(0px 0px 8px gray);
 }
 
-/* ==================================================== */
-/* ANIMATIONS */
-
 .slow-float {
     animation: floatUpDown 3s ease-in-out infinite alternate;
 }
-
 
 @keyframes floatUpDown {
     0% {
@@ -844,19 +444,10 @@ section {
     }
 }
 
-/* ==================================================== */
-
-/* RESPONSIVE QUERIES */
 @media (max-width: 1200px) {
-    .ceo-msg-card div p {
-        font-size: 0.75rem;
-    }
-
     .section-title h1 {
         font-size: 3rem;
-        font-weight: 800;
         line-height: 4.5125rem;
-        color: black;
     }
 
     nav ul li .nav-link {
@@ -867,20 +458,11 @@ section {
         font-size: 1.1rem;
     }
 
-    .value-card p {
-        font-size: 0.9;
-    }
-
     .footer-contact-item a {
         font-size: 0.9rem;
     }
-
-
-
 }
 
-
-/* Hide desktop nav below 1024px */
 @media (max-width: 1023px) {
     .nav-capsule {
         display: none !important;
@@ -893,20 +475,11 @@ section {
     .dropdown.d-lg-none {
         display: block !important;
     }
-
-    .ceo-msg-card div p {
-        font-size: 0.8rem;
-    }
-
-
 }
 
-/* Force mobile dropdown to show only below 1024px */
 @media (min-width: 1024px) {
-    .dropdown.d-lg-none {
-        display: none !important;
-    }
 
+    .dropdown.d-lg-none,
     .d-lg-none {
         display: none !important;
     }
@@ -920,57 +493,60 @@ section {
     }
 }
 
-
-
 @media (min-width: 992px) {
     .ceo-msg-card {
         text-align: justify;
     }
 }
 
+@media (max-width: 991px) {
+    .about-hero-bg {
+        background-attachment: scroll;
+    }
+
+    .footer-column-title {
+        margin-top: 1rem;
+        font-size: 1.05rem;
+    }
+
+    .hero-content-wrapper {
+        text-align: center !important;
+    }
+
+    .hero-content-wrapper .text-start {
+        text-align: center !important;
+    }
+
+    .hero-content-wrapper .mb-4 {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .floating-stat-badge {
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: none;
+    }
+}
+
 @media (max-width: 767px) {
-    .hero-header .hero-title h1 {
-        font-size: 3.875rem;
-        line-height: 4.8125rem;
+    .about-hero {
+        min-height: 70vh;
     }
 
-    .hero-header .hero-description p {
-        text-align: center;
-        font-size: 1rem;
-        line-height: 1.25rem;
+    .about-hero h1 {
+        font-size: 2.75rem;
     }
 
-    /* Optional: Add a break for larger screens if you want them on one line later */
-    .hero-header .hero-explore-title h1 {
-        display: block;
-        font-size: 2rem;
-        line-height: 2.25rem;
-    }
-
-    .hero-header .hero-explore-title .line-one {
-        display: inline;
-    }
-
-    .hero-explore-title .scroll-arrow {
-        width: 60px;
-        height: 60px;
-        transition: all 0.3s ease;
+    .hero-content-wrapper {
+        padding-top: 140px;
     }
 
     .section-title h1 {
         font-size: 2.5rem;
         text-align: start;
-        font-weight: 800;
         line-height: 3rem;
-        color: black;
-    }
-
-    .section-title span {
-        text-align: start;
-    }
-
-    .section-description {
-        text-align: start;
     }
 
     .value-card {
@@ -986,45 +562,20 @@ section {
         padding: 1rem 1.25rem !important;
     }
 
+    .stat-number {
+        font-size: 2.5rem;
+    }
 
+    .stat-suffix {
+        font-size: 1.85rem;
+    }
+
+    .engagement-models-container {
+        padding: 2rem 1.25rem !important;
+    }
 }
 
 @media (max-width: 576px) {
-    .hero-header .hero-title h1 {
-        font-size: 3rem;
-        line-height: 4rem;
-    }
-
-    .hero-header .hero-description p {
-        text-align: center;
-        font-size: 0.9rem;
-        line-height: 1.25rem;
-    }
-
-    /* Optional: Add a break for larger screens if you want them on one line later */
-    .hero-header .hero-explore-title h1 {
-        display: block;
-        font-size: 1.75rem;
-        line-height: 2rem;
-    }
-
-    .hero-header .hero-explore-title .line-one {
-        display: inline;
-    }
-
-    .hero-explore-title .scroll-arrow {
-        width: 50px;
-        height: 50px;
-        transition: all 0.3s ease;
-    }
-
-
-    .ceo-msg-card .quote-icon {
-        font-size: 4rem;
-        top: -5px;
-        left: 10px;
-    }
-
     .stat-label {
         font-size: 0.6rem;
         letter-spacing: 1.3px;
@@ -1035,8 +586,122 @@ section {
     .section-title h1 {
         font-size: 1.75rem;
         text-align: start;
-        font-weight: 800;
         line-height: 2.5125rem;
-        color: black;
     }
+}
+
+.mission-tab-card {
+    background-color: var(--section-bg-color);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    cursor: pointer;
+    min-width: 200px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mission-tab-icon-box {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+}
+
+.tab-title {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.tab-subtitle {
+    color: rgba(255, 255, 255, 0.5);
+    transition: color 0.3s ease;
+}
+
+.mission-tab-card.active {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 10px 30px rgba(27, 117, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+.mission-tab-card.active .mission-tab-icon-box {
+    background-color: white !important;
+    color: var(--primary-color) !important;
+}
+
+.mission-tab-card.active .tab-title,
+.mission-tab-card.active .tab-subtitle {
+    color: white !important;
+}
+
+.mission-tab-card:hover:not(.active) {
+    background-color: #1a202c;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.mission-large-icon-box {
+    width: 65px;
+    height: 65px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.floating-stat-badge {
+    bottom: -20px;
+    left: 20px;
+    min-width: 200px;
+    z-index: 5;
+    animation: slowFloat 4s ease-in-out infinite alternate;
+}
+
+.mission-content-pane {
+    animation: fadeAndSlideIn 0.5s ease-out forwards;
+}
+
+.mission-content-pane.active {
+    display: flex !important;
+}
+
+@keyframes fadeAndSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slowFloat {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-8px);
+    }
+}
+
+.hero-stat-card {
+    transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.hero-stat-card:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.hero-stat-label {
+    font-size: 0.8rem;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.hero-stat-number {
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    line-height: 1;
+    letter-spacing: -1px;
 }

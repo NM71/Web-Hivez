@@ -7,22 +7,15 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon"> -->
     <link rel="icon"
         href="https://webhivez.com/wp-content/uploads/2023/07/cropped-image_2023_07_10T20_45_13_727Z-32x32.png"
         sizes="32x32">
-
     <link rel="stylesheet" href="styles.css">
 
     <title>About Webhivez | Leading Web Development Company</title>
@@ -30,92 +23,167 @@
 
 <body>
 
-    <!-- Custom Cursor Elements -->
-    <div class="custom-cursor-dot"></div>
-    <div class="custom-cursor-ring"></div>
+    <!-- MAIN NAVBAR -->
+    <div id="main-nav" class="container-fluid fixed-top py-3" style="z-index: 1050; background: transparent;">
+        <div class="container d-flex align-items-center justify-content-between position-relative">
 
-    <header class="container-fluid full-screen-bg p-0 m-0">
+            <div class="navbar-brand d-flex align-items-center p-3 gap-2">
+                <a href="https://webhivez.com">
+                    <img src="https://webhivez.com/wp-content/uploads/2025/07/Webhivez.logo_.svg" alt="Webhivez Logo">
+                </a>
+            </div>
 
-        <div id="main-nav" class="container-fluid fixed-top py-3" style="z-index: 1050; background: transparent;">
-            <div class="container d-flex align-items-center justify-content-between position-relative">
+            <nav class="nav-capsule d-none d-lg-block">
+                <ul class="m-0 list-unstyled d-flex align-items-center gap-2">
+                    <li><a href="#" class="nav-link">About Us</a></li>
+                    <li class="nav-dropdown-wrapper position-relative">
+                        <a href="#" class="nav-link dropdown-toggle-custom">
+                            Services
+                            <svg class="caret-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M7 10l5 5 5-5H7z" />
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu-custom list-unstyled position-absolute rounded-3 p-3 shadow">
+                            <li><a href="#">Web Design & UI/UX</a></li>
+                            <li><a href="#">Custom Web Development</a></li>
+                            <li><a href="#">WordPress Development</a></li>
+                            <li><a href="#">E-Commerce Solutions</a></li>
+                            <li><a href="#">SEO & Digital Marketing</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://webhivez.com/portfolio/" class="nav-link">Portfolio</a></li>
+                    <li><a href="#" class="nav-link">Blog</a></li>
+                    <li><a href="#" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
 
-                <div class="navbar-brand d-flex align-items-center p-3 gap-2">
-                    <a href="https://webhivez.com"> <img
-                            src="https://webhivez.com/wp-content/uploads/2025/07/Webhivez.logo_.svg"
-                            alt="Webhivez Logo">
-                    </a>
+            <div class="d-flex align-items-center gap-2">
+                <div class="dropdown d-lg-none position-static">
+                    <button class="btn btn-outline-primary border-2" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="bi bi-list fs-5"></i>
+                    </button>
+
+                    <ul class="dropdown-menu mobile-dropdown-menu w-100 text-center border-0 rounded-0 mt-4 p-5">
+                        <li><a class="dropdown-item py-3" href="#">About Us</a></li>
+                        <li><a class="dropdown-item py-3" href="#">Services</a></li>
+                        <li><a class="dropdown-item py-3" href="#">Portfolio</a></li>
+                        <li><a class="dropdown-item py-3" href="#">Blog</a></li>
+                        <li><a class="dropdown-item py-3" href="#">Contact Us</a></li>
+                        <hr class="border-secondary my-3">
+                        <li class="px-3">
+                            <a href="#" class="btn-action w-100 justify-content-center py-3">
+                                <span>Request Free Audit</span>
+                                <span class="arrow-box ms-2">
+                                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
 
-                <nav class="nav-capsule d-none d-lg-block">
-                    <ul class="m-0 list-unstyled d-flex align-items-center gap-2">
-                        <li><a href="#" class="nav-link">About Us</a></li>
-                        <!-- <li>
-                            <a href="#" class="nav-link dropdown-toggle-custom">
-                                Services
-                                <svg class="caret-icon" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M7 10l5 5 5-5H7z" />
-                                </svg>
-                            </a>
-                        </li> -->
-                        <!-- Hover Dropdown Wrapper -->
-                        <li class="nav-dropdown-wrapper position-relative">
-                            <a href="#" class="nav-link dropdown-toggle-custom">
-                                Services
-                                <svg class="caret-icon" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M7 10l5 5 5-5H7z" />
-                                </svg>
-                            </a>
+                <a href="#" class="btn-action d-none d-lg-inline-flex">
+                    <span>Request Free Audit</span>
+                    <span class="arrow-box">
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
 
-                            <!-- White BG Hover Dropdown Menu -->
-                            <ul class="dropdown-menu-custom list-unstyled position-absolute rounded-3 p-3 shadow">
-                                <li><a href="#">Web Design & UI/UX</a></li>
-                                <li><a href="#">Custom Web Development</a></li>
-                                <li><a href="#">WordPress Development</a></li>
-                                <li><a href="#">E-Commerce Solutions</a></li>
-                                <li><a href="#">SEO & Digital Marketing</a></li>
-                            </ul>
-                        </li>
+    <!-- HERO SECTION -->
+    <header class="about-hero position-relative p-0 m-0 w-100 overflow-hidden">
+        <div class="about-hero-bg position-absolute top-0 start-0 w-100 h-100 z-n1"></div>
+        <div class="about-hero-overlay position-absolute top-0 start-0 w-100 h-100 z-n1"></div>
 
+        <div class="container position-relative z-1 hero-content-wrapper">
+            <div class="row align-items-center g-5 text-start mb-5" data-aos="fade-up">
 
-                        <li><a href="https://webhivez.com/portfolio/" class="nav-link">Portfolio</a></li>
-                        <li><a href="#" class="nav-link">Blog</a></li>
-                        <li><a href="#" class="nav-link">Contact Us</a></li>
-                    </ul>
-                </nav>
-
-                <div class="d-flex align-items-center gap-2">
-                    <div class="dropdown d-lg-none position-static">
-                        <button class="btn btn-outline-primary border-2" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <i class="bi bi-list fs-5"></i>
-                        </button>
-
-                        <ul class="dropdown-menu mobile-dropdown-menu w-100 text-center border-0 rounded-0 mt-4 p-5">
-                            <li><a class="dropdown-item py-3" href="#">About Us</a></li>
-                            <li><a class="dropdown-item py-3" href="#">Services</a></li>
-                            <li><a class="dropdown-item py-3" href="#">Portfolio</a></li>
-                            <li><a class="dropdown-item py-3" href="#">Blog</a></li>
-                            <li><a class="dropdown-item py-3" href="#">Contact Us</a></li>
-                            <hr class="border-secondary my-3">
-                            <li class="px-3">
-                                <a href="#" class="btn-action w-100 justify-content-center py-3">
-                                    <span>Request Free Audit</span>
-                                    <span class="arrow-box ms-2">
-                                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" stroke-width="3" stroke-linecap="round"
-                                            stroke-linejoin="round">
-                                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                                            <polyline points="12 5 19 12 12 19"></polyline>
-                                        </svg>
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
+                <div class="col-lg-7 text-start">
+                    <span class="text-uppercase fw-extrabold tracking-wider fs-7 mb-3 d-inline-block text-primary">About
+                        Us</span>
+                    <h1 class="display-4 fw-800 text-white mb-4 lh-sm">
+                        Crafting <span style="color: var(--primary-color);">Digital Excellence</span>
+                    </h1>
+                    <div class="mb-4"
+                        style="width: 70px; height: 3px; background-color: var(--primary-color); border-radius: 2px;">
                     </div>
+                    <p class="fs-5 text-white opacity-90 mb-3 lh-lg fw-medium">
+                        Welcome to Webhivez, where innovation meets technology, and creativity knows no bounds.
+                    </p>
+                    <p class="fs-6 text-white-50 lh-lg mb-0">
+                        As a leading web development company, we specialize in a spectrum of services that transform
+                        your digital aspirations into reality. Our expertise spans <span
+                            class="text-white fw-bold tracking-wide">Web Design, Development, UI/UX, SEO, Project
+                            Management, E-commerce Development, and Digital Marketing</span>.
+                    </p>
+                </div>
 
-                    <a href="#" class="btn-action d-none d-lg-inline-flex">
-                        <span>Request Free Audit</span>
-                        <span class="arrow-box">
+                <div class="col-lg-5 hero-stats-section d-none d-lg-block d-md-block">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="hero-stat-card p-4 text-center rounded-3 h-100">
+                                <div class="stat-number-wrapper mb-2">
+                                    <span class="hero-stat-number fw-800">10</span><span
+                                        class="stat-suffix fw-800">+</span>
+                                </div>
+                                <p class="hero-stat-label small mb-0 text-uppercase tracking-wider">Years of Experience
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="hero-stat-card p-4 text-center rounded-3 h-100">
+                                <div class="stat-number-wrapper mb-2">
+                                    <span class="hero-stat-number fw-800">98</span><span
+                                        class="stat-suffix fw-800">%</span>
+                                </div>
+                                <p class="hero-stat-label small mb-0 text-uppercase tracking-wider">Success Rate</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="hero-stat-card p-4 text-center rounded-3 h-100">
+                                <div class="stat-number-wrapper mb-2">
+                                    <span class="hero-stat-number fw-800">500</span><span
+                                        class="stat-suffix fw-800">+</span>
+                                </div>
+                                <p class="hero-stat-label small mb-0 text-uppercase tracking-wider">Projects Delivered
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="hero-stat-card p-4 text-center rounded-3 h-100">
+                                <div class="stat-number-wrapper mb-2">
+                                    <span class="hero-stat-number fw-800">25</span><span
+                                        class="stat-suffix fw-800">+</span>
+                                </div>
+                                <p class="hero-stat-label small mb-0 text-uppercase tracking-wider">Industries Served
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary opacity-10 my-4 d-none d-lg-block">
+
+            <div class="row" data-aos="fade-up" data-aos-delay="150">
+                <div class="col-12 text-center pt-2">
+                    <p class="text-white fw-semibold mb-3 tracking-wider fs-7 text-uppercase">Ready To Explore Our
+                        Services & Client Stories?</p>
+                    <a href="https://webhivez.com/portfolio/" target="_blank"
+                        class="btn-action shadow-lg d-inline-flex px-4 py-2">
+                        <span>Dive Into Our Portfolio</span>
+                        <span class="arrow-box ms-2">
                             <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
                                 <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -124,96 +192,15 @@
                         </span>
                     </a>
                 </div>
-
             </div>
         </div>
 
-        <div class="container hero-center-container">
-            <div class="hero-header">
-                <div class="row">
-                    <div class="col-12 hero-col-container text-center p-4 mx-auto">
-                        <div class="hero-title">
-                            <h1>Crafting <span style="color: var(--primary-color);">Digital Excellence</span></h1>
-                        </div>
-
-                        <div class="hero-description mt-4 mb-5">
-                            <p>Webhivez is a full-service agency delivering high-performance web design, development,
-                                and
-                                digital marketing. We build scalable UI/UX, e-commerce, and SEO solutions that drive
-                                business growth.</p>
-                        </div>
-
-                        <div class="hero-explore-title">
-                            <h1>
-                                <span class="line-one">Explore Our Services and</span>
-                                <span style="color: var(--primary-color);">Client Stories</span>
-                            </h1>
-                            <img src="assets/svg/down-arrow.svg" height="90" width="90" alt="Scroll Down"
-                                class="scroll-arrow my-2">
-                            <a href="https://webhivez.com/portfolio/" target="_blank"
-                                class="btn-action btn-action-secondary slow-float mt-3 mb-5">
-                                <span>Dive Into Our Portfolio</span>
-                                <span class="arrow-box">
-                                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        <polyline points="12 5 19 12 12 19"></polyline>
-                                    </svg>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="hero-bottom-fade position-absolute bottom-0 start-0 w-100"></div>
     </header>
 
-    <!-- <section class="py-5">
-        <div class="container my-5 px-3">
-            <div class="section-title text-center mb-5">
-                <h1><span style="color: var(--primary-color);">CEO'S Message</span></h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6 order-1 mb-3 mb-lg-0">
-                    <img src="assets/images/s-img.png" class="img-fluid rounded outlined-image glowing-image"
-                        alt="Leader Profile">
-                </div>
-                <div class="col-lg-6 order-2 ceo-msg-card p-4" style="text-align: justify;">
-                    <p class="text-muted fst-italic fst-italic">At WebHivez, we believe a strong digital presence is
-                        built on more
-                        than just
-                        great design. It requires strategy, innovation, and reliability. Since our inception, our
-                        mission
-                        has been to help businesses establish a meaningful online presence through high-quality digital
-                        solutions tailored to their goals.
-                    </p>
-
-                    <p class="text-muted fst-italic">As Managing Director and CEO, I am committed to ensuring every
-                        project
-                        reflects our core values
-                        of quality, transparency, and client satisfaction. Our experienced team combines technical
-                        expertise with creative thinking to deliver websites and digital solutions that are modern,
-                        scalable, and results-driven.</p>
-
-                    <p class="text-muted fst-italic">We value long-term relationships over one-time projects. By
-                        understanding your
-                        business, maintaining open communication, and delivering on our commitments, we strive to become
-                        a trusted digital partner you can rely on as your business grows.</p>
-
-                    <p class="text-muted fst-italic">
-                        Thank you for considering WebHivez. We look forward to helping you transform your ideas into
-                        impactful digital experiences and achieve lasting success online.
-                    </p>
-                    <p class="mt-5"> <strong>— Managing Director & CEO, WebHivez</strong>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
+    <!-- CEO MESSAGE SECTION -->
     <section class="py-5 position-relative overflow-hidden">
         <div class="container my-4 my-lg-5 px-3">
-            <!-- Section Title -->
             <div class="section-title text-center mb-5" data-aos="fade-up">
                 <h1 class="fw-800 text-dark">
                     <span style="color: var(--primary-color);">CEO'S </span>Message
@@ -221,7 +208,6 @@
             </div>
 
             <div class="row align-items-center g-4 g-lg-5">
-                <!-- CEO Image (5 columns wide on desktop to prevent bloating) -->
                 <div class="col-md-8 col-lg-5 mx-auto order-1 mb-4 mb-lg-0" data-aos="fade-right">
                     <div class="image-wrapper position-relative">
                         <img src="assets/images/s-img.png" class="img-fluid rounded-4 outlined-image glowing-image"
@@ -229,33 +215,29 @@
                     </div>
                 </div>
 
-                <!-- CEO Message Card (7 columns wide for highly legible line lengths) -->
                 <div class="col-lg-7 order-2" data-aos="fade-left">
-                    <div class="ceo-msg-card position-relative p-4 p-md-5 rounded-4 shadow-sm ">
-                        <!-- Elegant Background Quote Watermark -->
-                        <i class="bi bi-quote position-relative quote-icon"></i>
-
+                    <div class="ceo-msg-card p-4 p-md-5">
                         <div class="position-relative z-1">
-                            <p class="text-muted ">
-                                "At WebHivez, we believe a strong digital presence is built on more than just great
+                            <p class="text-muted">
+                                At WebHivez, we believe a strong digital presence is built on more than just great
                                 design. It requires strategy, innovation, and reliability. Since our inception, our
                                 mission has been to help businesses establish a meaningful online presence through
-                                high-quality digital solutions tailored to their goals."
+                                high-quality digital solutions tailored to their goals.
                             </p>
-                            <p class="text-muted ">
-                                "As Managing Director and CEO, I am committed to ensuring every project reflects our
-                                core values of quality, transparency, and client satisfaction. Our experienced team
-                                combines technical expertise with creative thinking to deliver websites and digital
-                                solutions that are modern, scalable, and results-driven."
+                            <p class="text-muted">
+                                As Managing Director and CEO, I am committed to ensuring every project reflects our core
+                                values of quality, transparency, and client satisfaction. Our experienced team combines
+                                technical expertise with creative thinking to deliver websites and digital solutions
+                                that are modern, scalable, and results-driven.
                             </p>
-                            <p class="text-muted ">
-                                "We value long-term relationships over one-time projects. By understanding your
-                                business, maintaining open communication, and delivering on our commitments, we strive
-                                to become a trusted digital partner you can rely on as your business grows."
+                            <p class="text-muted">
+                                We value long-term relationships over one-time projects. By understanding your business,
+                                maintaining open communication, and delivering on our commitments, we strive to become a
+                                trusted digital partner you can rely on as your business grows.
                             </p>
-                            <p class="text-muted ">
-                                "Thank you for considering WebHivez. We look forward to helping you transform your ideas
-                                into impactful digital experiences and achieve lasting success online."
+                            <p class="text-muted">
+                                Thank you for considering WebHivez. We look forward to helping you transform your ideas
+                                into impactful digital experiences and achieve lasting success online.
                             </p>
 
                             <div class="mt-4 pt-3 border-top border-light">
@@ -269,13 +251,9 @@
         </div>
     </section>
 
-
-    <!-- ==================================================== -->
-    <!-- ABOUT US / CORE VALUES SECTION -->
+    <!-- CORE VALUES SECTION -->
     <section class="py-5 bg-light position-relative">
         <div class="container my-4 my-lg-5 px-3">
-
-            <!-- Header Text Block -->
             <div class="row mb-5" data-aos="fade-up">
                 <div class="col-lg-8 mx-auto text-center">
                     <div class="section-title mb-3">
@@ -290,10 +268,7 @@
                 </div>
             </div>
 
-            <!-- Interactive Stats/Values Grid -->
             <div class="row g-4 justify-content-center">
-
-                <!-- Card 1: Expertise -->
                 <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
                     <div class="value-card p-4 p-md-5 rounded-4 h-100 position-relative">
                         <div
@@ -308,7 +283,6 @@
                     </div>
                 </div>
 
-                <!-- Card 2: Innovation -->
                 <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
                     <div class="value-card p-4 p-md-5 rounded-4 h-100 position-relative">
                         <div
@@ -322,7 +296,6 @@
                     </div>
                 </div>
 
-                <!-- Card 3: Quality Assurance -->
                 <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
                     <div class="value-card p-4 p-md-5 rounded-4 h-100 position-relative">
                         <div
@@ -337,7 +310,6 @@
                     </div>
                 </div>
 
-                <!-- Card 4: Client Satisfaction -->
                 <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="400">
                     <div class="value-card p-4 p-md-5 rounded-4 h-100 position-relative">
                         <div
@@ -352,7 +324,6 @@
                     </div>
                 </div>
 
-                <!-- Card 5: Continuous Improvement -->
                 <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="500">
                     <div class="value-card p-4 p-md-5 rounded-4 h-100 position-relative">
                         <div
@@ -366,200 +337,268 @@
                         </p>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- =============================================================================================== -->
-
+    <!-- MISSION SECTION -->
     <section class="py-5" style="background-color: #121721;">
-        <div class="container-fluid">
-            <div class="container my-4 my-lg-5 px-3">
-                <div class="row">
-                    <div class="col-12" data-aos="fade-up">
+        <div class="container my-4 my-lg-5 px-3">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-title mb-3">
+                    <span class="text-uppercase fw-extrabold tracking-wider fs-7 d-block mb-2"
+                        style="color: var(--primary-color);">Our Mission</span>
+                    <h1 class="fw-800 text-white display-6">
+                        Driven by a <span style="color: var(--primary-color);">Simple </span>yet Profound <span
+                            style="color: var(--primary-color);">Mission</span>
+                    </h1>
+                </div>
+            </div>
 
-                        <div class="text-center mb-5">
-                            <div class="section-title mb-3">
-                                <span class="text-uppercase fw-extrabold tracking-wider fs-7 d-block mb-2"
-                                    style="color: var(--primary-color);">Our Purpose</span>
-                                <h1 class="fw-800 text-white display-6">
-                                    Driven by a <span style="color: var(--primary-color);">Simple </span>
-                                    yet Profound
-                                    <span style="color: var(--primary-color);">Mission</span>
+            <div class="d-flex flex-wrap gap-4 justify-content-center mb-5" data-aos="fade-up">
+                <div class="mission-tab-card flex-fill p-3 rounded-3 d-flex align-items-center gap-3 active"
+                    data-mission="0">
+                    <div
+                        class="mission-tab-icon-box rounded-3 d-flex justify-content-center align-items-center flex-shrink-0">
+                        <i class="bi bi-award-fill"></i>
+                    </div>
+                    <div class="text-start">
+                        <h5 class="fw-bold mb-1 tab-title">Quality</h5>
+                        <span class="small tab-subtitle">Flawless execution</span>
+                    </div>
+                </div>
 
-                                </h1>
-                            </div>
-                            <p class="section-description text-white-50 max-width-700 mx-auto">
-                                At WebHivez, our mission is to leverage our technical prowess and creative flair to
-                                deliver digital solutions that empower businesses and individuals to thrive in the
-                                online world. We are committed to:
-                            </p>
-                        </div>
+                <div class="mission-tab-card flex-fill p-3 rounded-3 d-flex align-items-center gap-3" data-mission="1">
+                    <div
+                        class="mission-tab-icon-box rounded-3 d-flex justify-content-center align-items-center flex-shrink-0">
+                        <i class="bi bi-lightbulb-fill"></i>
+                    </div>
+                    <div class="text-start">
+                        <h5 class="fw-bold mb-1 tab-title">Innovation</h5>
+                        <span class="small tab-subtitle">Future-proof solutions</span>
+                    </div>
+                </div>
 
-                        <div class="row g-4 justify-content-center">
+                <div class="mission-tab-card flex-fill p-3 rounded-3 d-flex align-items-center gap-3" data-mission="2">
+                    <div
+                        class="mission-tab-icon-box rounded-3 d-flex justify-content-center align-items-center flex-shrink-0">
+                        <i class="bi bi-patch-check-fill"></i>
+                    </div>
+                    <div class="text-start">
+                        <h5 class="fw-bold mb-1 tab-title">Ethics</h5>
+                        <span class="small tab-subtitle">Absolute transparency</span>
+                    </div>
+                </div>
 
-                            <div class="col-md-6">
-                                <div class="mission-item-flat p-4 d-flex align-items-start gap-3 rounded-3 h-100">
-                                    <div
-                                        class="mission-icon-flat d-flex align-items-center justify-content-center rounded-circle flex-shrink-0">
-                                        <i class="bi bi-award-fill"></i>
-                                    </div>
-                                    <div>
-                                        <h5 class="fw-bold text-white mb-2">Quality</h5>
-                                        <p class=" small mb-0 lh-base">Delivering flawless execution and
-                                            pixel-perfect software engineering.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="mission-item-flat p-4 d-flex align-items-start gap-3 rounded-3 h-100">
-                                    <div
-                                        class="mission-icon-flat d-flex align-items-center justify-content-center rounded-circle flex-shrink-0">
-                                        <i class="bi bi-lightbulb-fill"></i>
-                                    </div>
-                                    <div>
-                                        <h5 class="fw-bold text-white mb-2">Innovation</h5>
-                                        <p class=" small mb-0 lh-base">Implementing next-gen technology
-                                            stacks to solve complex digital roadblocks.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="mission-item-flat p-4 d-flex align-items-start gap-3 rounded-3 h-100">
-                                    <div
-                                        class="mission-icon-flat d-flex align-items-center justify-content-center rounded-circle flex-shrink-0">
-                                        <i class="bi bi-patch-check-fill"></i>
-                                    </div>
-                                    <div>
-                                        <h5 class="fw-bold text-white mb-2">Ethical Practices</h5>
-                                        <p class=" small mb-0 lh-base">Maintaining absolute transparency,
-                                            data safety, and fair collaboration mechanics.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="mission-item-flat p-4 d-flex align-items-start gap-3 rounded-3 h-100">
-                                    <div
-                                        class="mission-icon-flat d-flex align-items-center justify-content-center rounded-circle flex-shrink-0">
-                                        <i class="bi bi-people-fill"></i>
-                                    </div>
-                                    <div>
-                                        <h5 class="fw-bold text-white mb-2">Client-Centricity</h5>
-                                        <p class=" small mb-0 lh-base">Placing your target benchmarks at
-                                            the core of our iterative design loops.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-8">
-                                <div class="mission-item-flat p-4 d-flex align-items-start gap-3 rounded-3 h-100">
-                                    <div
-                                        class="mission-icon-flat d-flex align-items-center justify-content-center rounded-circle flex-shrink-0">
-                                        <i class="bi bi-lightning-charge-fill"></i>
-                                    </div>
-                                    <div>
-                                        <h5 class="fw-bold text-white mb-2">Team Empowerment</h5>
-                                        <p class=" small mb-0 lh-base">Nurturing continuous learning,
-                                            structural ownership, and collective success.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="text-center mt-5">
-                            <a href="https://webhivez.com/portfolio/" target="_blank" class="btn-action px-5 py-3">
-                                <span>View All</span>
-                                <span class="arrow-box">
-                                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        <polyline points="12 5 19 12 12 19"></polyline>
-                                    </svg>
-                                </span>
-                            </a>
-                        </div>
-
+                <div class="mission-tab-card flex-fill p-3 rounded-3 d-flex align-items-center gap-3" data-mission="3">
+                    <div
+                        class="mission-tab-icon-box rounded-3 d-flex justify-content-center align-items-center flex-shrink-0">
+                        <i class="bi bi-people-fill"></i>
+                    </div>
+                    <div class="text-start">
+                        <h5 class="fw-bold mb-1 tab-title">Clients</h5>
+                        <span class="small tab-subtitle">Dedicated support</span>
                     </div>
                 </div>
             </div>
+
+            <div class="mt-5" data-aos="fade-up">
+                <!-- Content 0: Quality -->
+                <div class="row align-items-center g-5 mission-content-pane active" data-mission="0">
+                    <div class="col-lg-5 text-start order-2 order-lg-1">
+                        <div
+                            class="mission-large-icon-box mb-4 d-inline-flex align-items-center justify-content-center rounded-3">
+                            <i class="bi bi-award-fill fs-2"></i>
+                        </div>
+                        <h2 class="fw-bold text-white mb-3">Flawless Quality & Execution</h2>
+                        <p class="text-white-50 lh-lg mb-5">We deliver pixel-perfect, high-performance digital solutions
+                            tailored to your business needs. From seamless mobile applications to robust web platforms,
+                            our rigorous quality assurance ensures your product is secure, scalable, and built to
+                            perform flawlessly from day one.</p>
+                    </div>
+                    <div class="col-lg-7 position-relative order-1 order-lg-2">
+                        <img src="https://images.pexels.com/photos/6804068/pexels-photo-6804068.jpeg?auto=compress&cs=tinysrgb&w=800"
+                            class="img-fluid rounded-4 w-100 object-fit-cover shadow-lg" style="height: 450px;"
+                            alt="Quality">
+                        <div
+                            class="floating-stat-badge bg-white rounded-3 shadow-lg d-flex align-items-center gap-3 p-3 position-absolute">
+                            <i class="bi bi-bug-fill fs-3" style="color: var(--primary-color);"></i>
+                            <div class="text-start">
+                                <span class="d-block small text-muted fw-bold mb-0">Testing</span>
+                                <span class="d-block text-dark fw-bolder fs-6 lh-1">Zero Bugs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content 1: Innovation -->
+                <div class="row align-items-center g-5 mission-content-pane d-none" data-mission="1">
+                    <div class="col-lg-5 text-start order-2 order-lg-1">
+                        <div
+                            class="mission-large-icon-box mb-4 d-inline-flex align-items-center justify-content-center rounded-3">
+                            <i class="bi bi-lightbulb-fill fs-2"></i>
+                        </div>
+                        <h2 class="fw-bold text-white mb-3">Next-Gen Innovation</h2>
+                        <p class="text-white-50 lh-lg mb-5">We leverage the latest technologies to turn complex
+                            challenges into simple, elegant solutions. By staying ahead of industry trends, we build
+                            modern, future-proof applications that give your business a competitive edge and bring your
+                            vision to life faster.</p>
+                    </div>
+                    <div class="col-lg-7 position-relative order-1 order-lg-2">
+                        <img src="https://images.pexels.com/photos/17279854/pexels-photo-17279854.jpeg?auto=compress&cs=tinysrgb&w=800"
+                            class="img-fluid rounded-4 w-100 object-fit-cover shadow-lg" style="height: 450px;"
+                            alt="Innovation">
+                        <div
+                            class="floating-stat-badge bg-white rounded-3 shadow-lg d-flex align-items-center gap-3 p-3 position-absolute">
+                            <i class="bi bi-rocket-takeoff-fill fs-3" style="color: var(--primary-color);"></i>
+                            <div class="text-start">
+                                <span class="d-block small text-muted fw-bold mb-0">Solutions</span>
+                                <span class="d-block text-dark fw-bolder fs-6 lh-1">Cutting-Edge</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content 2: Ethics -->
+                <div class="row align-items-center g-5 mission-content-pane d-none" data-mission="2">
+                    <div class="col-lg-5 text-start order-2 order-lg-1">
+                        <div
+                            class="mission-large-icon-box mb-4 d-inline-flex align-items-center justify-content-center rounded-3">
+                            <i class="bi bi-patch-check-fill fs-2"></i>
+                        </div>
+                        <h2 class="fw-bold text-white mb-3">Trust & Transparency</h2>
+                        <p class="text-white-50 lh-lg mb-5">Trust is the foundation of every successful partnership. We
+                            maintain complete transparency throughout the development process, providing clear
+                            communication, honest timelines, and secure practices so you always know exactly where your
+                            project stands.</p>
+                    </div>
+                    <div class="col-lg-7 position-relative order-1 order-lg-2">
+                        <img src="https://images.pexels.com/photos/6814554/pexels-photo-6814554.jpeg?auto=compress&cs=tinysrgb&w=800"
+                            class="img-fluid rounded-4 w-100 object-fit-cover shadow-lg" style="height: 450px;"
+                            alt="Ethics">
+                        <div
+                            class="floating-stat-badge bg-white rounded-3 shadow-lg d-flex align-items-center gap-3 p-3 position-absolute">
+                            <i class="bi bi-shield-lock-fill fs-3" style="color: var(--primary-color);"></i>
+                            <div class="text-start">
+                                <span class="d-block small text-muted fw-bold mb-0">Security</span>
+                                <span class="d-block text-dark fw-bolder fs-6 lh-1">Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content 3: Clients -->
+                <div class="row align-items-center g-5 mission-content-pane d-none" data-mission="3">
+                    <div class="col-lg-5 text-start order-2 order-lg-1">
+                        <div
+                            class="mission-large-icon-box mb-4 d-inline-flex align-items-center justify-content-center rounded-3">
+                            <i class="bi bi-people-fill fs-2"></i>
+                        </div>
+                        <h2 class="fw-bold text-white mb-3">Client-Centric Approach</h2>
+                        <p class="text-white-50 lh-lg mb-5">Your success is our ultimate benchmark. We take the time to
+                            truly understand your business goals, ensuring that every digital product we create is
+                            strategically designed to drive operational growth and deliver an exceptional experience for
+                            your users.</p>
+                    </div>
+                    <div class="col-lg-7 position-relative order-1 order-lg-2">
+                        <img src="https://images.pexels.com/photos/7709193/pexels-photo-7709193.jpeg?auto=compress&cs=tinysrgb&w=800"
+                            class="img-fluid rounded-4 w-100 object-fit-cover shadow-lg" style="height: 450px;"
+                            alt="Clients">
+                        <div
+                            class="floating-stat-badge bg-white rounded-3 shadow-lg d-flex align-items-center gap-3 p-3 position-absolute">
+                            <i class="bi bi-heart-pulse-fill fs-3" style="color: var(--primary-color);"></i>
+                            <div class="text-start">
+                                <span class="d-block small text-muted fw-bold mb-0">Support</span>
+                                <span class="d-block text-dark fw-bolder fs-6 lh-1">Dedicated</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-5 d-flex justify-content-center">
+                <a href="https://webhivez.com/services/" target="_blank" class="btn-action fs-5 px-5 py-3 mt-5">
+                    <span>View All</span>
+                    <span class="arrow-box ms-2">
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- ==================================================== -->
-
-    <section class=" stats-section py-5">
+    <!-- CORE ANALYTICS SECTION -->
+    <section class="stats-section py-5">
         <div class="container-fluid">
             <div class="container my-4 px-3">
-                <div class="row g-4 justify-content-center">
+                <div class="row mb-5">
+                    <div class="col-lg-9 mx-auto text-center">
+                        <div class="section-title mb-3">
+                            <h1 class="fw-800 text-dark">Proven by Data, <span
+                                    style="color: var(--primary-color);">Driven</span> by Results</h1>
+                        </div>
+                        <p class="text-muted fs-5 section-description mb-0">
+                            Our track record speaks for itself. Over the years, we have bridged the gap between complex
+                            technology and measurable business milestones for partners worldwide.
+                        </p>
+                    </div>
+                </div>
 
+                <div class="row g-4 justify-content-center">
                     <div class="col-6 col-lg-3">
                         <div class="stat-card p-4 text-center rounded-1 h-100">
                             <div class="stat-number-wrapper mb-2">
                                 <span class="stat-number fw-800" data-target="10">0</span><span
                                     class="stat-suffix fw-800">+</span>
                             </div>
-                            <p class="stat-label small mb-0 text-uppercase tracking-wider">Years of
-                                Experience</p>
+                            <p class="stat-label small mb-0 text-uppercase tracking-wider">Years of Experience</p>
                         </div>
                     </div>
-
                     <div class="col-6 col-lg-3">
                         <div class="stat-card p-4 text-center rounded-1 h-100">
                             <div class="stat-number-wrapper mb-2">
                                 <span class="stat-number fw-800" data-target="98">0</span><span
                                     class="stat-suffix fw-800">%</span>
                             </div>
-                            <p class="stat-label small mb-0 text-uppercase tracking-wider">Success Rate
-                            </p>
+                            <p class="stat-label small mb-0 text-uppercase tracking-wider">Success Rate</p>
                         </div>
                     </div>
-
                     <div class="col-6 col-lg-3">
                         <div class="stat-card p-4 text-center rounded-1 h-100">
                             <div class="stat-number-wrapper mb-2">
                                 <span class="stat-number fw-800" data-target="500">0</span><span
                                     class="stat-suffix fw-800">+</span>
                             </div>
-                            <p class="stat-label small mb-0 text-uppercase tracking-wider">Projects
-                                Delivered</p>
+                            <p class="stat-label small mb-0 text-uppercase tracking-wider">Projects Delivered</p>
                         </div>
                     </div>
-
                     <div class="col-6 col-lg-3">
                         <div class="stat-card p-4 text-center rounded-1 h-100">
                             <div class="stat-number-wrapper mb-2">
                                 <span class="stat-number fw-800" data-target="25">0</span><span
                                     class="stat-suffix fw-800">+</span>
                             </div>
-                            <p class="stat-label small mb-0 text-uppercase tracking-wider">Industries
-                                Served</p>
+                            <p class="stat-label small mb-0 text-uppercase tracking-wider">Industries Served</p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- =============================================================================================== -->
-
-    <!-- ==================================================== -->
-    <!-- ENGAGEMENT MODELS SECTION (WITH SYSTEM DEPTH SHADOW) -->
+    <!-- ENGAGEMENT MODELS SECTION -->
     <section class="py-5 position-relative bg-white">
         <div class="container my-4 my-lg-5 px-3">
             <div class="engagement-models-container p-4 p-md-5 rounded-4" data-aos="fade-up">
-
-                <!-- Section Header (Using your pre-defined layout standards) -->
                 <div class="row mb-5">
                     <div class="col-lg-9 mx-auto text-center">
                         <div class="section-title mb-3">
-                            <span class=" fw-extrabold tracking-wider fs-7 d-block mb-2">Fuel Success
-                                Through Collaboration</span>
+                            <span class="fw-extrabold tracking-wider fs-7 d-block mb-2">Fuel Success Through
+                                Collaboration</span>
                             <h1 class="fw-800 text-dark">
                                 With Our <span style="color: var(--primary-color);">Engagement Models</span>
                             </h1>
@@ -571,10 +610,7 @@
                     </div>
                 </div>
 
-                <!-- Engagement Models Grid System -->
                 <div class="row g-4 justify-content-center mb-5">
-
-                    <!-- Model 1: Staff Augmentation -->
                     <div class="col-md-6 col-lg-4">
                         <div class="value-card p-4 p-md-5 rounded-4 h-100 position-relative">
                             <div class="value-icon-box mb-4 d-flex align-items-center justify-content-center rounded-3">
@@ -587,8 +623,6 @@
                             </p>
                         </div>
                     </div>
-
-                    <!-- Model 2: Dedicated Teams -->
                     <div class="col-md-6 col-lg-4">
                         <div class="value-card p-4 p-md-5 rounded-4 h-100 position-relative">
                             <div class="value-icon-box mb-4 d-flex align-items-center justify-content-center rounded-3">
@@ -601,8 +635,6 @@
                             </p>
                         </div>
                     </div>
-
-                    <!-- Model 3: Product Development -->
                     <div class="col-md-6 col-lg-4">
                         <div class="value-card p-4 p-md-5 rounded-4 h-100 position-relative">
                             <div class="value-icon-box mb-4 d-flex align-items-center justify-content-center rounded-3">
@@ -615,10 +647,8 @@
                             </p>
                         </div>
                     </div>
-
                 </div>
 
-                <!-- Bottom Call to Action Grid Alignment -->
                 <div class="text-center mt-4">
                     <a href="#" class="btn-action">
                         <span>Secure a Free Quote Today!</span>
@@ -631,19 +661,13 @@
                         </span>
                     </a>
                 </div>
-
             </div>
         </div>
     </section>
 
-
-    <!-- =============================================================================================== -->
-
     <!-- FAQ SECTION -->
     <section class="py-5 position-relative">
         <div class="container my-4 my-lg-5 px-3">
-
-            <!-- Section Header -->
             <div class="row mb-5" data-aos="fade-up">
                 <div class="col-lg-7 mx-auto text-center">
                     <div class="section-title mb-3">
@@ -655,16 +679,12 @@
                         We've got answers to your questions. Explore our commonly asked infrastructure and process
                         inquiries.
                     </p>
-
                 </div>
             </div>
 
-            <!-- Accordion Wrapper -->
             <div class="row">
                 <div class="col-lg-9 mx-auto">
                     <div class="accordion custom-faq-accordion" id="faqAccordion">
-
-                        <!-- FAQ Item 1 -->
                         <div class="accordion-item mb-4 p-2 border-0 rounded-3 overflow-hidden" data-aos="fade-up"
                             data-aos-delay="100">
                             <h2 class="accordion-header" id="faqHeadingOne">
@@ -684,7 +704,6 @@
                             </div>
                         </div>
 
-                        <!-- FAQ Item 2 -->
                         <div class="accordion-item mb-4 p-2 border-0 rounded-3 overflow-hidden" data-aos="fade-up"
                             data-aos-delay="150">
                             <h2 class="accordion-header" id="faqHeadingTwo">
@@ -704,7 +723,6 @@
                             </div>
                         </div>
 
-                        <!-- FAQ Item 3 -->
                         <div class="accordion-item mb-4 p-2 border-0 rounded-3 overflow-hidden" data-aos="fade-up"
                             data-aos-delay="200">
                             <h2 class="accordion-header" id="faqHeadingThree">
@@ -723,7 +741,6 @@
                             </div>
                         </div>
 
-                        <!-- FAQ Item 4 -->
                         <div class="accordion-item mb-4 p-2 border-0 rounded-3 overflow-hidden" data-aos="fade-up"
                             data-aos-delay="250">
                             <h2 class="accordion-header" id="faqHeadingFour">
@@ -742,7 +759,6 @@
                             </div>
                         </div>
 
-                        <!-- FAQ Item 5 -->
                         <div class="accordion-item border-0 p-2 rounded-3 overflow-hidden" data-aos="fade-up"
                             data-aos-delay="300">
                             <h2 class="accordion-header" id="faqHeadingFive">
@@ -761,144 +777,19 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
-    <!-- =============================================================================================== -->
-
-    <!-- <div class="container-fluid full-screen-bg">
-
-        <div class="container-fluid sticky-top py-3" style="z-index: 1050; background: transparent;">
-
-            <div class="container d-flex align-items-center justify-content-between">
-
-                <div class="navbar-brand d-flex align-items-center p-3 gap-2">
-                    <img src="https://webhivez.com/wp-content/uploads/2025/07/Webhivez.logo_.svg" alt="Webhivez Logo">
-                </div>
-
-                <nav class="nav-capsule d-none d-md-block">
-                    <ul class="m-0 list-unstyled d-flex align-items-center gap-2">
-                        <li><a href="#" class="nav-link">About Us</a></li>
-                        <li>
-                            <a href="#" class="nav-link dropdown-toggle-custom">
-                                Services
-                                <svg class="caret-icon" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M7 10l5 5 5-5H7z" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li><a href="#" class="nav-link">Portfolio</a></li>
-                        <li><a href="#" class="nav-link">Blog</a></li>
-                        <li><a href="#" class="nav-link">Contact Us</a></li>
-                    </ul>
-                </nav>
-
-
-                <div class="d-flex align-items-center gap-2">
-                    <div class="dropdown d-lg-none">
-                        <button class="btn btn-outline-primary" type="button" data-bs-toggle="dropdown">
-                            <i class="bi bi-list fs-4"></i>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#">About Us</a></li>
-                            <li><a class="dropdown-item" href="#">Services</a></li>
-                            <li><a class="dropdown-item" href="#">Portfolio</a></li>
-                            <li><a class="dropdown-item" href="#">Blog</a></li>
-                            <li><a class="dropdown-item" href="#">Contact Us</a></li>
-                        </ul>
-                    </div>
-
-                    <a href="#" class="btn-action">
-                        <span>Request Free Audit</span>
-                        <span class="arrow-box">
-                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg>
-                        </span>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="container">
-            <div class="hero-header">
-                <div class="row">
-                    <div class="col-12 text-center p-4 mx-auto">
-                        <div class="hero-title">
-                            <h1>Crafting <span style="color: var(--primary-color);">Digital Excellence</span></h1>
-                        </div>
-
-                        <div class="hero-description mt-4 mb-5">
-                            <p> Webhivez is a full-service agency delivering high-performance web design, development,
-                                and
-                                digital marketing. We build scalable UI/UX, e-commerce, and SEO solutions that drive
-                                business growth.</p>
-                        </div>
-
-
-
-                        <div class="hero-explore-title">
-                            <h1>
-                                <span class="line-one">Explore Our Services and</span>
-                                <span style="color: var(--primary-color);">Client Stories</span>
-                            </h1>
-                            <img src="assets/svg/down-arrow.svg" height="100" width="100" alt="">
-                            <a href="https://webhivez.com/portfolio/" target="_blank"
-                                class="btn-action btn-action-secondary slow-float mt-3 mb-5">
-                                <span>Dive Into Our Portfolio</span>
-                                <span class="arrow-box">
-                                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        <polyline points="12 5 19 12 12 19"></polyline>
-                                    </svg>
-                                </span>
-                            </a>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-
-
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 order-1">
-                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQE-uDIZJFj4Vw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1718251775542?e=1785974400&v=beta&t=d3G3LhTew1HjM6iQanDY5AR5yoRTFl9zsK8KMXrL5b0"
-                        class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-6 order-2"></div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- =============================================================================================== -->
-
-    <!-- ==================================================== -->
-    <!-- SITE FOOTER -->
+    <!-- FOOTER -->
     <footer class="site-footer pt-5 pb-0" style="background-color: #090d16;">
         <div class="container pt-4 px-3">
             <div class="row g-5 justify-content-between">
 
-                <!-- Left Panel Card Column -->
                 <div class="col-lg-4 order-lg-0 order-5 col-md-6 mb-4 mb-lg-0">
                     <div class="footer-contact-card p-4 rounded-4 h-100">
-
-                        <!-- Direct Call -->
                         <div class="footer-contact-item d-flex align-items-center gap-3 mb-4">
                             <div
                                 class="footer-icon-circle d-flex align-items-center justify-content-center rounded-circle flex-shrink-0">
@@ -911,7 +802,6 @@
                             </div>
                         </div>
 
-                        <!-- Email Us -->
                         <div class="footer-contact-item d-flex align-items-center gap-3 mb-4">
                             <div
                                 class="footer-icon-circle d-flex align-items-center justify-content-center rounded-circle flex-shrink-0">
@@ -926,25 +816,22 @@
 
                         <hr class="border-secondary opacity-25 my-4">
 
-                        <!-- Social Media Handles -->
                         <div>
                             <h6 class="text-white fw-bold mb-3">Our Socials</h6>
                             <div class="d-flex align-items-center gap-2">
                                 <a href="#"
-                                    class="footer-social-icon d-flex align-items-center justify-content-center rounded-circle border ">
+                                    class="footer-social-icon d-flex align-items-center justify-content-center rounded-circle border">
                                     <i class="ri-facebook-fill"></i>
                                 </a>
                                 <a href="#"
-                                    class="footer-social-icon d-flex align-items-center justify-content-center rounded-circle border ">
+                                    class="footer-social-icon d-flex align-items-center justify-content-center rounded-circle border">
                                     <i class="ri-linkedin-box-fill"></i>
                                 </a>
                             </div>
                         </div>
-
                     </div>
                 </div>
 
-                <!-- Column 2: Our Service -->
                 <div class="col-6 col-md-3 col-lg-2">
                     <h5 class="text-white fw-bold mb-4 footer-column-title">Our Service</h5>
                     <ul class="list-unstyled footer-links-list">
@@ -956,7 +843,6 @@
                     </ul>
                 </div>
 
-                <!-- Column 3: Industries We Serve -->
                 <div class="col-6 col-md-3 col-lg-2">
                     <h5 class="text-white fw-bold mb-4 footer-column-title">Industries We Serve</h5>
                     <ul class="list-unstyled footer-links-list">
@@ -969,7 +855,6 @@
                     </ul>
                 </div>
 
-                <!-- Column 4: Quick Links -->
                 <div class="col-6 col-md-3 col-lg-2">
                     <h5 class="text-white fw-bold mb-4 footer-column-title">Quick Links</h5>
                     <ul class="list-unstyled footer-links-list">
@@ -982,7 +867,6 @@
                     </ul>
                 </div>
 
-                <!-- Column 5: Get in Touch -->
                 <div class="col-6 col-md-3 col-lg-2">
                     <h5 class="text-white fw-bold mb-4 footer-column-title">Get in Touch</h5>
                     <ul class="list-unstyled footer-links-list">
@@ -992,15 +876,13 @@
                 </div>
 
             </div>
-            <!-- Bottom Copyright Strip Wrapper -->
+
             <div class="footer-copyright-strip py-3 px-5 mt-5 rounded-top-4"
                 style="background-color: var(--primary-color);">
                 <div class="container px-3">
                     <div class="row align-items-center justify-content-between g-2">
                         <div class="col-sm-auto text-center text-sm-start">
-                            <p class="text-white m-0 opacity-90 fw-medium">
-                                © Copyright 2026 All rights reserved.
-                            </p>
+                            <p class="text-white m-0 opacity-90 fw-medium">© Copyright 2026 All rights reserved.</p>
                         </div>
                         <div class="col-sm-auto text-center text-sm-end">
                             <div class="footer-sub-links small fw-medium">
@@ -1013,24 +895,16 @@
                 </div>
             </div>
         </div>
-
-
     </footer>
-    <!-- =============================================================================================== -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
     <script>
-        AOS.init({
-            once: true,
-            offset: 100
-        });
+        AOS.init({ once: true, offset: 100 });
     </script>
-
     <script src="script.js"></script>
 </body>
 
