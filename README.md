@@ -18,7 +18,23 @@ A collection of hands-on projects built during this internship — from personal
       <img src="Screenshots/portfolio-site-ss.png" width="350" alt="Nousher's Portfolio"><br><br>
       <b>Nousher's Portfolio</b><br>
       <sub>A personal portfolio site showcasing skills and work.</sub><br><br>
-      <a href="https://web-hivez.vercel.app"><b>View Project →</b></a>
+      <a href="https://web-hivez.vercel.app"><b>Live Demo →</b></a>
+    </td>
+    <td align="center" width="50%">
+      <img src="Screenshots/hackerRank-site-ss.png" width="350" alt="HackerRank Website"><br><br>
+      <b>HackerRank Website</b><br>
+      <sub>A front-end of the HackerRank.</sub><br><br>
+      <a href="https://hacker-rank-frontend.vercel.app"><b>Live Demo →</b></a>
+    </td>
+    
+    
+  </tr>
+  <tr>
+  <td align="center" width="50%">
+      <img src="Screenshots/givergy-site-ss.png" width="350" alt="Givergy Website "><br><br>
+      <b>Givergy Website</b><br>
+      <sub>A front-end of the Givergy website.</sub><br><br>
+      <a href="https://givergy.vercel.app"><b>Live Demo →</b></a>
     </td>
     <td align="center" width="50%">
       <img src="Screenshots/webhivez-about-ss.png" width="350" alt="Webhivez's"><br><br>
@@ -30,25 +46,18 @@ A collection of hands-on projects built during this internship — from personal
     
   </tr>
   <tr>
-  <td align="center" width="50%">
-      <img src="Screenshots/givergy-site-ss.png" width="350" alt="Givergy Website "><br><br>
-      <b>Givergy Website</b><br>
-      <sub>A front-end of the Givergy website.</sub><br><br>
-      <a href="https://givergy.vercel.app"><b>View Project →</b></a>
+    <td align="center" width="50%">
+      <img src="Screenshots/foodies-site-ss.png" width="350" alt="Foodies Website"><br><br>
+      <b>Foodies Website</b><br>
+      <sub>A front-end of the Foodies website.</sub><br><br>
+      <a href="https://foodies-taupe-theta.vercel.app"><b>Live Demo →</b></a>
     </td>
     <td align="center" width="50%">
       <img src="Screenshots/landify-site-ss.png" width="350" alt="Landify Website"><br><br>
       <b>Landify Website</b><br>
       <sub>A front-end of the Landify website.</sub><br><br>
-      <a href="https://landify-phi-inky.vercel.app"><b>View Project →</b></a>
+      <a href="https://landify-phi-inky.vercel.app"><b>Live Demo →</b></a>
     </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <img src="Screenshots/foodies-site-ss.png" width="350" alt="Foodies Website"><br><br>
-      <b>Foodies Website</b><br>
-      <sub>A front-end of the Foodies website.</sub><br><br>
-      <a href="https://foodies-taupe-theta.vercel.app"><b>View Project →</b></a>
-    </td>
+    
   </tr>
 </table>
