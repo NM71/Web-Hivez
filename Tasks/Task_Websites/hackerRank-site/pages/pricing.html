@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="shortcut icon"
+        href="https://cdn.prod.website-files.com/66b6d7fd4d3e9cef94717176/6715d41d809c171b16ea5612_Hackerrank%20Cursor%20Favicon.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="../styles.css">
+    <title> Pricing | Programming problems and challenges | HackerRank </title>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="../index.html" class="logo">HackerRank</a>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger"><i class="fa-solid fa-bars"></i></label>
+
+        <div class="nav-menu">
+            <ul class="nav-links">
+                <li><a href="products.html">Products</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="nav-dev">For Developers <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="#" class="btn btn-light">Request Demo</a>
+                <a href="#" class="btn btn-green">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="hero-pricing">
+        <div class="container-fluid">
+
+            <div class="container text-center">
+
+                <div class="hero-pricing-content">
+                    <div class="hero-pricing-header">
+                        <h1>Choose a plan that works for you</h1>
+                        <p>From interns to senior engineers across every tech role, HackerRank can help you reduce time
+                            to
+                            hire by 50% or more and hire with confidence. Get started today!</p>
+                    </div>
+                </div>
+
+                <div
+                    class="pricing-toggle-container mt-4 mt-md-5 d-inline-flex w-sm-auto position-relative px-2 rounded-3 border">
+                    <div class="d-flex w-100 gap-1">
+                        <button class="toggle-btn flex-fill px-3 px-sm-5 py-2 py-md-3 border-0 rounded-2 fw-bold active"
+                            id="btnMonthly">
+                            Monthly
+                        </button>
+                        <button class="toggle-btn flex-fill px-3 px-sm-5 py-2 py-md-3 border-0 rounded-2 fw-bold"
+                            id="btnAnnually">
+                            Annually
+                        </button>
+                    </div>
+
+                    <div class="price-discount-chip position-absolute" id="discountChip">
+                        <span>2 months free</span>
+                    </div>
+                </div>
+
+                <!-- <div class="pricing-toggle-container mt-5 d-inline-block position-relative">
+                    <div class="d-flex gap-1">
+                        <button class="toggle-btn active" id="btnMonthly">Monthly</button>
+                        <button class="toggle-btn" id="btnAnnually">Annually</button>
+                    </div>
+
+                    <div class="price-discount-chip" id="discountChip">
+                        <span>2 months free</span>
+                    </div>
+                </div> -->
+
+                <div class="info pt-4">Hiring needs vary by month? Choose an <strong>annual plan</strong> and use
+                    attempts when you need them.</div>
+            </div>
+
+
+            <div class="container pt-5">
+                <div class="row g-4 align-items-stretch justify-content-center text-start">
+
+                    <!-- 1. Starter Card -->
+                    <div class="col-12 col-lg-4">
+                        <div class="pricing-card card-starter">
+                            <div>
+                                <div class="card-header-box">
+                                    <h2 class="plan-title">Starter</h2>
+                                    <div class="price-amount" id="starterPrice">$82/mo</div>
+                                    <div class="price-billed" id="starterBilled">$990 billed annually</div>
+                                </div>
+
+                                <div class="card-divider"></div>
+
+                                <div class="card-body-box">
+                                    <p class="list-heading">The basics to start hiring:</p>
+                                    <ul class="tick-list">
+                                        <li>
+                                            <svg class="tick-icon green" viewBox="0 0 24 24">
+                                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <span><strong>1 user</strong></span>
+                                        </li>
+                                        <li>
+                                            <svg class="tick-icon green" viewBox="0 0 24 24">
+                                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <span>Access to Screen + Interview</span>
+                                        </li>
+                                        <li>
+                                            <svg class="tick-icon green" viewBox="0 0 24 24">
+                                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <span>Advanced plagiarism detection</span>
+                                        </li>
+                                        <li>
+                                            <svg class="tick-icon green" viewBox="0 0 24 24">
+                                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <span>Leaked question protection</span>
+                                        </li>
+                                        <li>
+                                            <svg class="tick-icon green" viewBox="0 0 24 24">
+                                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <span>Multi-file project questions</span>
+                                        </li>
+                                        <li>
+                                            <svg class="tick-icon green" viewBox="0 0 24 24">
+                                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <span>2000+ questions</span>
+                                        </li>
+                                        <li>
+                                            <svg class="tick-icon green" viewBox="0 0 24 24">
+                                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <span id="starterAttempts">60 attempts per year</span>
+                                        </li>
+                                        <li>
+                                            <svg class="tick-icon green" viewBox="0 0 24 24">
+                                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <span>$20 per additional attempt</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="card-footer-box mt-4">
+                                <button class="btn-card-outline">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Pro Card (Dark) -->
+                    <div class="col-12 col-lg-4">
+                        <div class="pricing-card card-pro">
+                            <div>
+                                <div class="card-header-box">
+                                    <h2 class="plan-title text-green">Pro</h2>
+                                    <div class="price-amount text-white" id="proPrice">$375/mo</div>
+                                    <div class="price-billed text-muted-light" id="proBilled">$4,490 billed annually
+                                    </div>
+                                </div>
+
+                                <div class="card-divider dark"></div>
+
+                                <div class="card-body-box">
+                                    <p class="list-heading text-white">Everything in Starter plus:</p>
+                                    <ul class="tick-list">
+                                        <li>
+                                            <svg class="tick-icon white" viewBox="0 0 24 24">
+                                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <span>Unlimited users</span>
+                                        </li>
+                                        <li>
+                                            <svg class="sparkle-icon green" viewBox="0 0 24 24" fill="#32c766">
+                                                <path
+                                                    d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" />
+                                            </svg>
+                                            <div>
+                                                <strong>Advanced AI features</strong>
+                                                <ul class="sub-list">
+                                                    <li>AI-Assisted IDE</li>
+                                                    <li>AI Proctoring & Identity Verification</li>
+                                                    <li>Advanced Evaluation & Scorecard Assist</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <svg class="tick-icon white" viewBox="0 0 24 24">
+                                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <div>
+                                                <span>Integrations:</span>
+                                                <ul class="sub-list">
+                                                    <li>ATS: Greenhouse, Lever, Ashby</li>
+                                                    <li>Calendar: Google & Outlook</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <svg class="tick-icon white" viewBox="0 0 24 24">
+                                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <span>4000+ questions</span>
+                                        </li>
+                                        <li>
+                                            <svg class="tick-icon white" viewBox="0 0 24 24">
+                                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <span id="proAttempts">300 attempts per year</span>
+                                        </li>
+                                        <li>
+                                            <svg class="tick-icon white" viewBox="0 0 24 24">
+                                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <span>$20 per additional attempt</span>
+                                        </li>
+                                        <li>
+                                            <svg class="tick-icon white" viewBox="0 0 24 24">
+                                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <span>Ability to pre-purchase additional attempts at checkout (annual plan
+                                                only)</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="card-footer-box mt-4">
+                                <button class="btn-card-green">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Enterprise Card -->
+                    <div class="col-12 col-lg-4">
+                        <div class="pricing-card card-enterprise">
+                            <div>
+                                <div class="card-header-box">
+                                    <h2 class="plan-title">Enterprise</h2>
+                                    <div class="price-amount">Custom Pricing</div>
+                                    <div class="price-billed opacity-0">&nbsp;</div>
+                                </div>
+
+                                <div class="card-divider"></div>
+
+                                <div class="card-body-box pt-2">
+                                    <ul class="tick-list">
+                                        <li>
+                                            <svg class="tick-icon green" viewBox="0 0 24 24">
+                                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <span>Custom users and attempts</span>
+                                        </li>
+                                        <li>
+                                            <svg class="tick-icon green" viewBox="0 0 24 24">
+                                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <span>Certified assessments</span>
+                                        </li>
+                                        <li>
+                                            <svg class="tick-icon green" viewBox="0 0 24 24">
+                                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <span>40+ <a href="#" class="blue-link">integrations</a> (including Workday,
+                                                Oracle, and Eightfold)</span>
+                                        </li>
+                                        <li>
+                                            <svg class="tick-icon green" viewBox="0 0 24 24">
+                                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <span>Full library of 7500+ questions</span>
+                                        </li>
+                                        <li>
+                                            <svg class="tick-icon green" viewBox="0 0 24 24">
+                                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <span>Advanced user roles and permissions</span>
+                                        </li>
+                                        <li>
+                                            <svg class="tick-icon green" viewBox="0 0 24 24">
+                                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <span>Test up to 100k candidates at once</span>
+                                        </li>
+                                        <li>
+                                            <svg class="tick-icon green" viewBox="0 0 24 24">
+                                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <span>Designated account manager</span>
+                                        </li>
+                                        <li>
+                                            <svg class="tick-icon green" viewBox="0 0 24 24">
+                                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <span>Access to Professional Services</span>
+                                        </li>
+                                        <li>
+                                            <svg class="tick-icon green" viewBox="0 0 24 24">
+                                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <span>Single sign on (SSO/SCIM)</span>
+                                        </li>
+                                        <li>
+                                            <svg class="tick-icon green" viewBox="0 0 24 24">
+                                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <span>Premium support</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="card-footer-box mt-4">
+                                <button class="btn-card-outline">Contact Us</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- <div class="container pt-4">
+                <div class="row">
+                    <div class="col-lg-4 gx-0 starter-price text-black">
+                        <div class="price-header px-3 py-4">
+                            <h2 style="font-weight: 800;">Starter</h2>
+                            <h3 style="font-weight: 800;">$82/mo
+                            </h3>
+                            <h5>$990 billed annually
+                            </h5>
+                        </div>
+
+                        <hr>
+                        <div class="price-content px-3 py-4">
+                            <p>The basics to start hiring:</p>
+                            <ul class="tick-list">
+                                <li>user</li>
+                                <li> Access to Screen + Interview
+                                </li>
+                                <li> Advanced plagiarism detection
+                                </li>
+                                <li>Leaked question protection</li>
+                                <li> Multi-file project questions
+                                </li>
+                                <li> 2000+ questions
+                                </li>
+                                <li> 60 attempts per year
+                                </li>
+
+                                <li> $20 per additional attempt
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+    </section>
+
+
+
+    <section class="hero-faq">
+        <div class="container my-5">
+            <h1 class="text-center display-3 mb-5">Frequently Asked Questions</h1>
+
+            <!-- FAQ Wrapper -->
+            <!-- FAQ Wrapper -->
+            <div class="faq-wrapper">
+
+                <!-- FAQ Item 1 -->
+                <div class="faq-card">
+                    <div class="faq-header d-flex justify-content-between align-items-center">
+                        <h3 class="faq-question">What are attempts?</h3>
+                        <i class="fa-solid fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-body">
+                        Attempts are the measurement of your use of HackerRank. When a candidate completes your Screen
+                        take-home assessment that counts as one attempt. When you interview a candidate, that also
+                        counts as an attempt. Sending a candidate an invite to take an assessment does not count as an
+                        attempt.
+                        <br><br>
+                        Starter and Pro subscription plans come with a set number of attempts. Any usage beyond what's
+                        included will be charged to your saved payment method at the end of your billing cycle or after
+                        you've accumulated 25 extra attempts, whichever comes first.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-card">
+                    <div class="faq-header d-flex justify-content-between align-items-center">
+                        <h3 class="faq-question">What questions are included?</h3>
+                        <i class="fa-solid fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-body">
+                        Every plan comes with access to at least 1 question for every question type HackerRank offers.
+                        This allows each plan to be able to assess all Roles and Skills. HackerRank supports 14
+                        different question types across 3 categories: general, programming, and real-world questions.
+                    </div>
+                </div> <!-- FIXED: Added missing closing div here -->
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-card">
+                    <div class="faq-header d-flex justify-content-between align-items-center">
+                        <h3 class="faq-question">What is Screen?</h3>
+                        <i class="fa-solid fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-body">
+                        HackerRank Screen consists of skills-based coding tests to assess how well a developer can
+                        code. Companies find that including a technical screening phase in their hiring process
+                        helps them hire faster and make better hires.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-card">
+                    <div class="faq-header d-flex justify-content-between align-items-center">
+                        <h3 class="faq-question">What are Interviews?</h3>
+                        <i class="fa-solid fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-body">
+                        HackerRank Interviews allow you and your candidates to simultaneously edit code, share
+                        files, and collaborate via chat and video – all within your browser. The platform comes with
+                        hiring-specific tools like code playback, scorecards, and a candidate lobby.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-card">
+                    <div class="faq-header d-flex justify-content-between align-items-center">
+                        <h3 class="faq-question">What are real-world questions?</h3>
+                        <i class="fa-solid fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-body">
+                        Real-world questions allow you to assess candidates in a sandboxed environment similar to
+                        what they use on the job. Unlike general coding questions, our real-world experience lets
+                        candidates work through extended problems and carry context forward from one challenge to
+                        the next.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="faq-card">
+                    <div class="faq-header d-flex justify-content-between align-items-center">
+                        <h3 class="faq-question">What training and support are available?</h3>
+                        <i class="fa-solid fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-body">
+                        The HackerRank Academy provides on-demand training videos and recorded webinars for
+                        customers looking to learn more about using HackerRank. All customers also have access to
+                        technical support through articles, documentation, and email/chat with our support team.
+                        <br><br>
+                        Beyond self-serve options, customers who choose the Custom plan have access to customer
+                        success and solution engineering support for services like test creation guidance,
+                        integration support, and onboarding.
+                    </div>
+                </div>
+
+            </div>
+
+    </section>
+
+
+
+
+
+    <footer class="footer-section py-5" style="background-color: #040810;">
+        <div class="container py-4">
+
+            <!-- Top Links Grid -->
+            <div class="row gy-4 mb-5">
+
+                <!-- Products -->
+                <div class="col-6 col-md">
+                    <h6 class="text-white fw-bold mb-3">Products</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2 footer-links mb-0">
+                        <li><a href="#">Screen</a></li>
+                        <li><a href="#">Interview</a></li>
+                        <li><a href="#">Engage</a></li>
+                        <li><a href="#">SkillUp</a></li>
+                        <li><a href="#">Certified assessments</a></li>
+                        <li><a href="#">Plagiarism detection</a></li>
+                        <li><a href="#">Real-world questions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Solutions -->
+                <div class="col-6 col-md">
+                    <h6 class="text-white fw-bold mb-3">Solutions</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2 footer-links mb-0">
+                        <li><a href="#">Set up your skills strategy</a></li>
+                        <li><a href="#">Showcase your tech brand</a></li>
+                        <li><a href="#">Optimize your hiring process</a></li>
+                        <li><a href="#">Mobilize your internal talent</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div class="col-6 col-md">
+                    <h6 class="text-white fw-bold mb-3">Resources</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2 footer-links mb-0">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Customer stories</a></li>
+                        <li><a href="#">Roles directory</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">What's new</a></li>
+                        <li><a href="#">Writing</a></li>
+                    </ul>
+                </div>
+
+                <!-- About us -->
+                <div class="col-6 col-md">
+                    <h6 class="text-white fw-bold mb-3">About us</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2 footer-links mb-0">
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Status</a></li>
+                        <li><a href="#">Trust</a></li>
+                    </ul>
+                </div>
+
+                <!-- Get started -->
+                <div class="col-6 col-md">
+                    <h6 class="text-white fw-bold mb-3">Get started</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2 footer-links mb-0">
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Free Trial</a></li>
+                        <li><a href="#">Request a demo</a></li>
+                        <li><a href="#">Product support</a></li>
+                        <li><a href="#">For developers</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="pt-4 d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-4">
+
+                <!-- Left: Logo & Copyright -->
+                <div>
+                    <div class="mb-2">
+                        <!-- HackerRank SVG Logo -->
+                        <!-- <svg width="34" height="26" viewBox="0 0 34 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="15" height="26" fill="white" />
+                            <rect x="19" width="15" height="26" fill="#32c766" />
+                            <rect x="10" y="9" width="14" height="8" fill="#040810" />
+                        </svg> -->
+                        <img src="../assets/hackerrank-logo.png" width="34" height="26" alt="">
+
+                    </div>
+                    <p class="mb-0 text-muted-custom small">© HackerRank 2026 All Rights Reserved.</p>
+                </div>
+
+                <!-- Right: Social Icons & Legal Links -->
+                <div class="d-flex flex-column align-items-md-end gap-3">
+
+                    <!-- Social Icons -->
+                    <div class="d-flex gap-3 social-icons">
+                        <!-- Facebook -->
+                        <a href="#" aria-label="Facebook">
+                            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.891h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+                            </svg>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                            </svg>
+                        </a>
+                        <!-- X / Twitter -->
+                        <a href="#" aria-label="X">
+                            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                        <!-- Instagram -->
+                        <a href="#" aria-label="Instagram">
+                            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Legal Links -->
+                    <div class="d-flex gap-3 small footer-legal-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Candidate AI Notice</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- ========================================================================================= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        AOS.init({ once: true, offset: 100 });
+    </script>
+    <script src="../script.js"></script>
+</body>
+
+</html>
