@@ -163,10 +163,10 @@ body {
 
 
     /* Combined animation properties for cleaner code */
-    -webkit-animation: bg-scrolling-reverse 4s infinite linear;
-    -moz-animation: bg-scrolling-reverse 4s infinite linear;
-    -o-animation: bg-scrolling-reverse 4s infinite linear;
-    animation: bg-scrolling-reverse 4s infinite linear;
+    -webkit-animation: bg-scrolling-reverse 2s infinite linear;
+    -moz-animation: bg-scrolling-reverse 2s infinite linear;
+    -o-animation: bg-scrolling-reverse 2s infinite linear;
+    animation: bg-scrolling-reverse 2s infinite linear;
 }
 
 /* --------------------------------------------------
@@ -264,7 +264,7 @@ body {
     /* Slowly presses down and hits peak depth at 4 seconds (50%) */
     50% {
         transform: scale(0.85);
-        color: #ffffff;
+        color: white;
     }
 
     /* Slowly returns back to normal size by 5 seconds (62.5%) */
@@ -313,7 +313,7 @@ body {
 
     background:
         linear-gradient(var(--bg-dark), var(--bg-dark)) padding-box,
-        conic-gradient(from var(--border-angle), var(--primary-color), #ffffff 25%, var(--primary-color) 50%, transparent 80%) border-box;
+        conic-gradient(from var(--border-angle), var(--primary-color), white 25%, var(--primary-color) 50%, transparent 80%) border-box;
 
     animation: rotateBorder 3.5s linear infinite;
     transition: transform 0.3s ease-out, color 0.3s ease-out;
@@ -477,6 +477,18 @@ body {
 
 }
 
+.content-badge-light p {
+    padding: 10px 15px;
+    display: inline-block;
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    background-color: #e4ffec;
+    background-image: linear-gradient(180deg, white, var(--color--green--green-10));
+    color: var(--primary-color);
+    font-family: "Departure Mono", monospace;
+
+}
+
 /* =============================================================== */
 
 
@@ -551,7 +563,7 @@ body {
 }
 
 .slider-dots .dot.active {
-    background-color: #ffffff;
+    background-color: white;
 }
 
 /* --------------------------------------------------
@@ -612,12 +624,12 @@ body {
 
 .footer-links a:hover,
 .footer-legal-links a:hover {
-    color: #ffffff;
+    color: white;
 }
 
 /* Social Icons */
 .social-icons a {
-    color: #ffffff;
+    color: white;
     opacity: 0.8;
     transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
     display: inline-block;
@@ -848,7 +860,7 @@ ul.tick-list li::marker {
 
 /* Card Base Container */
 .pricing-card {
-    background: #ffffff;
+    background: white;
     border: 1px solid #e2e8f0;
     border-radius: 12px;
     padding: 2.5rem 2rem;
@@ -942,7 +954,7 @@ ul.tick-list li::marker {
 }
 
 .tick-icon.white {
-    color: #ffffff;
+    color: white;
 }
 
 .sparkle-icon {
@@ -978,7 +990,7 @@ ul.tick-list li::marker {
 .card-pro {
     /* background: linear-gradient(180deg, #021a24 0%, #030a12 35%, #010408 100%); */
     background: radial-gradient(23.3% 47.34% at 23.3% 15.14%, rgba(33, 186, 122, .2) 0, rgba(33, 186, 122, 0) 69.85%), radial-gradient(79.07% 37.31% at 25.07% -8.28%, rgba(14, 78, 183, .7) 0, rgba(14, 78, 183, 0) 100%), radial-gradient(114.42% 33.64% at 50% -5.76%, rgba(12, 148, 188, .5) 0, rgba(0, 0, 0, .5) 100%), linear-gradient(0deg, #050910, #050910), #12274a;
-    color: #ffffff;
+    color: white;
     border: 1px solid #0a192f;
 }
 
@@ -1002,7 +1014,7 @@ ul.tick-list li::marker {
 
 .btn-card-outline:hover {
     background: #0b1320;
-    color: #ffffff;
+    color: white;
 }
 
 .btn-card-green {
@@ -1083,7 +1095,7 @@ ul.tick-list li::marker {
 }
 
 .faq-header {
-    background-color: #ffffff;
+    background-color: white;
     padding: 20px;
     cursor: pointer;
     user-select: none;
@@ -1117,7 +1129,7 @@ ul.tick-list li::marker {
 }
 
 .faq-body {
-    background-color: #ffffff;
+    background-color: white;
     padding: 0 20px 20px 20px;
     color: var(--text-dark-color);
     display: none;
@@ -1168,3 +1180,63 @@ ul.tick-list li::marker {
     opacity: 1;
     transform: scale(1.05);
 }
+
+
+
+/* ================================================================ */
+
+/* Form Group Wrapper */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    /* max-width: 500px; */
+    /* padding: 20px; */
+}
+
+/* Label Styling */
+.input-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 0.2px;
+}
+
+/* Required Asterisk */
+.required-asterisk {
+    color: white;
+    /* Or change to #ef4444 for standard red */
+}
+
+/* Input Field Styling */
+.input-field {
+    width: 100%;
+    height: 42px;
+    padding: 0 14px;
+    background-color: #0B0F19;
+    /* Slightly lighter inner background */
+    border: 1px solid #1f293d;
+    /* Subtle dark border */
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Interactive States */
+.input-field:hover {
+    border-color: #374151;
+}
+
+.input-field:focus {
+    border-color: var(--primary-color);
+    /* Accent highlight color when active */
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+
+
+/* ================================================================================ */

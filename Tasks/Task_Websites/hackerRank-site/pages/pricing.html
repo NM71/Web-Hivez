@@ -18,7 +18,7 @@
 
 <body>
 
-    <header class="navbar">
+    <header class="navbar" data-aos="fade-down" data-aos-duration="800">
         <a href="../index.html" class="logo">HackerRank</a>
 
         <input type="checkbox" id="menu-toggle">
@@ -27,12 +27,13 @@
         <div class="nav-menu">
             <ul class="nav-links">
                 <li><a href="products.html">Products</a></li>
-                <li><a href="#">Solutions</a></li>
-                <li><a href="#">Resources</a></li>
                 <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="#">Resources</a></li>
             </ul>
             <div class="nav-actions">
-                <a href="#" class="nav-dev">For Developers <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="https://www.hackerrank.com/auth/signup" class="nav-dev">For Developers <i
+                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 <a href="#" class="btn btn-light">Request Demo</a>
                 <a href="#" class="btn btn-green">Sign Up</a>
             </div>
@@ -46,7 +47,7 @@
 
             <div class="container text-center">
 
-                <div class="hero-pricing-content">
+                <div class="hero-pricing-content" data-aos="fade-up" data-aos-duration="1000">
                     <div class="hero-pricing-header">
                         <h1>Choose a plan that works for you</h1>
                         <p>From interns to senior engineers across every tech role, HackerRank can help you reduce time
@@ -55,8 +56,8 @@
                     </div>
                 </div>
 
-                <div
-                    class="pricing-toggle-container mt-4 mt-md-5 d-inline-flex w-sm-auto position-relative px-2 rounded-3 border">
+                <div class="pricing-toggle-container mt-4 mt-md-5 d-inline-flex w-sm-auto position-relative px-2 rounded-3 border"
+                    data-aos="zoom-in" data-aos-delay="200" data-aos-duration="800">
                     <div class="d-flex w-100 gap-1">
                         <button class="toggle-btn flex-fill px-3 px-sm-5 py-2 py-md-3 border-0 rounded-2 fw-bold active"
                             id="btnMonthly">
@@ -73,19 +74,10 @@
                     </div>
                 </div>
 
-                <!-- <div class="pricing-toggle-container mt-5 d-inline-block position-relative">
-                    <div class="d-flex gap-1">
-                        <button class="toggle-btn active" id="btnMonthly">Monthly</button>
-                        <button class="toggle-btn" id="btnAnnually">Annually</button>
-                    </div>
-
-                    <div class="price-discount-chip" id="discountChip">
-                        <span>2 months free</span>
-                    </div>
-                </div> -->
-
-                <div class="info pt-4">Hiring needs vary by month? Choose an <strong>annual plan</strong> and use
-                    attempts when you need them.</div>
+                <div class="info pt-4" data-aos="fade-up" data-aos-delay="300">Hiring needs vary by month? Choose an
+                    <strong>annual plan</strong> and use
+                    attempts when you need them.
+                </div>
             </div>
 
 
@@ -93,7 +85,7 @@
                 <div class="row g-4 align-items-stretch justify-content-center text-start">
 
                     <!-- 1. Starter Card -->
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                         <div class="pricing-card card-starter">
                             <div>
                                 <div class="card-header-box">
@@ -174,7 +166,7 @@
                     </div>
 
                     <!-- 2. Pro Card (Dark) -->
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="250" data-aos-duration="1000">
                         <div class="pricing-card card-pro">
                             <div>
                                 <div class="card-header-box">
@@ -263,7 +255,7 @@
                     </div>
 
                     <!-- 3. Enterprise Card -->
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
                         <div class="pricing-card card-enterprise">
                             <div>
                                 <div class="card-header-box">
@@ -360,44 +352,6 @@
                 </div>
             </div>
 
-            <!-- <div class="container pt-4">
-                <div class="row">
-                    <div class="col-lg-4 gx-0 starter-price text-black">
-                        <div class="price-header px-3 py-4">
-                            <h2 style="font-weight: 800;">Starter</h2>
-                            <h3 style="font-weight: 800;">$82/mo
-                            </h3>
-                            <h5>$990 billed annually
-                            </h5>
-                        </div>
-
-                        <hr>
-                        <div class="price-content px-3 py-4">
-                            <p>The basics to start hiring:</p>
-                            <ul class="tick-list">
-                                <li>user</li>
-                                <li> Access to Screen + Interview
-                                </li>
-                                <li> Advanced plagiarism detection
-                                </li>
-                                <li>Leaked question protection</li>
-                                <li> Multi-file project questions
-                                </li>
-                                <li> 2000+ questions
-                                </li>
-                                <li> 60 attempts per year
-                                </li>
-
-                                <li> $20 per additional attempt
-                                </li>
-                            </ul>
-                        </div>
-
-                        <button>Buy Now</button>
-                    </div>
-                </div>
-            </div> -->
-
         </div>
     </section>
 
@@ -405,14 +359,14 @@
 
     <section class="hero-faq">
         <div class="container my-5">
-            <h1 class="text-center display-3 mb-5">Frequently Asked Questions</h1>
+            <h1 class="text-center display-3 mb-5" data-aos="fade-up" data-aos-duration="800">Frequently Asked Questions
+            </h1>
 
-            <!-- FAQ Wrapper -->
             <!-- FAQ Wrapper -->
             <div class="faq-wrapper">
 
                 <!-- FAQ Item 1 -->
-                <div class="faq-card">
+                <div class="card faq-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
                     <div class="faq-header d-flex justify-content-between align-items-center">
                         <h3 class="faq-question">What are attempts?</h3>
                         <i class="fa-solid fa-chevron-down faq-icon"></i>
@@ -430,7 +384,7 @@
                 </div>
 
                 <!-- FAQ Item 2 -->
-                <div class="faq-card">
+                <div class="card faq-card" data-aos="fade-up" data-aos-delay="150" data-aos-duration="600">
                     <div class="faq-header d-flex justify-content-between align-items-center">
                         <h3 class="faq-question">What questions are included?</h3>
                         <i class="fa-solid fa-chevron-down faq-icon"></i>
@@ -440,10 +394,10 @@
                         This allows each plan to be able to assess all Roles and Skills. HackerRank supports 14
                         different question types across 3 categories: general, programming, and real-world questions.
                     </div>
-                </div> <!-- FIXED: Added missing closing div here -->
+                </div>
 
                 <!-- FAQ Item 3 -->
-                <div class="faq-card">
+                <div class="card faq-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
                     <div class="faq-header d-flex justify-content-between align-items-center">
                         <h3 class="faq-question">What is Screen?</h3>
                         <i class="fa-solid fa-chevron-down faq-icon"></i>
@@ -456,7 +410,7 @@
                 </div>
 
                 <!-- FAQ Item 4 -->
-                <div class="faq-card">
+                <div class="card faq-card" data-aos="fade-up" data-aos-delay="250" data-aos-duration="600">
                     <div class="faq-header d-flex justify-content-between align-items-center">
                         <h3 class="faq-question">What are Interviews?</h3>
                         <i class="fa-solid fa-chevron-down faq-icon"></i>
@@ -469,7 +423,7 @@
                 </div>
 
                 <!-- FAQ Item 5 -->
-                <div class="faq-card">
+                <div class="card faq-card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="600">
                     <div class="faq-header d-flex justify-content-between align-items-center">
                         <h3 class="faq-question">What are real-world questions?</h3>
                         <i class="fa-solid fa-chevron-down faq-icon"></i>
@@ -483,7 +437,7 @@
                 </div>
 
                 <!-- FAQ Item 6 -->
-                <div class="faq-card">
+                <div class="card faq-card" data-aos="fade-up" data-aos-delay="350" data-aos-duration="600">
                     <div class="faq-header d-flex justify-content-between align-items-center">
                         <h3 class="faq-question">What training and support are available?</h3>
                         <i class="fa-solid fa-chevron-down faq-icon"></i>
@@ -500,14 +454,10 @@
                 </div>
 
             </div>
-
+        </div>
     </section>
 
-
-
-
-
-    <footer class="footer-section py-5" style="background-color: #040810;">
+    <footer class="footer-section py-5" style="background-color: #040810;" data-aos="fade-up" data-aos-duration="1000">
         <div class="container py-4">
 
             <!-- Top Links Grid -->
@@ -570,7 +520,7 @@
                         <li><a href="#">Free Trial</a></li>
                         <li><a href="#">Request a demo</a></li>
                         <li><a href="#">Product support</a></li>
-                        <li><a href="#">For developers</a></li>
+                        <li><a href="https://www.hackerrank.com/auth/signup">For developers</a></li>
                     </ul>
                 </div>
 
@@ -582,14 +532,7 @@
                 <!-- Left: Logo & Copyright -->
                 <div>
                     <div class="mb-2">
-                        <!-- HackerRank SVG Logo -->
-                        <!-- <svg width="34" height="26" viewBox="0 0 34 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="15" height="26" fill="white" />
-                            <rect x="19" width="15" height="26" fill="#32c766" />
-                            <rect x="10" y="9" width="14" height="8" fill="#040810" />
-                        </svg> -->
-                        <img src="../assets/hackerrank-logo.png" width="34" height="26" alt="">
-
+                        <img src="../assets/hackerrank-logo.png" width="34" height="26" alt="HackerRank Logo">
                     </div>
                     <p class="mb-0 text-muted-custom small">© HackerRank 2026 All Rights Reserved.</p>
                 </div>
@@ -643,13 +586,17 @@
         </div>
     </footer>
 
-    <!-- ========================================================================================= -->
-
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
-        AOS.init({ once: true, offset: 100 });
+        AOS.init({
+            once: true,
+            offset: 100,
+            duration: 800,
+            easing: 'ease-in-out'
+        });
     </script>
     <script src="../script.js"></script>
 </body>
